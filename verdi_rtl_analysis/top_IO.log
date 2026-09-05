@@ -1,0 +1,67 @@
+********************************************
+* VIA App: getModIO.tcl
+* Report : openMSP430_IO.log
+* Date  : 2026-09-06 02:33:06
+********************************************
+
+================================================================================
+Target Scope:   openMSP430
+Target Modules: openMSP430
+================================================================================
+
+Module: openMSP430 (openMSP430)
+--------------------------------------------------------------------------------
+   1) Output: aclk             (Size: 1)
+   2) Output: aclk_en          (Size: 1)
+   3) Output: dbg_freeze       (Size: 1)
+   4) Output: dbg_i2c_sda_out  (Size: 1)
+   5) Output: dbg_uart_txd     (Size: 1)
+   6) Output: dco_enable       (Size: 1)
+   7) Output: dco_wkup         (Size: 1)
+   8) Output: dmem_addr        (Size: 9)
+   9) Output: dmem_cen         (Size: 1)
+  10) Output: dmem_din         (Size: 16)
+  11) Output: dmem_wen         (Size: 2)
+  12) Output: irq_acc          (Size: 14)
+  13) Output: lfxt_enable      (Size: 1)
+  14) Output: lfxt_wkup        (Size: 1)
+  15) Output: mclk             (Size: 1)
+  16) Output: dma_dout         (Size: 16)
+  17) Output: dma_ready        (Size: 1)
+  18) Output: dma_resp         (Size: 1)
+  19) Output: per_addr         (Size: 14)
+  20) Output: per_din          (Size: 16)
+  21) Output: per_en           (Size: 1)
+  22) Output: per_we           (Size: 2)
+  23) Output: pmem_addr        (Size: 11)
+  24) Output: pmem_cen         (Size: 1)
+  25) Output: pmem_din         (Size: 16)
+  26) Output: pmem_wen         (Size: 2)
+  27) Output: puc_rst          (Size: 1)
+  28) Output: smclk            (Size: 1)
+  29) Output: smclk_en         (Size: 1)
+  30) Input : cpu_en           (Size: 1)
+  31) Input : dbg_en           (Size: 1)
+  32) Input : dbg_i2c_addr     (Size: 7)
+  33) Input : dbg_i2c_broadcast (Size: 7)
+  34) Input : dbg_i2c_scl      (Size: 1)
+  35) Input : dbg_i2c_sda_in   (Size: 1)
+  36) Input : dbg_uart_rxd     (Size: 1)
+  37) Input : dco_clk          (Size: 1)
+  38) Input : dmem_dout        (Size: 16)
+  39) Input : irq              (Size: 14)
+  40) Input : lfxt_clk         (Size: 1)
+  41) Input : dma_addr         (Size: 15)
+  42) Input : dma_din          (Size: 16)
+  43) Input : dma_en           (Size: 1)
+  44) Input : dma_priority     (Size: 1)
+  45) Input : dma_we           (Size: 2)
+  46) Input : dma_wkup         (Size: 1)
+  47) Input : nmi              (Size: 1)
+  48) Input : per_dout         (Size: 16)
+  49) Input : pmem_dout        (Size: 16)
+  50) Input : reset_n          (Size: 1)
+  51) Input : scan_enable      (Size: 1)
+  52) Input : scan_mode        (Size: 1)
+  53) Input : wkup             (Size: 1)
+

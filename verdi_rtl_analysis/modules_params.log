@@ -1,0 +1,603 @@
+********************************************
+* VIA App: getModParam.tcl
+* Report : modules_params.log
+* Date   : 2026-09-06 02:38:59
+********************************************
+
+================================================================================
+Target Modules: *
+================================================================================
+
+Module: openMSP430 (openMSP430)
+--------------------------------------------------------------------------------
+   1)  Parameter: INST_NR           Value: 8'h00
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/openMSP430.v : 110 )
+   2)  Parameter: TOTAL_NR          Value: 8'h00
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/openMSP430.v : 111 )
+
+Module: openMSP430.clock_module_0 (omsp_clock_module)
+--------------------------------------------------------------------------------
+   1)  Parameter: BASE_ADDR         Value: 15'h0050
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 145 )
+   2)  Parameter: DEC_WD            Value: 32'h00000004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 148 )
+   3)  Parameter: BCSCTL1           Value: 4'h7
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 151 )
+   4)  Parameter: BCSCTL2           Value: 4'h8
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 152 )
+   5)  Parameter: DEC_SZ            Value: 32'h00000010
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 155 )
+   6)  Parameter: BASE_REG          Value: 16'h0001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 156 )
+   7)  Parameter: BCSCTL1_D         Value: 16'h0080
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 159 )
+   8)  Parameter: BCSCTL2_D         Value: 16'h0100
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_clock_module.v : 160 )
+
+Module: openMSP430.clock_module_0.and_cpuoff_mclk_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_cpuoff_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_cpuoff_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_scg0_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_scg0_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_scg1_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_scg1_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_oscoff_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_oscoff_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_dis1 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_dis2 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_dis3 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_dis4 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_dis5 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_mclk_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_en_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_dco_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_dis1 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_dis2 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_dis3 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_dis4 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_dis5 (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_mclk_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_en_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.and_lfxt_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_dco_wkup (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_dco_wkup_observe (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_lfxt_wkup (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_lfxt_wkup_observe (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_puc_lfxt (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_por (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_dbg_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_puc_rst_a (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.scan_mux_puc_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_dco_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_lfxt_disable (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_lfxt_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_cpu_aux_en (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_mclk_dma_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_mclk_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_puc_lfxt (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_oscoff (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_aclk_dma_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_smclk_dma_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_cell_puc (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.clock_gate_mclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.clock_gate_dma_mclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.clock_gate_aclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.clock_gate_smclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.clock_gate_dbg_clk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.clock_module_0.sync_reset_por (omsp_sync_reset)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0 (omsp_frontend)
+--------------------------------------------------------------------------------
+   1)  Parameter: I_IRQ_FETCH       Value: 3'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 207 )
+   2)  Parameter: I_IRQ_DONE        Value: 3'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 208 )
+   3)  Parameter: I_DEC             Value: 3'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 209 )
+   4)  Parameter: I_EXT1            Value: 3'h3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 210 )
+   5)  Parameter: I_EXT2            Value: 3'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 211 )
+   6)  Parameter: I_IDLE            Value: 3'h5
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 212 )
+   7)  Parameter: E_IRQ_0           Value: 4'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 218 )
+   8)  Parameter: E_IRQ_1           Value: 4'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 219 )
+   9)  Parameter: E_IRQ_2           Value: 4'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 220 )
+  10)  Parameter: E_IRQ_3           Value: 4'h3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 221 )
+  11)  Parameter: E_IRQ_4           Value: 4'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 222 )
+  12)  Parameter: E_SRC_AD          Value: 4'h5
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 223 )
+  13)  Parameter: E_SRC_RD          Value: 4'h6
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 224 )
+  14)  Parameter: E_SRC_WR          Value: 4'h7
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 225 )
+  15)  Parameter: E_DST_AD          Value: 4'h8
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 226 )
+  16)  Parameter: E_DST_RD          Value: 4'h9
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 227 )
+  17)  Parameter: E_DST_WR          Value: 4'ha
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 228 )
+  18)  Parameter: E_EXEC            Value: 4'hb
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 229 )
+  19)  Parameter: E_JUMP            Value: 4'hc
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 230 )
+  20)  Parameter: E_IDLE            Value: 4'hd
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_frontend.v : 231 )
+
+Module: openMSP430.frontend_0.clock_gate_irq_num (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.clock_gate_pc (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.clock_gate_inst_sext (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.clock_gate_inst_dext (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.clock_gate_decode (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.and_mirq_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.and_mclk_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.frontend_0.and_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0 (omsp_execution_unit)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0 (omsp_register_file)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r1 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r2 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r3 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r4 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r5 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r6 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r7 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r8 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r9 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r10 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r11 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r12 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r13 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r14 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r15 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.alu_0 (omsp_alu)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.clock_gate_mdb_out_nxt (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.execution_unit_0.clock_gate_mdb_in_buf (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.mem_backbone_0 (omsp_mem_backbone)
+--------------------------------------------------------------------------------
+   1)  Parameter: DMEM_END          Value: 32'h00000600
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_mem_backbone.v : 224 )
+   2)  Parameter: PMEM_OFFSET       Value: 32'h0000f000
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_mem_backbone.v : 253 )
+
+Module: openMSP430.mem_backbone_0.clock_gate_bckup (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.sfr_0 (omsp_sfr)
+--------------------------------------------------------------------------------
+   1)  Parameter: BASE_ADDR         Value: 15'h0000
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 108 )
+   2)  Parameter: DEC_WD            Value: 32'h00000004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 111 )
+   3)  Parameter: IE1               Value: 4'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 114 )
+   4)  Parameter: IFG1              Value: 4'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 115 )
+   5)  Parameter: CPU_ID_LO         Value: 4'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 116 )
+   6)  Parameter: CPU_ID_HI         Value: 4'h6
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 117 )
+   7)  Parameter: CPU_NR            Value: 4'h8
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 118 )
+   8)  Parameter: DEC_SZ            Value: 32'h00000010
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 121 )
+   9)  Parameter: BASE_REG          Value: 16'h0001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 122 )
+  10)  Parameter: IE1_D             Value: 16'h0001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 125 )
+  11)  Parameter: IFG1_D            Value: 16'h0004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 126 )
+  12)  Parameter: CPU_ID_LO_D       Value: 16'h0010
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 127 )
+  13)  Parameter: CPU_ID_HI_D       Value: 16'h0040
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 128 )
+  14)  Parameter: CPU_NR_D          Value: 16'h0100
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_sfr.v : 129 )
+
+Module: openMSP430.sfr_0.wakeup_cell_nmi (omsp_wakeup_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.sfr_0.wakeup_cell_nmi.scan_mux_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.sfr_0.wakeup_cell_nmi.scan_mux_clk (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.sfr_0.sync_cell_nmi (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.sfr_0.and_nmi_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0 (omsp_watchdog)
+--------------------------------------------------------------------------------
+   1)  Parameter: BASE_ADDR         Value: 15'h0120
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 115 )
+   2)  Parameter: DEC_WD            Value: 32'h00000002
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 118 )
+   3)  Parameter: WDTCTL            Value: 2'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 121 )
+   4)  Parameter: DEC_SZ            Value: 32'h00000004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 124 )
+   5)  Parameter: BASE_REG          Value: 4'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 125 )
+   6)  Parameter: WDTCTL_D          Value: 4'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 128 )
+   7)  Parameter: WDTNMIES_MASK     Value: 8'h40
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 175 )
+   8)  Parameter: WDTSSEL_MASK      Value: 8'h00
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 184 )
+   9)  Parameter: WDTCTL_MASK       Value: 8'hd3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 190 )
+  10)  Parameter: WDTNMI_RD_MASK    Value: 8'h20
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 210 )
+  11)  Parameter: WDTSSEL_RD_MASK   Value: 8'h00
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 220 )
+  12)  Parameter: WDTCTL_RD_MASK    Value: 8'h20
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_watchdog.v : 223 )
+
+Module: openMSP430.watchdog_0.clock_gate_wdtctl (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.clock_gate_wdtcnt (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.sync_reset_por (omsp_sync_reset)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.scan_mux_wdt_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.sync_cell_wdtcnt_clr (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.sync_cell_wdtcnt_incr (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.sync_cell_wdt_evt (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.wakeup_cell_wdog (omsp_wakeup_cell)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.wakeup_cell_wdog.scan_mux_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.wakeup_cell_wdog.scan_mux_clk (omsp_scan_mux)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.watchdog_0.and_wdt_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.multiplier_0 (omsp_multiplier)
+--------------------------------------------------------------------------------
+   1)  Parameter: BASE_ADDR         Value: 15'h0130
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 83 )
+   2)  Parameter: DEC_WD            Value: 32'h00000004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 86 )
+   3)  Parameter: OP1_MPY           Value: 4'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 89 )
+   4)  Parameter: OP1_MPYS          Value: 4'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 90 )
+   5)  Parameter: OP1_MAC           Value: 4'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 91 )
+   6)  Parameter: OP1_MACS          Value: 4'h6
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 92 )
+   7)  Parameter: OP2               Value: 4'h8
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 93 )
+   8)  Parameter: RESLO             Value: 4'ha
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 94 )
+   9)  Parameter: RESHI             Value: 4'hc
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 95 )
+  10)  Parameter: SUMEXT            Value: 4'he
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 96 )
+  11)  Parameter: DEC_SZ            Value: 32'h00000010
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 99 )
+  12)  Parameter: BASE_REG          Value: 16'h0001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 100 )
+  13)  Parameter: OP1_MPY_D         Value: 16'h0001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 103 )
+  14)  Parameter: OP1_MPYS_D        Value: 16'h0004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 104 )
+  15)  Parameter: OP1_MAC_D         Value: 16'h0010
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 105 )
+  16)  Parameter: OP1_MACS_D        Value: 16'h0040
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 106 )
+  17)  Parameter: OP2_D             Value: 16'h0100
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 107 )
+  18)  Parameter: RESLO_D           Value: 16'h0400
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 108 )
+  19)  Parameter: RESHI_D           Value: 16'h1000
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 109 )
+  20)  Parameter: SUMEXT_D          Value: 16'h4000
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_multiplier.v : 110 )
+
+Module: openMSP430.multiplier_0.clock_gate_op1 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.multiplier_0.clock_gate_op2 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.multiplier_0.clock_gate_reslo (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.multiplier_0.clock_gate_reshi (omsp_clock_gate)
+--------------------------------------------------------------------------------
+
+Module: openMSP430.dbg_0 (omsp_dbg)
+--------------------------------------------------------------------------------
+   1)  Parameter: NR_REG            Value: 32'h00000019
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 157 )
+   2)  Parameter: CPU_ID_LO         Value: 6'h00
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 160 )
+   3)  Parameter: CPU_ID_HI         Value: 6'h01
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 161 )
+   4)  Parameter: CPU_CTL           Value: 6'h02
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 162 )
+   5)  Parameter: CPU_STAT          Value: 6'h03
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 163 )
+   6)  Parameter: MEM_CTL           Value: 6'h04
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 164 )
+   7)  Parameter: MEM_ADDR          Value: 6'h05
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 165 )
+   8)  Parameter: MEM_DATA          Value: 6'h06
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 166 )
+   9)  Parameter: MEM_CNT           Value: 6'h07
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 167 )
+  10)  Parameter: CPU_NR            Value: 6'h18
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 192 )
+  11)  Parameter: BASE_D            Value: 25'h0000001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 195 )
+  12)  Parameter: CPU_ID_LO_D       Value: 25'h0000001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 196 )
+  13)  Parameter: CPU_ID_HI_D       Value: 25'h0000002
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 197 )
+  14)  Parameter: CPU_CTL_D         Value: 25'h0000004
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 198 )
+  15)  Parameter: CPU_STAT_D        Value: 25'h0000008
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 199 )
+  16)  Parameter: MEM_CTL_D         Value: 25'h0000010
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 200 )
+  17)  Parameter: MEM_ADDR_D        Value: 25'h0000020
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 201 )
+  18)  Parameter: MEM_DATA_D        Value: 25'h0000040
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 202 )
+  19)  Parameter: MEM_CNT_D         Value: 25'h0000080
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 203 )
+  20)  Parameter: CPU_NR_D          Value: 25'h1000000
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 228 )
+  21)  Parameter: M_IDLE            Value: 2'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 740 )
+  22)  Parameter: M_SET_BRK         Value: 2'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 741 )
+  23)  Parameter: M_ACCESS_BRK      Value: 2'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 742 )
+  24)  Parameter: M_ACCESS          Value: 2'h3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg.v : 743 )
+
+Module: openMSP430.dbg_0.dbg_uart_0 (omsp_dbg_uart)
+--------------------------------------------------------------------------------
+   1)  Parameter: RX_SYNC           Value: 3'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_uart.v : 152 )
+   2)  Parameter: RX_CMD            Value: 3'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_uart.v : 153 )
+   3)  Parameter: RX_DATA1          Value: 3'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_uart.v : 154 )
+   4)  Parameter: RX_DATA2          Value: 3'h3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_uart.v : 155 )
+   5)  Parameter: TX_DATA1          Value: 3'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_uart.v : 156 )
+   6)  Parameter: TX_DATA2          Value: 3'h5
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_uart.v : 157 )
+
+Module: openMSP430.dbg_0.dbg_uart_0.sync_cell_uart_rxd (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: omsp_dbg_i2c (omsp_dbg_i2c)
+--------------------------------------------------------------------------------
+   1)  Parameter: RX_ADDR           Value: 3'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 231 )
+   2)  Parameter: RX_ADDR_ACK       Value: 3'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 232 )
+   3)  Parameter: RX_DATA           Value: 3'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 233 )
+   4)  Parameter: RX_DATA_ACK       Value: 3'h3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 234 )
+   5)  Parameter: TX_DATA           Value: 3'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 235 )
+   6)  Parameter: TX_DATA_ACK       Value: 3'h5
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 236 )
+   7)  Parameter: RX_CMD            Value: 3'h0
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 350 )
+   8)  Parameter: RX_BYTE_LO        Value: 3'h1
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 351 )
+   9)  Parameter: RX_BYTE_HI        Value: 3'h2
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 352 )
+  10)  Parameter: TX_BYTE_LO        Value: 3'h3
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 353 )
+  11)  Parameter: TX_BYTE_HI        Value: 3'h4
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 354 )
+  12)  Parameter: MEM_DATA          Value: 6'h06
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_i2c.v : 408 )
+
+Module: omsp_dbg_i2c.sync_cell_i2c_scl (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: omsp_dbg_i2c.sync_cell_i2c_sda (omsp_sync_cell)
+--------------------------------------------------------------------------------
+
+Module: omsp_dbg_hwbrk (omsp_dbg_hwbrk)
+--------------------------------------------------------------------------------
+   1)  Parameter: BRK_CTL           Value: 32'h00000000
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_hwbrk.v : 100 )
+   2)  Parameter: BRK_STAT          Value: 32'h00000001
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_hwbrk.v : 101 )
+   3)  Parameter: BRK_ADDR0         Value: 32'h00000002
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_hwbrk.v : 102 )
+   4)  Parameter: BRK_ADDR1         Value: 32'h00000003
+                ( /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/rtl/omsp_dbg_hwbrk.v : 103 )
+
+Module: omsp_clock_mux (omsp_clock_mux)
+--------------------------------------------------------------------------------
+

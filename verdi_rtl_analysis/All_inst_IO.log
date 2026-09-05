@@ -1,0 +1,1062 @@
+********************************************
+* VIA App: getModIO.tcl
+* Report : All_modules_IO.log
+* Date  : 2026-09-06 00:06:46
+********************************************
+
+================================================================================
+Target Scope:   openMSP430
+Target Modules: *
+================================================================================
+
+Module: openMSP430 (openMSP430)
+--------------------------------------------------------------------------------
+   1) Output: aclk             (Size: 1)
+   2) Output: aclk_en          (Size: 1)
+   3) Output: dbg_freeze       (Size: 1)
+   4) Output: dbg_i2c_sda_out  (Size: 1)
+   5) Output: dbg_uart_txd     (Size: 1)
+   6) Output: dco_enable       (Size: 1)
+   7) Output: dco_wkup         (Size: 1)
+   8) Output: dmem_addr        (Size: 9)
+   9) Output: dmem_cen         (Size: 1)
+  10) Output: dmem_din         (Size: 16)
+  11) Output: dmem_wen         (Size: 2)
+  12) Output: irq_acc          (Size: 14)
+  13) Output: lfxt_enable      (Size: 1)
+  14) Output: lfxt_wkup        (Size: 1)
+  15) Output: mclk             (Size: 1)
+  16) Output: dma_dout         (Size: 16)
+  17) Output: dma_ready        (Size: 1)
+  18) Output: dma_resp         (Size: 1)
+  19) Output: per_addr         (Size: 14)
+  20) Output: per_din          (Size: 16)
+  21) Output: per_en           (Size: 1)
+  22) Output: per_we           (Size: 2)
+  23) Output: pmem_addr        (Size: 11)
+  24) Output: pmem_cen         (Size: 1)
+  25) Output: pmem_din         (Size: 16)
+  26) Output: pmem_wen         (Size: 2)
+  27) Output: puc_rst          (Size: 1)
+  28) Output: smclk            (Size: 1)
+  29) Output: smclk_en         (Size: 1)
+  30) Input : cpu_en           (Size: 1)
+  31) Input : dbg_en           (Size: 1)
+  32) Input : dbg_i2c_addr     (Size: 7)
+  33) Input : dbg_i2c_broadcast (Size: 7)
+  34) Input : dbg_i2c_scl      (Size: 1)
+  35) Input : dbg_i2c_sda_in   (Size: 1)
+  36) Input : dbg_uart_rxd     (Size: 1)
+  37) Input : dco_clk          (Size: 1)
+  38) Input : dmem_dout        (Size: 16)
+  39) Input : irq              (Size: 14)
+  40) Input : lfxt_clk         (Size: 1)
+  41) Input : dma_addr         (Size: 15)
+  42) Input : dma_din          (Size: 16)
+  43) Input : dma_en           (Size: 1)
+  44) Input : dma_priority     (Size: 1)
+  45) Input : dma_we           (Size: 2)
+  46) Input : dma_wkup         (Size: 1)
+  47) Input : nmi              (Size: 1)
+  48) Input : per_dout         (Size: 16)
+  49) Input : pmem_dout        (Size: 16)
+  50) Input : reset_n          (Size: 1)
+  51) Input : scan_enable      (Size: 1)
+  52) Input : scan_mode        (Size: 1)
+  53) Input : wkup             (Size: 1)
+
+Module: openMSP430.clock_module_0 (omsp_clock_module)
+--------------------------------------------------------------------------------
+   1) Output: aclk             (Size: 1)
+   2) Output: aclk_en          (Size: 1)
+   3) Output: cpu_en_s         (Size: 1)
+   4) Output: cpu_mclk         (Size: 1)
+   5) Output: dma_mclk         (Size: 1)
+   6) Output: dbg_clk          (Size: 1)
+   7) Output: dbg_en_s         (Size: 1)
+   8) Output: dbg_rst          (Size: 1)
+   9) Output: dco_enable       (Size: 1)
+  10) Output: dco_wkup         (Size: 1)
+  11) Output: lfxt_enable      (Size: 1)
+  12) Output: lfxt_wkup        (Size: 1)
+  13) Output: per_dout         (Size: 16)
+  14) Output: por              (Size: 1)
+  15) Output: puc_pnd_set      (Size: 1)
+  16) Output: puc_rst          (Size: 1)
+  17) Output: smclk            (Size: 1)
+  18) Output: smclk_en         (Size: 1)
+  19) Input : cpu_en           (Size: 1)
+  20) Input : cpuoff           (Size: 1)
+  21) Input : dbg_cpu_reset    (Size: 1)
+  22) Input : dbg_en           (Size: 1)
+  23) Input : dco_clk          (Size: 1)
+  24) Input : lfxt_clk         (Size: 1)
+  25) Input : mclk_dma_enable  (Size: 1)
+  26) Input : mclk_dma_wkup    (Size: 1)
+  27) Input : mclk_enable      (Size: 1)
+  28) Input : mclk_wkup        (Size: 1)
+  29) Input : oscoff           (Size: 1)
+  30) Input : per_addr         (Size: 14)
+  31) Input : per_din          (Size: 16)
+  32) Input : per_en           (Size: 1)
+  33) Input : per_we           (Size: 2)
+  34) Input : reset_n          (Size: 1)
+  35) Input : scan_enable      (Size: 1)
+  36) Input : scan_mode        (Size: 1)
+  37) Input : scg0             (Size: 1)
+  38) Input : scg1             (Size: 1)
+  39) Input : wdt_reset        (Size: 1)
+
+Module: openMSP430.clock_module_0.and_cpuoff_mclk_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_cpuoff_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_cpuoff_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_scg0_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_scg0_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_scg1_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_scg1_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_oscoff_mclk_dma_en (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_oscoff_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_dis1 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_dis2 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_dis3 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_dis4 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_dis5 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_mclk_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_en_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_dco_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_dis1 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_dis2 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_dis3 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_dis4 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_dis5 (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_mclk_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_en_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.and_lfxt_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_dco_wkup (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_dco_wkup_observe (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_lfxt_wkup (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_lfxt_wkup_observe (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_puc_lfxt (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_por (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_dbg_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_puc_rst_a (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.scan_mux_puc_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_dco_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_lfxt_disable (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_lfxt_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_cpu_aux_en (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_mclk_dma_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_mclk_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_puc_lfxt (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_oscoff (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_aclk_dma_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_smclk_dma_wkup (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_cell_puc (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.clock_module_0.clock_gate_mclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.clock_module_0.clock_gate_dma_mclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.clock_module_0.clock_gate_aclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.clock_module_0.clock_gate_smclk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.clock_module_0.clock_gate_dbg_clk (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.clock_module_0.sync_reset_por (omsp_sync_reset)
+--------------------------------------------------------------------------------
+   1) Output: rst_s            (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : rst_a            (Size: 1)
+
+Module: openMSP430.frontend_0 (omsp_frontend)
+--------------------------------------------------------------------------------
+   1) Output: cpu_halt_st      (Size: 1)
+   2) Output: decode_noirq     (Size: 1)
+   3) Output: e_state          (Size: 4)
+   4) Output: exec_done        (Size: 1)
+   5) Output: inst_ad          (Size: 8)
+   6) Output: inst_as          (Size: 8)
+   7) Output: inst_alu         (Size: 12)
+   8) Output: inst_bw          (Size: 1)
+   9) Output: inst_dest        (Size: 16)
+  10) Output: inst_dext        (Size: 16)
+  11) Output: inst_irq_rst     (Size: 1)
+  12) Output: inst_jmp         (Size: 8)
+  13) Output: inst_mov         (Size: 1)
+  14) Output: inst_sext        (Size: 16)
+  15) Output: inst_so          (Size: 8)
+  16) Output: inst_src         (Size: 16)
+  17) Output: inst_type        (Size: 3)
+  18) Output: irq_acc          (Size: 14)
+  19) Output: mab              (Size: 16)
+  20) Output: mb_en            (Size: 1)
+  21) Output: mclk_dma_enable  (Size: 1)
+  22) Output: mclk_dma_wkup    (Size: 1)
+  23) Output: mclk_enable      (Size: 1)
+  24) Output: mclk_wkup        (Size: 1)
+  25) Output: nmi_acc          (Size: 1)
+  26) Output: pc               (Size: 16)
+  27) Output: pc_nxt           (Size: 16)
+  28) Input : cpu_en_s         (Size: 1)
+  29) Input : cpu_halt_cmd     (Size: 1)
+  30) Input : cpuoff           (Size: 1)
+  31) Input : dbg_reg_sel      (Size: 4)
+  32) Input : dma_en           (Size: 1)
+  33) Input : dma_wkup         (Size: 1)
+  34) Input : fe_pmem_wait     (Size: 1)
+  35) Input : gie              (Size: 1)
+  36) Input : irq              (Size: 14)
+  37) Input : mclk             (Size: 1)
+  38) Input : mdb_in           (Size: 16)
+  39) Input : nmi_pnd          (Size: 1)
+  40) Input : nmi_wkup         (Size: 1)
+  41) Input : pc_sw            (Size: 16)
+  42) Input : pc_sw_wr         (Size: 1)
+  43) Input : puc_rst          (Size: 1)
+  44) Input : scan_enable      (Size: 1)
+  45) Input : wdt_irq          (Size: 1)
+  46) Input : wdt_wkup         (Size: 1)
+  47) Input : wkup             (Size: 1)
+
+Module: openMSP430.frontend_0.clock_gate_irq_num (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.frontend_0.clock_gate_pc (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.frontend_0.clock_gate_inst_sext (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.frontend_0.clock_gate_inst_dext (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.frontend_0.clock_gate_decode (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.frontend_0.and_mirq_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.frontend_0.and_mclk_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.frontend_0.and_mclk_dma_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.execution_unit_0 (omsp_execution_unit)
+--------------------------------------------------------------------------------
+   1) Output: cpuoff           (Size: 1)
+   2) Output: dbg_reg_din      (Size: 16)
+   3) Output: gie              (Size: 1)
+   4) Output: mab              (Size: 16)
+   5) Output: mb_en            (Size: 1)
+   6) Output: mb_wr            (Size: 2)
+   7) Output: mdb_out          (Size: 16)
+   8) Output: oscoff           (Size: 1)
+   9) Output: pc_sw            (Size: 16)
+  10) Output: pc_sw_wr         (Size: 1)
+  11) Output: scg0             (Size: 1)
+  12) Output: scg1             (Size: 1)
+  13) Input : dbg_halt_st      (Size: 1)
+  14) Input : dbg_mem_dout     (Size: 16)
+  15) Input : dbg_reg_wr       (Size: 1)
+  16) Input : e_state          (Size: 4)
+  17) Input : exec_done        (Size: 1)
+  18) Input : inst_ad          (Size: 8)
+  19) Input : inst_as          (Size: 8)
+  20) Input : inst_alu         (Size: 12)
+  21) Input : inst_bw          (Size: 1)
+  22) Input : inst_dest        (Size: 16)
+  23) Input : inst_dext        (Size: 16)
+  24) Input : inst_irq_rst     (Size: 1)
+  25) Input : inst_jmp         (Size: 8)
+  26) Input : inst_mov         (Size: 1)
+  27) Input : inst_sext        (Size: 16)
+  28) Input : inst_so          (Size: 8)
+  29) Input : inst_src         (Size: 16)
+  30) Input : inst_type        (Size: 3)
+  31) Input : mclk             (Size: 1)
+  32) Input : mdb_in           (Size: 16)
+  33) Input : pc               (Size: 16)
+  34) Input : pc_nxt           (Size: 16)
+  35) Input : puc_rst          (Size: 1)
+  36) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0 (omsp_register_file)
+--------------------------------------------------------------------------------
+   1) Output: cpuoff           (Size: 1)
+   2) Output: gie              (Size: 1)
+   3) Output: oscoff           (Size: 1)
+   4) Output: pc_sw            (Size: 16)
+   5) Output: pc_sw_wr         (Size: 1)
+   6) Output: reg_dest         (Size: 16)
+   7) Output: reg_src          (Size: 16)
+   8) Output: scg0             (Size: 1)
+   9) Output: scg1             (Size: 1)
+  10) Output: status           (Size: 4)
+  11) Input : alu_stat         (Size: 4)
+  12) Input : alu_stat_wr      (Size: 4)
+  13) Input : inst_bw          (Size: 1)
+  14) Input : inst_dest        (Size: 16)
+  15) Input : inst_src         (Size: 16)
+  16) Input : mclk             (Size: 1)
+  17) Input : pc               (Size: 16)
+  18) Input : puc_rst          (Size: 1)
+  19) Input : reg_dest_val     (Size: 16)
+  20) Input : reg_dest_wr      (Size: 1)
+  21) Input : reg_pc_call      (Size: 1)
+  22) Input : reg_sp_val       (Size: 16)
+  23) Input : reg_sp_wr        (Size: 1)
+  24) Input : reg_sr_wr        (Size: 1)
+  25) Input : reg_sr_clr       (Size: 1)
+  26) Input : reg_incr         (Size: 1)
+  27) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r1 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r2 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r3 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r4 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r5 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r6 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r7 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r8 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r9 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r10 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r11 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r12 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r13 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r14 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.register_file_0.clock_gate_r15 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.alu_0 (omsp_alu)
+--------------------------------------------------------------------------------
+   1) Output: alu_out          (Size: 16)
+   2) Output: alu_out_add      (Size: 16)
+   3) Output: alu_stat         (Size: 4)
+   4) Output: alu_stat_wr      (Size: 4)
+   5) Input : dbg_halt_st      (Size: 1)
+   6) Input : exec_cycle       (Size: 1)
+   7) Input : inst_alu         (Size: 12)
+   8) Input : inst_bw          (Size: 1)
+   9) Input : inst_jmp         (Size: 8)
+  10) Input : inst_so          (Size: 8)
+  11) Input : op_dst           (Size: 16)
+  12) Input : op_src           (Size: 16)
+  13) Input : status           (Size: 4)
+
+Module: openMSP430.execution_unit_0.clock_gate_mdb_out_nxt (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.execution_unit_0.clock_gate_mdb_in_buf (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.mem_backbone_0 (omsp_mem_backbone)
+--------------------------------------------------------------------------------
+   1) Output: cpu_halt_cmd     (Size: 1)
+   2) Output: dbg_mem_din      (Size: 16)
+   3) Output: dmem_addr        (Size: 9)
+   4) Output: dmem_cen         (Size: 1)
+   5) Output: dmem_din         (Size: 16)
+   6) Output: dmem_wen         (Size: 2)
+   7) Output: eu_mdb_in        (Size: 16)
+   8) Output: fe_mdb_in        (Size: 16)
+   9) Output: fe_pmem_wait     (Size: 1)
+  10) Output: dma_dout         (Size: 16)
+  11) Output: dma_ready        (Size: 1)
+  12) Output: dma_resp         (Size: 1)
+  13) Output: per_addr         (Size: 14)
+  14) Output: per_din          (Size: 16)
+  15) Output: per_we           (Size: 2)
+  16) Output: per_en           (Size: 1)
+  17) Output: pmem_addr        (Size: 11)
+  18) Output: pmem_cen         (Size: 1)
+  19) Output: pmem_din         (Size: 16)
+  20) Output: pmem_wen         (Size: 2)
+  21) Input : cpu_halt_st      (Size: 1)
+  22) Input : dbg_halt_cmd     (Size: 1)
+  23) Input : dbg_mem_addr     (Size: 15)
+  24) Input : dbg_mem_dout     (Size: 16)
+  25) Input : dbg_mem_en       (Size: 1)
+  26) Input : dbg_mem_wr       (Size: 2)
+  27) Input : dmem_dout        (Size: 16)
+  28) Input : eu_mab           (Size: 15)
+  29) Input : eu_mb_en         (Size: 1)
+  30) Input : eu_mb_wr         (Size: 2)
+  31) Input : eu_mdb_out       (Size: 16)
+  32) Input : fe_mab           (Size: 15)
+  33) Input : fe_mb_en         (Size: 1)
+  34) Input : mclk             (Size: 1)
+  35) Input : dma_addr         (Size: 15)
+  36) Input : dma_din          (Size: 16)
+  37) Input : dma_en           (Size: 1)
+  38) Input : dma_priority     (Size: 1)
+  39) Input : dma_we           (Size: 2)
+  40) Input : per_dout         (Size: 16)
+  41) Input : pmem_dout        (Size: 16)
+  42) Input : puc_rst          (Size: 1)
+  43) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.mem_backbone_0.clock_gate_bckup (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.sfr_0 (omsp_sfr)
+--------------------------------------------------------------------------------
+   1) Output: cpu_id           (Size: 32)
+   2) Output: nmi_pnd          (Size: 1)
+   3) Output: nmi_wkup         (Size: 1)
+   4) Output: per_dout         (Size: 16)
+   5) Output: wdtie            (Size: 1)
+   6) Output: wdtifg_sw_clr    (Size: 1)
+   7) Output: wdtifg_sw_set    (Size: 1)
+   8) Input : cpu_nr_inst      (Size: 8)
+   9) Input : cpu_nr_total     (Size: 8)
+  10) Input : mclk             (Size: 1)
+  11) Input : nmi              (Size: 1)
+  12) Input : nmi_acc          (Size: 1)
+  13) Input : per_addr         (Size: 14)
+  14) Input : per_din          (Size: 16)
+  15) Input : per_en           (Size: 1)
+  16) Input : per_we           (Size: 2)
+  17) Input : puc_rst          (Size: 1)
+  18) Input : scan_mode        (Size: 1)
+  19) Input : wdtifg           (Size: 1)
+  20) Input : wdtnmies         (Size: 1)
+
+Module: openMSP430.sfr_0.wakeup_cell_nmi (omsp_wakeup_cell)
+--------------------------------------------------------------------------------
+   1) Output: wkup_out         (Size: 1)
+   2) Input : scan_clk         (Size: 1)
+   3) Input : scan_mode        (Size: 1)
+   4) Input : scan_rst         (Size: 1)
+   5) Input : wkup_clear       (Size: 1)
+   6) Input : wkup_event       (Size: 1)
+
+Module: openMSP430.sfr_0.wakeup_cell_nmi.scan_mux_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.sfr_0.wakeup_cell_nmi.scan_mux_clk (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.sfr_0.sync_cell_nmi (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.sfr_0.and_nmi_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.watchdog_0 (omsp_watchdog)
+--------------------------------------------------------------------------------
+   1) Output: per_dout         (Size: 16)
+   2) Output: wdt_irq          (Size: 1)
+   3) Output: wdt_reset        (Size: 1)
+   4) Output: wdt_wkup         (Size: 1)
+   5) Output: wdtifg           (Size: 1)
+   6) Output: wdtnmies         (Size: 1)
+   7) Input : aclk             (Size: 1)
+   8) Input : aclk_en          (Size: 1)
+   9) Input : dbg_freeze       (Size: 1)
+  10) Input : mclk             (Size: 1)
+  11) Input : per_addr         (Size: 14)
+  12) Input : per_din          (Size: 16)
+  13) Input : per_en           (Size: 1)
+  14) Input : per_we           (Size: 2)
+  15) Input : por              (Size: 1)
+  16) Input : puc_rst          (Size: 1)
+  17) Input : scan_enable      (Size: 1)
+  18) Input : scan_mode        (Size: 1)
+  19) Input : smclk            (Size: 1)
+  20) Input : smclk_en         (Size: 1)
+  21) Input : wdtie            (Size: 1)
+  22) Input : wdtifg_irq_clr   (Size: 1)
+  23) Input : wdtifg_sw_clr    (Size: 1)
+  24) Input : wdtifg_sw_set    (Size: 1)
+
+Module: openMSP430.watchdog_0.clock_gate_wdtctl (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.watchdog_0.clock_gate_wdtcnt (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.watchdog_0.sync_reset_por (omsp_sync_reset)
+--------------------------------------------------------------------------------
+   1) Output: rst_s            (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : rst_a            (Size: 1)
+
+Module: openMSP430.watchdog_0.scan_mux_wdt_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.watchdog_0.sync_cell_wdtcnt_clr (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.watchdog_0.sync_cell_wdtcnt_incr (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.watchdog_0.sync_cell_wdt_evt (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
+Module: openMSP430.watchdog_0.wakeup_cell_wdog (omsp_wakeup_cell)
+--------------------------------------------------------------------------------
+   1) Output: wkup_out         (Size: 1)
+   2) Input : scan_clk         (Size: 1)
+   3) Input : scan_mode        (Size: 1)
+   4) Input : scan_rst         (Size: 1)
+   5) Input : wkup_clear       (Size: 1)
+   6) Input : wkup_event       (Size: 1)
+
+Module: openMSP430.watchdog_0.wakeup_cell_wdog.scan_mux_rst (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.watchdog_0.wakeup_cell_wdog.scan_mux_clk (omsp_scan_mux)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : data_in_scan     (Size: 1)
+   3) Input : data_in_func     (Size: 1)
+   4) Input : scan_mode        (Size: 1)
+
+Module: openMSP430.watchdog_0.and_wdt_wkup (omsp_and_gate)
+--------------------------------------------------------------------------------
+   1) Output: y                (Size: 1)
+   2) Input : a                (Size: 1)
+   3) Input : b                (Size: 1)
+
+Module: openMSP430.multiplier_0 (omsp_multiplier)
+--------------------------------------------------------------------------------
+   1) Output: per_dout         (Size: 16)
+   2) Input : mclk             (Size: 1)
+   3) Input : per_addr         (Size: 14)
+   4) Input : per_din          (Size: 16)
+   5) Input : per_en           (Size: 1)
+   6) Input : per_we           (Size: 2)
+   7) Input : puc_rst          (Size: 1)
+   8) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.multiplier_0.clock_gate_op1 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.multiplier_0.clock_gate_op2 (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.multiplier_0.clock_gate_reslo (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.multiplier_0.clock_gate_reshi (omsp_clock_gate)
+--------------------------------------------------------------------------------
+   1) Output: gclk             (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : enable           (Size: 1)
+   4) Input : scan_enable      (Size: 1)
+
+Module: openMSP430.dbg_0 (omsp_dbg)
+--------------------------------------------------------------------------------
+   1) Output: dbg_cpu_reset    (Size: 1)
+   2) Output: dbg_freeze       (Size: 1)
+   3) Output: dbg_halt_cmd     (Size: 1)
+   4) Output: dbg_i2c_sda_out  (Size: 1)
+   5) Output: dbg_mem_addr     (Size: 16)
+   6) Output: dbg_mem_dout     (Size: 16)
+   7) Output: dbg_mem_en       (Size: 1)
+   8) Output: dbg_mem_wr       (Size: 2)
+   9) Output: dbg_reg_wr       (Size: 1)
+  10) Output: dbg_uart_txd     (Size: 1)
+  11) Input : cpu_en_s         (Size: 1)
+  12) Input : cpu_id           (Size: 32)
+  13) Input : cpu_nr_inst      (Size: 8)
+  14) Input : cpu_nr_total     (Size: 8)
+  15) Input : dbg_clk          (Size: 1)
+  16) Input : dbg_en_s         (Size: 1)
+  17) Input : dbg_halt_st      (Size: 1)
+  18) Input : dbg_i2c_addr     (Size: 7)
+  19) Input : dbg_i2c_broadcast (Size: 7)
+  20) Input : dbg_i2c_scl      (Size: 1)
+  21) Input : dbg_i2c_sda_in   (Size: 1)
+  22) Input : dbg_mem_din      (Size: 16)
+  23) Input : dbg_reg_din      (Size: 16)
+  24) Input : dbg_rst          (Size: 1)
+  25) Input : dbg_uart_rxd     (Size: 1)
+  26) Input : decode_noirq     (Size: 1)
+  27) Input : eu_mab           (Size: 16)
+  28) Input : eu_mb_en         (Size: 1)
+  29) Input : eu_mb_wr         (Size: 2)
+  30) Input : fe_mdb_in        (Size: 16)
+  31) Input : pc               (Size: 16)
+  32) Input : puc_pnd_set      (Size: 1)
+
+Module: openMSP430.dbg_0.dbg_uart_0 (omsp_dbg_uart)
+--------------------------------------------------------------------------------
+   1) Output: dbg_addr         (Size: 6)
+   2) Output: dbg_din          (Size: 16)
+   3) Output: dbg_rd           (Size: 1)
+   4) Output: dbg_uart_txd     (Size: 1)
+   5) Output: dbg_wr           (Size: 1)
+   6) Input : dbg_clk          (Size: 1)
+   7) Input : dbg_dout         (Size: 16)
+   8) Input : dbg_rd_rdy       (Size: 1)
+   9) Input : dbg_rst          (Size: 1)
+  10) Input : dbg_uart_rxd     (Size: 1)
+  11) Input : mem_burst        (Size: 1)
+  12) Input : mem_burst_end    (Size: 1)
+  13) Input : mem_burst_rd     (Size: 1)
+  14) Input : mem_burst_wr     (Size: 1)
+  15) Input : mem_bw           (Size: 1)
+
+Module: openMSP430.dbg_0.dbg_uart_0.sync_cell_uart_rxd (omsp_sync_cell)
+--------------------------------------------------------------------------------
+   1) Output: data_out         (Size: 1)
+   2) Input : clk              (Size: 1)
+   3) Input : data_in          (Size: 1)
+   4) Input : rst              (Size: 1)
+
