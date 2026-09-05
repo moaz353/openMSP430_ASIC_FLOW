@@ -87,12 +87,16 @@ rtl/openMSP430.v
 
 ```text
 .
-├── README.md
-└── rtl/
-    └── openMSP430 RTL
+├── readme.md
+├── rtl/
+└── verdi_rtl_analysis/
+    ├── readme.md
+    └── schematic/
 ```
 
 The `rtl/` directory contains the selected RTL files required as the design source for the ASIC implementation.
+
+The `verdi_rtl_analysis/` directory contains Verdi RTL analysis and schematics.
 
 ASIC implementation scripts, constraints, reports, physical design data, and signoff results will be added as the project progresses.
 
