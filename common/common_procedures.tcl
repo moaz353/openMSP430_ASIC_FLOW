@@ -111,9 +111,9 @@ proc report_timing_max_min {STAGE_REPORT_DIR stage_name} {
 # ###########################################################################
 # Group paths so timing reports are presented per endpoint category.
 proc setup_path_groups {} {
-    group_path -name INPUT  -from [all_inputs]
-    group_path -name OUTPUT -to   [all_outputs]
-    group_path -name COMBO  -from [all_inputs] -to [all_outputs]
+    group_path -name REGIN  -from [remove_from_collection [all_inputs] [get_ports dco_clk]]
+    group_path -name REGOUT -to   [all_outputs]
+    group_path -name FEEDTHROUGH -from [remove_from_collection [all_inputs] [get_ports dco_clk]] -to [all_outputs]
 }
 
 ###############################################################################

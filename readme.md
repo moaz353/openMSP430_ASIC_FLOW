@@ -26,16 +26,16 @@ The ASIC implementation will be developed progressively from synthesis through p
 
 ### 📈 Progress
 
-- [✅]  Import openMSP430 RTL — **Done**
-- [⏳]  ASIC synthesis — *Pending*
-- [⏳]  Floorplanning — *Pending*
-- [⏳]  Power planning — *Pending*
-- [⏳]  Placement — *Pending*
-- [⏳]  Clock Tree Synthesis (CTS) — *Pending*
-- [⏳]  Routing — *Pending*
-- [⏳]  Static Timing Analysis (STA) — *Pending*
-- [⏳]  Physical verification — *Pending*
-- [⏳]  Final signoff — *Pending*
+- [✅] Import openMSP430 RTL — **Done**
+- [⏳] ASIC synthesis — _Pending_
+- [⏳] Floorplanning — _Pending_
+- [⏳] Power planning — _Pending_
+- [⏳] Placement — _Pending_
+- [⏳] Clock Tree Synthesis (CTS) — _Pending_
+- [⏳] Routing — _Pending_
+- [⏳] Static Timing Analysis (STA) — _Pending_
+- [⏳] Physical verification — _Pending_
+- [⏳] Final signoff — _Pending_
 
 ---
 
@@ -90,11 +90,19 @@ rtl/openMSP430.v
 ├── readme.md
 ├── common/
 │   └── readme.md
+├── cons/
+│   └── readme.md
+│   └── setup/
+│   └── optional/
 ├── rtl/
 └── verdi_rtl_analysis/
     ├── readme.md
     └── schematic/
 ```
+
+The `common/` directory contains shared functions, variables, and paths used across the flow.
+
+The `cons/` directory contains the timing constraints used for the design.
 
 The `rtl/` directory contains the selected RTL files required as the design source for the ASIC implementation.
 
