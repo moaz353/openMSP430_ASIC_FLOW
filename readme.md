@@ -88,6 +88,8 @@ rtl/openMSP430.v
 ```text
 .
 ├── readme.md
+├── common/
+│   └── readme.md
 ├── rtl/
 └── verdi_rtl_analysis/
     ├── readme.md
