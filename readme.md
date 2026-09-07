@@ -18,16 +18,19 @@
 ## 🚀 Project Status
 
 > [!IMPORTANT]
-> **Current stage:** `RTL Import` 🟢
+> **Current stage:** `syn` 🟢
 
-The repository currently contains the selected openMSP430 RTL that will be used as the starting point for the ASIC implementation flow.
+Synthesis has been completed using Synopsys Design Compiler.
 
-The ASIC implementation will be developed progressively from synthesis through physical design, timing analysis, and final signoff.
+Generated synthesis reports and outputs are available under `syn/`.
+
+The ASIC implementation is being developed progressively from synthesis through physical design, timing analysis, and final signoff.
+
 
 ### 📈 Progress
 
 - [✅] Import openMSP430 RTL — **Done**
-- [⏳] ASIC synthesis — _Pending_
+- [✅] ASIC synthesis — **Done**
 - [⏳] Floorplanning — _Pending_
 - [⏳] Power planning — _Pending_
 - [⏳] Placement — _Pending_
@@ -91,13 +94,21 @@ rtl/openMSP430.v
 ├── common/
 │   └── readme.md
 ├── cons/
-│   └── readme.md
-│   └── setup/
+│   ├── readme.md
+│   ├── setup/
 │   └── optional/
 ├── rtl/
-└── verdi_rtl_analysis/
+├── verdi_rtl_analysis/
+│   ├── readme.md
+│   └── schematic/
+└── syn/
+    ├── run_syn.tcl
     ├── readme.md
-    └── schematic/
+    ├── scripts/
+    ├── reports/
+    │  └── qor/
+    └── output/
+        └── images/
 ```
 
 The `common/` directory contains shared functions, variables, and paths used across the flow.
@@ -107,6 +118,8 @@ The `cons/` directory contains the timing constraints used for the design.
 The `rtl/` directory contains the selected RTL files required as the design source for the ASIC implementation.
 
 The `verdi_rtl_analysis/` directory contains Verdi RTL analysis and schematics.
+
+The `syn/`  directory contains the Synopsys Design Compiler synthesis flow, including scripts, reports, and generated outputs.
 
 ASIC implementation scripts, constraints, reports, physical design data, and signoff results will be added as the project progresses.
 
