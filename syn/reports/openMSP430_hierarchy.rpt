@@ -1,0 +1,669 @@
+ 
+****************************************
+Report : hierarchy
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Mon Sep  7 11:00:56 2026
+****************************************
+
+openMSP430
+    AND2X1_RVT                                 saed32rvt_tt1p05v25c
+    INVX1_RVT                                  saed32rvt_tt1p05v25c
+    NAND2X0_RVT                                saed32rvt_tt1p05v25c
+    NOR3X0_RVT                                 saed32rvt_tt1p05v25c
+    OR3X1_RVT                                  saed32rvt_tt1p05v25c
+    omsp_clock_module
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AOI21X1_RVT                            saed32rvt_tt1p05v25c
+        AOI221X1_RVT                           saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        DFFASX1_RVT                            saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        INVX2_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX2_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR4X1_RVT                             saed32rvt_tt1p05v25c
+        OA21X1_RVT                             saed32rvt_tt1p05v25c
+        OA221X1_RVT                            saed32rvt_tt1p05v25c
+        OAI21X1_RVT                            saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        XNOR2X1_RVT                            saed32rvt_tt1p05v25c
+        XOR2X1_RVT                             saed32rvt_tt1p05v25c
+        omsp_and_gate_0
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_6
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_7
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_8
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_9
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_10
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_11
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_12
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_13
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_14
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_15
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_16
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_17
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_18
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_19
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_20
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_21
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_22
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_23
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_24
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_25
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_26
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_27
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_28
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_29
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_clock_gate_0
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_30
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_31
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_32
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_33
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_1
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_5
+            AO22X2_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_6
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_7
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_8
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_9
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_10
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_11
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_12
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_0
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_6
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_7
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_8
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_9
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_10
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_11
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_12
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_13
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_14
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_15
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_reset_0
+            DFFASX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+    omsp_dbg
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND2X2_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AND3X2_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X2_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AO221X1_RVT                            saed32rvt_tt1p05v25c
+        AO222X1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX2_RVT                            saed32rvt_tt1p05v25c
+        DFFASX1_RVT                            saed32rvt_tt1p05v25c
+        FADDX1_RVT                             saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        INVX2_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND2X2_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NAND4X0_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX2_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX4_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR4X1_RVT                             saed32rvt_tt1p05v25c
+        OA21X1_RVT                             saed32rvt_tt1p05v25c
+        OA221X1_RVT                            saed32rvt_tt1p05v25c
+        OAI21X1_RVT                            saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X2_RVT                              saed32rvt_tt1p05v25c
+        OR4X1_RVT                              saed32rvt_tt1p05v25c
+        XOR2X1_RVT                             saed32rvt_tt1p05v25c
+        omsp_dbg_uart
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            AND2X2_RVT                         saed32rvt_tt1p05v25c
+            AND3X1_RVT                         saed32rvt_tt1p05v25c
+            AND4X1_RVT                         saed32rvt_tt1p05v25c
+            AO21X1_RVT                         saed32rvt_tt1p05v25c
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            AO221X1_RVT                        saed32rvt_tt1p05v25c
+            AO222X1_RVT                        saed32rvt_tt1p05v25c
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            DFFASX1_RVT                        saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            INVX2_RVT                          saed32rvt_tt1p05v25c
+            NAND2X0_RVT                        saed32rvt_tt1p05v25c
+            NAND3X0_RVT                        saed32rvt_tt1p05v25c
+            NAND4X0_RVT                        saed32rvt_tt1p05v25c
+            NBUFFX2_RVT                        saed32rvt_tt1p05v25c
+            NOR2X0_RVT                         saed32rvt_tt1p05v25c
+            NOR4X1_RVT                         saed32rvt_tt1p05v25c
+            OA21X1_RVT                         saed32rvt_tt1p05v25c
+            OAI21X1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+            OR2X2_RVT                          saed32rvt_tt1p05v25c
+            OR3X1_RVT                          saed32rvt_tt1p05v25c
+            XNOR2X1_RVT                        saed32rvt_tt1p05v25c
+            XOR2X1_RVT                         saed32rvt_tt1p05v25c
+            omsp_dbg_uart_DW01_inc_0
+                HADDX1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                XOR2X1_RVT                     saed32rvt_tt1p05v25c
+            omsp_sync_cell_1
+                DFFARX1_RVT                    saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+    omsp_execution_unit
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND2X2_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X2_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AO221X1_RVT                            saed32rvt_tt1p05v25c
+        AO221X2_RVT                            saed32rvt_tt1p05v25c
+        AO222X1_RVT                            saed32rvt_tt1p05v25c
+        AOI21X1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        INVX0_RVT                              saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        INVX2_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X2_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX2_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR2X1_RVT                             saed32rvt_tt1p05v25c
+        OA21X1_RVT                             saed32rvt_tt1p05v25c
+        OA22X1_RVT                             saed32rvt_tt1p05v25c
+        OAI21X1_RVT                            saed32rvt_tt1p05v25c
+        OAI22X1_RVT                            saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        OR4X1_RVT                              saed32rvt_tt1p05v25c
+        omsp_alu
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            AND2X2_RVT                         saed32rvt_tt1p05v25c
+            AND3X1_RVT                         saed32rvt_tt1p05v25c
+            AO21X1_RVT                         saed32rvt_tt1p05v25c
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            AO221X1_RVT                        saed32rvt_tt1p05v25c
+            AO222X1_RVT                        saed32rvt_tt1p05v25c
+            AO222X2_RVT                        saed32rvt_tt1p05v25c
+            FADDX1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            NAND2X0_RVT                        saed32rvt_tt1p05v25c
+            NAND2X2_RVT                        saed32rvt_tt1p05v25c
+            NAND3X0_RVT                        saed32rvt_tt1p05v25c
+            NAND4X0_RVT                        saed32rvt_tt1p05v25c
+            NOR2X0_RVT                         saed32rvt_tt1p05v25c
+            NOR2X1_RVT                         saed32rvt_tt1p05v25c
+            NOR2X2_RVT                         saed32rvt_tt1p05v25c
+            NOR3X0_RVT                         saed32rvt_tt1p05v25c
+            NOR4X0_RVT                         saed32rvt_tt1p05v25c
+            OA21X1_RVT                         saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+            OR3X2_RVT                          saed32rvt_tt1p05v25c
+            OR4X1_RVT                          saed32rvt_tt1p05v25c
+            XOR2X1_RVT                         saed32rvt_tt1p05v25c
+            omsp_alu_DW01_add_9
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                FADDX1_RVT                     saed32rvt_tt1p05v25c
+                XOR2X1_RVT                     saed32rvt_tt1p05v25c
+        omsp_clock_gate_23
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_24
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_register_file
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            AND3X1_RVT                         saed32rvt_tt1p05v25c
+            AO21X1_RVT                         saed32rvt_tt1p05v25c
+            AO21X2_RVT                         saed32rvt_tt1p05v25c
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            AO222X1_RVT                        saed32rvt_tt1p05v25c
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            FADDX1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            INVX2_RVT                          saed32rvt_tt1p05v25c
+            NAND2X0_RVT                        saed32rvt_tt1p05v25c
+            NAND2X2_RVT                        saed32rvt_tt1p05v25c
+            NAND2X4_RVT                        saed32rvt_tt1p05v25c
+            NAND3X0_RVT                        saed32rvt_tt1p05v25c
+            NAND4X0_RVT                        saed32rvt_tt1p05v25c
+            NBUFFX2_RVT                        saed32rvt_tt1p05v25c
+            NOR2X0_RVT                         saed32rvt_tt1p05v25c
+            NOR2X1_RVT                         saed32rvt_tt1p05v25c
+            OA21X1_RVT                         saed32rvt_tt1p05v25c
+            OA22X1_RVT                         saed32rvt_tt1p05v25c
+            OA221X1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+            XNOR2X1_RVT                        saed32rvt_tt1p05v25c
+            XOR2X1_RVT                         saed32rvt_tt1p05v25c
+            omsp_clock_gate_1
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_2
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_3
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_4
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_5
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_6
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_7
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_8
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_9
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_10
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_11
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_12
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_13
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_14
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+            omsp_clock_gate_15
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                LATCHX1_RVT                    saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+    omsp_frontend
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AO221X1_RVT                            saed32rvt_tt1p05v25c
+        AO222X1_RVT                            saed32rvt_tt1p05v25c
+        AOI21X1_RVT                            saed32rvt_tt1p05v25c
+        AOI22X1_RVT                            saed32rvt_tt1p05v25c
+        AOI221X1_RVT                           saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX2_RVT                            saed32rvt_tt1p05v25c
+        DFFASX1_RVT                            saed32rvt_tt1p05v25c
+        FADDX1_RVT                             saed32rvt_tt1p05v25c
+        INVX0_RVT                              saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NAND4X0_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX2_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX4_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR2X1_RVT                             saed32rvt_tt1p05v25c
+        NOR3X0_RVT                             saed32rvt_tt1p05v25c
+        OA21X1_RVT                             saed32rvt_tt1p05v25c
+        OA22X1_RVT                             saed32rvt_tt1p05v25c
+        OA221X1_RVT                            saed32rvt_tt1p05v25c
+        OAI21X1_RVT                            saed32rvt_tt1p05v25c
+        OAI22X1_RVT                            saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        OR4X1_RVT                              saed32rvt_tt1p05v25c
+        XOR2X1_RVT                             saed32rvt_tt1p05v25c
+        omsp_and_gate_3
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_4
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_and_gate_5
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_clock_gate_25
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_26
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_27
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_28
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_29
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+    omsp_mem_backbone
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND2X2_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO222X1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX2_RVT                            saed32rvt_tt1p05v25c
+        INVX0_RVT                              saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        INVX2_RVT                              saed32rvt_tt1p05v25c
+        INVX4_RVT                              saed32rvt_tt1p05v25c
+        MUX21X1_RVT                            saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X2_RVT                            saed32rvt_tt1p05v25c
+        NAND4X0_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX2_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX4_RVT                            saed32rvt_tt1p05v25c
+        NOR2X1_RVT                             saed32rvt_tt1p05v25c
+        NOR4X0_RVT                             saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        XOR2X1_RVT                             saed32rvt_tt1p05v25c
+        omsp_clock_gate_22
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+    omsp_multiplier
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND2X2_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X2_RVT                             saed32rvt_tt1p05v25c
+        AO222X1_RVT                            saed32rvt_tt1p05v25c
+        AOI22X1_RVT                            saed32rvt_tt1p05v25c
+        AOI222X1_RVT                           saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NAND4X0_RVT                            saed32rvt_tt1p05v25c
+        NBUFFX2_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR3X0_RVT                             saed32rvt_tt1p05v25c
+        NOR4X1_RVT                             saed32rvt_tt1p05v25c
+        OA21X1_RVT                             saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        omsp_clock_gate_16
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_17
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_18
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_19
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_multiplier_DW01_add_0
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            FADDX1_RVT                         saed32rvt_tt1p05v25c
+            XOR2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_multiplier_DW02_mult_0
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            FADDX1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            INVX2_RVT                          saed32rvt_tt1p05v25c
+            NOR2X0_RVT                         saed32rvt_tt1p05v25c
+            NOR2X1_RVT                         saed32rvt_tt1p05v25c
+            XOR2X1_RVT                         saed32rvt_tt1p05v25c
+            omsp_multiplier_DW01_add_1
+                AND2X1_RVT                     saed32rvt_tt1p05v25c
+                AND3X1_RVT                     saed32rvt_tt1p05v25c
+                INVX1_RVT                      saed32rvt_tt1p05v25c
+                NAND2X0_RVT                    saed32rvt_tt1p05v25c
+                OA21X1_RVT                     saed32rvt_tt1p05v25c
+                OA22X1_RVT                     saed32rvt_tt1p05v25c
+                OR2X1_RVT                      saed32rvt_tt1p05v25c
+                XNOR2X1_RVT                    saed32rvt_tt1p05v25c
+                XNOR3X1_RVT                    saed32rvt_tt1p05v25c
+                XOR2X1_RVT                     saed32rvt_tt1p05v25c
+    omsp_sfr
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X2_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AO221X1_RVT                            saed32rvt_tt1p05v25c
+        AO222X1_RVT                            saed32rvt_tt1p05v25c
+        AOI21X1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        DFFASX1_RVT                            saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND3X0_RVT                            saed32rvt_tt1p05v25c
+        NAND4X0_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR3X0_RVT                             saed32rvt_tt1p05v25c
+        NOR4X1_RVT                             saed32rvt_tt1p05v25c
+        OR3X1_RVT                              saed32rvt_tt1p05v25c
+        XOR2X1_RVT                             saed32rvt_tt1p05v25c
+        omsp_and_gate_2
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_sync_cell_5
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_wakeup_cell_0
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            omsp_scan_mux_0
+                MUX21X1_RVT                    saed32rvt_tt1p05v25c
+            omsp_scan_mux_3
+                AO22X1_RVT                     saed32rvt_tt1p05v25c
+                INVX0_RVT                      saed32rvt_tt1p05v25c
+    omsp_watchdog
+        AND2X1_RVT                             saed32rvt_tt1p05v25c
+        AND2X2_RVT                             saed32rvt_tt1p05v25c
+        AND3X1_RVT                             saed32rvt_tt1p05v25c
+        AND4X1_RVT                             saed32rvt_tt1p05v25c
+        AO21X1_RVT                             saed32rvt_tt1p05v25c
+        AO22X1_RVT                             saed32rvt_tt1p05v25c
+        AO221X1_RVT                            saed32rvt_tt1p05v25c
+        DFFARX1_RVT                            saed32rvt_tt1p05v25c
+        DFFASX1_RVT                            saed32rvt_tt1p05v25c
+        INVX1_RVT                              saed32rvt_tt1p05v25c
+        INVX2_RVT                              saed32rvt_tt1p05v25c
+        INVX4_RVT                              saed32rvt_tt1p05v25c
+        NAND2X0_RVT                            saed32rvt_tt1p05v25c
+        NAND4X0_RVT                            saed32rvt_tt1p05v25c
+        NOR2X0_RVT                             saed32rvt_tt1p05v25c
+        NOR3X0_RVT                             saed32rvt_tt1p05v25c
+        NOR4X1_RVT                             saed32rvt_tt1p05v25c
+        OA21X1_RVT                             saed32rvt_tt1p05v25c
+        OAI22X1_RVT                            saed32rvt_tt1p05v25c
+        OR2X1_RVT                              saed32rvt_tt1p05v25c
+        XNOR2X1_RVT                            saed32rvt_tt1p05v25c
+        XOR2X1_RVT                             saed32rvt_tt1p05v25c
+        omsp_and_gate_1
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+        omsp_clock_gate_20
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_clock_gate_21
+            AND2X1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            LATCHX1_RVT                        saed32rvt_tt1p05v25c
+            OR2X1_RVT                          saed32rvt_tt1p05v25c
+        omsp_scan_mux_4
+            AO22X1_RVT                         saed32rvt_tt1p05v25c
+            INVX0_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_2
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_3
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_cell_4
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_sync_reset_1
+            DFFASX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+        omsp_wakeup_cell_1
+            DFFARX1_RVT                        saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            omsp_scan_mux_2
+                AO22X1_RVT                     saed32rvt_tt1p05v25c
+                INVX0_RVT                      saed32rvt_tt1p05v25c
+            omsp_scan_mux_13
+                MUX21X1_RVT                    saed32rvt_tt1p05v25c
+        omsp_watchdog_DW01_inc_0
+            HADDX1_RVT                         saed32rvt_tt1p05v25c
+            INVX1_RVT                          saed32rvt_tt1p05v25c
+            XOR2X1_RVT                         saed32rvt_tt1p05v25c
+1

@@ -1,0 +1,198 @@
+ 
+****************************************
+Report : area
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Mon Sep  7 11:00:55 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/ICer/Mo_AZ/Common/ALL-LIBs/PDKs_30nm/hierar_NDM_sead_32/SAED32/STD/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                         2643
+Number of nets:                          7101
+Number of cells:                         4554
+Number of combinational cells:           3591
+Number of sequential cells:               848
+Number of macros/black boxes:               0
+Number of buf/inv:                        522
+Number of references:                      13
+
+Combinational area:               9094.034804
+Buf/Inv area:                      721.006536
+Noncombinational area:            5420.891611
+Macro/Black Box area:                0.000000
+Net Interconnect area:            3353.119056
+
+Total cell area:                 14514.926415
+Total area:                      17868.045471
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area           Local cell area
+                                  -------------------  ---------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-     Noncombi-  Black-
+                                  Total       Total    national   national   boxes   Design
+--------------------------------  ----------  -------  ---------  ---------  ------  ---------------------------
+openMSP430                        14514.9264    100.0    94.0333     0.0000  0.0000  openMSP430
+clock_module_0                      743.3712      5.1   227.7130   192.1329  0.0000  omsp_clock_module
+clock_module_0/and_cpuoff_mclk_dma_en
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_29
+clock_module_0/and_cpuoff_mclk_dma_wkup
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_28
+clock_module_0/and_cpuoff_mclk_en     2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_0
+clock_module_0/and_dco_dis1           2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_21
+clock_module_0/and_dco_dis2           2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_20
+clock_module_0/and_dco_dis3           2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_19
+clock_module_0/and_dco_dis4           2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_18
+clock_module_0/and_dco_dis5           2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_17
+clock_module_0/and_dco_en_wkup        2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_15
+clock_module_0/and_dco_mclk_wkup      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_16
+clock_module_0/and_dco_wkup           2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_14
+clock_module_0/and_lfxt_dis1          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_13
+clock_module_0/and_lfxt_dis2          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_12
+clock_module_0/and_lfxt_dis3          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_11
+clock_module_0/and_lfxt_dis4          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_10
+clock_module_0/and_lfxt_dis5          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_9
+clock_module_0/and_lfxt_en_wkup       2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_7
+clock_module_0/and_lfxt_mclk_wkup     2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_8
+clock_module_0/and_lfxt_wkup          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_6
+clock_module_0/and_oscoff_mclk_dma_en
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_23
+clock_module_0/and_oscoff_mclk_dma_wkup
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_22
+clock_module_0/and_scg0_mclk_dma_en
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_27
+clock_module_0/and_scg0_mclk_dma_wkup
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_26
+clock_module_0/and_scg1_mclk_dma_en
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_25
+clock_module_0/and_scg1_mclk_dma_wkup
+                                      2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_24
+clock_module_0/clock_gate_aclk       10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_32
+clock_module_0/clock_gate_dbg_clk    10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_30
+clock_module_0/clock_gate_dma_mclk
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_33
+clock_module_0/clock_gate_mclk       10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_0
+clock_module_0/clock_gate_smclk      10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_31
+clock_module_0/scan_mux_dbg_rst       3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_7
+clock_module_0/scan_mux_dco_wkup      3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_1
+clock_module_0/scan_mux_dco_wkup_observe
+                                      3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_12
+clock_module_0/scan_mux_lfxt_wkup     3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_11
+clock_module_0/scan_mux_lfxt_wkup_observe
+                                      3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_10
+clock_module_0/scan_mux_por           3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_8
+clock_module_0/scan_mux_puc_lfxt      3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_9
+clock_module_0/scan_mux_puc_rst       4.0663      0.0     4.0663     0.0000  0.0000  omsp_scan_mux_5
+clock_module_0/scan_mux_puc_rst_a     3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_6
+clock_module_0/sync_cell_aclk_dma_wkup
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_8
+clock_module_0/sync_cell_cpu_aux_en
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_13
+clock_module_0/sync_cell_dco_wkup    15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_0
+clock_module_0/sync_cell_lfxt_disable
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_15
+clock_module_0/sync_cell_lfxt_wkup
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_14
+clock_module_0/sync_cell_mclk_dma_wkup
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_12
+clock_module_0/sync_cell_mclk_wkup
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_11
+clock_module_0/sync_cell_oscoff      15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_9
+clock_module_0/sync_cell_puc         15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_6
+clock_module_0/sync_cell_puc_lfxt    15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_10
+clock_module_0/sync_cell_smclk_dma_wkup
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_7
+clock_module_0/sync_reset_por        15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_reset_0
+dbg_0                              2398.8652     16.5   811.2277   477.2824  0.0000  omsp_dbg
+dbg_0/dbg_uart_0                   1110.3552      7.6   506.5090   526.5864  0.0000  omsp_dbg_uart
+dbg_0/dbg_uart_0/add_215_S2          61.7570      0.4    61.7570     0.0000  0.0000  omsp_dbg_uart_DW01_inc_0
+dbg_0/dbg_uart_0/sync_cell_uart_rxd
+                                     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_1
+execution_unit_0                   5219.1012     36.0   523.5366   249.0611  0.0000  omsp_execution_unit
+execution_unit_0/alu_0              909.8355      6.3   831.0509     0.0000  0.0000  omsp_alu
+execution_unit_0/alu_0/add_171       78.7846      0.5    78.7846     0.0000  0.0000  omsp_alu_DW01_add_9
+execution_unit_0/clock_gate_mdb_in_buf
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_23
+execution_unit_0/clock_gate_mdb_out_nxt
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_24
+execution_unit_0/register_file_0   3515.8281     24.2  1708.6101  1650.9195  0.0000  omsp_register_file
+execution_unit_0/register_file_0/clock_gate_r1
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_15
+execution_unit_0/register_file_0/clock_gate_r10
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_6
+execution_unit_0/register_file_0/clock_gate_r11
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_5
+execution_unit_0/register_file_0/clock_gate_r12
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_4
+execution_unit_0/register_file_0/clock_gate_r13
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_3
+execution_unit_0/register_file_0/clock_gate_r14
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_2
+execution_unit_0/register_file_0/clock_gate_r15
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_1
+execution_unit_0/register_file_0/clock_gate_r2
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_14
+execution_unit_0/register_file_0/clock_gate_r3
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_13
+execution_unit_0/register_file_0/clock_gate_r4
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_12
+execution_unit_0/register_file_0/clock_gate_r5
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_11
+execution_unit_0/register_file_0/clock_gate_r6
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_10
+execution_unit_0/register_file_0/clock_gate_r7
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_9
+execution_unit_0/register_file_0/clock_gate_r8
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_8
+execution_unit_0/register_file_0/clock_gate_r9
+                                     10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_7
+frontend_0                         2035.6935     14.0  1149.4933   828.0012  0.0000  omsp_frontend
+frontend_0/and_mclk_dma_wkup          2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_3
+frontend_0/and_mclk_wkup              2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_4
+frontend_0/and_mirq_wkup              2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_5
+frontend_0/clock_gate_decode         10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_25
+frontend_0/clock_gate_inst_dext      10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_26
+frontend_0/clock_gate_inst_sext      10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_27
+frontend_0/clock_gate_irq_num        10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_29
+frontend_0/clock_gate_pc             10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_28
+mem_backbone_0                      934.4875      6.4   646.0341   278.0335  0.0000  omsp_mem_backbone
+mem_backbone_0/clock_gate_bckup      10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_22
+multiplier_0                       2351.3403     16.2   495.5808   498.1222  0.0000  omsp_multiplier
+multiplier_0/add_402                156.0444      1.1   156.0444     0.0000  0.0000  omsp_multiplier_DW01_add_0
+multiplier_0/clock_gate_op1          10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_19
+multiplier_0/clock_gate_op2          10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_18
+multiplier_0/clock_gate_reshi        10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_16
+multiplier_0/clock_gate_reslo        10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_17
+multiplier_0/mult_396              1159.9132      8.0  1025.9793     0.0000  0.0000  omsp_multiplier_DW02_mult_0
+multiplier_0/mult_396/FS_1          133.9339      0.9   133.9339     0.0000  0.0000  omsp_multiplier_DW01_add_1
+sfr_0                               188.0666      1.3   119.4477    35.5802  0.0000  omsp_sfr
+sfr_0/and_nmi_wkup                    2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_2
+sfr_0/sync_cell_nmi                  15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_5
+sfr_0/wakeup_cell_nmi                15.5028      0.1     1.2707     7.1160  0.0000  omsp_wakeup_cell_0
+sfr_0/wakeup_cell_nmi/scan_mux_clk
+                                      3.3039      0.0     3.3039     0.0000  0.0000  omsp_scan_mux_0
+sfr_0/wakeup_cell_nmi/scan_mux_rst
+                                      3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_3
+watchdog_0                          549.9676      3.8   151.9781   241.9451  0.0000  omsp_watchdog
+watchdog_0/add_325                   51.8454      0.4    51.8454     0.0000  0.0000  omsp_watchdog_DW01_inc_0
+watchdog_0/and_wdt_wkup               2.0332      0.0     2.0332     0.0000  0.0000  omsp_and_gate_1
+watchdog_0/clock_gate_wdtcnt         10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_20
+watchdog_0/clock_gate_wdtctl         10.4199      0.1     5.3370     5.0829  0.0000  omsp_clock_gate_21
+watchdog_0/scan_mux_wdt_rst           3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_4
+watchdog_0/sync_cell_wdt_evt         15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_2
+watchdog_0/sync_cell_wdtcnt_clr      15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_4
+watchdog_0/sync_cell_wdtcnt_incr     15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_cell_3
+watchdog_0/sync_reset_por            15.5028      0.1     1.2707    14.2321  0.0000  omsp_sync_reset_1
+watchdog_0/wakeup_cell_wdog          15.5028      0.1     1.2707     7.1160  0.0000  omsp_wakeup_cell_1
+watchdog_0/wakeup_cell_wdog/scan_mux_clk
+                                      3.3039      0.0     3.3039     0.0000  0.0000  omsp_scan_mux_13
+watchdog_0/wakeup_cell_wdog/scan_mux_rst
+                                      3.8122      0.0     3.8122     0.0000  0.0000  omsp_scan_mux_2
+--------------------------------  ----------  -------  ---------  ---------  ------  ---------------------------
+Total                                                  9094.0348  5420.8916  0.0000
+
+1

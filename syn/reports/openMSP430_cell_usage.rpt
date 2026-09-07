@@ -1,0 +1,136 @@
+ 
+****************************************
+Report : cell
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Mon Sep  7 11:00:56 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U2                        OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U4                        OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U5                        OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U10                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U11                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U12                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U13                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U16                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U18                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U19                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U24                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U25                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U26                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U28                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U29                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U30                       OR3X1_RVT       saed32rvt_tt1p05v25c
+                                                          2.541440  
+U34                       AND2X1_RVT      saed32rvt_tt1p05v25c
+                                                          2.033152  
+U35                       AND2X1_RVT      saed32rvt_tt1p05v25c
+                                                          2.033152  
+U36                       NOR3X0_RVT      saed32rvt_tt1p05v25c
+                                                          2.795584  
+U37                       NOR3X0_RVT      saed32rvt_tt1p05v25c
+                                                          2.795584  
+U38                       NOR3X0_RVT      saed32rvt_tt1p05v25c
+                                                          2.795584  
+U39                       NOR3X0_RVT      saed32rvt_tt1p05v25c
+                                                          2.795584  
+U40                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U41                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U42                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U43                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U44                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U45                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U46                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U47                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U48                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U49                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U50                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U51                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U52                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U53                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U54                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U55                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U56                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U57                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U58                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U59                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U60                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U61                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U62                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U63                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U64                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U65                       NAND2X0_RVT     saed32rvt_tt1p05v25c
+                                                          1.524864  
+U66                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+U67                       INVX1_RVT       saed32rvt_tt1p05v25c
+                                                          1.270720  
+clock_module_0            omsp_clock_module               743.371211
+                                                                    h, n
+dbg_0                     omsp_dbg                        2398.865247
+                                                                    h, n
+execution_unit_0          omsp_execution_unit             5219.101222
+                                                                    h, n
+frontend_0                omsp_frontend                   2035.693465
+                                                                    h, n
+mem_backbone_0            omsp_mem_backbone               934.487512
+                                                                    h, n
+multiplier_0              omsp_multiplier                 2351.340290
+                                                                    h, n
+sfr_0                     omsp_sfr                        188.066563
+                                                                    h, n
+watchdog_0                omsp_watchdog                   549.967626
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 58 cells                                            14514.926415
+1

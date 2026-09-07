@@ -14,14 +14,14 @@
 set  clk_1_name             dco_clk                           
 set  clk_2_name             lfxt_clk                           
 
-set  clk_period             40        #*____ clock period in ns  
+set  clk_period             40         
   
 ###################################################################################
 
 ##############____2_Driving cells_variables__###################################### (driving_cells.tcl)
-set drive_lib     $SELECTED_STD_NAME   #*____ library containing the driving cell (selected STD corner)
-set drive_cell    "IBUFFX2_RVT"        #*____ cell used to model input driving strength
-set drive_pin     "Y"                  #*____ output pin of the driving cell
+set drive_lib     $SELECTED_STD_NAME   
+set drive_cell    "IBUFFX2_RVT"        
+set drive_pin     "Y"                  
 
 ###################################################################################
 
@@ -75,10 +75,10 @@ set PUC_DLY          [expr ($clk_period/100) * 75]
 ###################################################################################################
 
 ##############____4_Operating_Condition_variables__################################ (operating_condition.tcl)
-set lib_min       $SELECTED_STD_MIN_NAME   #*____ min (hold) corner LIBRARY name (fast, default FF)
-set lib_max       $SELECTED_STD_MAX_NAME   #*____ max (setup) corner LIBRARY name (slow, default SS)
-set lib_min_cond  $SELECTED_STD_MIN_COND   #*____ min operating-condition NAME inside $lib_min (corner token)
-set lib_max_cond  $SELECTED_STD_MAX_COND   #*____ max operating-condition NAME inside $lib_max (corner token)
+set lib_min       $SELECTED_STD_MIN_NAME   
+set lib_max       $SELECTED_STD_MAX_NAME  
+set lib_min_cond  $SELECTED_STD_MIN_COND   
+set lib_max_cond  $SELECTED_STD_MAX_COND   
 
 ################################################################################################?_______optional_____
 
@@ -99,9 +99,9 @@ set wire_load_library       $SELECTED_STD_NAME
 # Every flag defaults to 0 (disabled). A project template should only
 # set the ones it actually needs to 1.
 
-if {![info exists ENABLE_FALSE_PATHS]}       { set ENABLE_FALSE_PATHS       0 } ;# design has known-false timing paths
-if {![info exists ENABLE_WIRELOAD_MODEL]}    { set ENABLE_WIRELOAD_MODEL    0 } ;# legacy DC flows without a physical floorplan
-if {![info exists ENABLE_AREA_CONSTRAINTS]}  { set ENABLE_AREA_CONSTRAINTS  0 } ;# design has an explicit max-area budget
-if {![info exists ENABLE_ADVANCED]}          { set ENABLE_ADVANCED          0 } ;# rarely-needed DC-specific netlist switches
+if {![info exists ENABLE_FALSE_PATHS]}       { set ENABLE_FALSE_PATHS       0 } ;
+if {![info exists ENABLE_WIRELOAD_MODEL]}    { set ENABLE_WIRELOAD_MODEL    0 } ;
+if {![info exists ENABLE_AREA_CONSTRAINTS]}  { set ENABLE_AREA_CONSTRAINTS  0 } ;
+if {![info exists ENABLE_ADVANCED]}          { set ENABLE_ADVANCED          0 } ;
 
 ################################################################################################################################___end

@@ -1,0 +1,1 @@
+dc_shell -f scripts/master.tcl 2>&1 | tee ./logs/syn.log

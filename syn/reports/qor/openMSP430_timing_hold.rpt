@@ -1,0 +1,1831 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Mon Sep  7 11:00:55 2026
+****************************************
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: pmem_dout[6]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[5]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  pmem_dout[6] (in)                                       0.00       0.00 f
+  mem_backbone_0/pmem_dout[6] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U79/Y (MUX21X1_RVT)                      0.22       0.23 f
+  mem_backbone_0/fe_mdb_in[6] (omsp_mem_backbone)         0.00       0.23 f
+  frontend_0/mdb_in[6] (omsp_frontend)                    0.00       0.23 f
+  frontend_0/U11/Y (AO221X1_RVT)                          0.52       0.75 f
+  frontend_0/mab[6] (omsp_frontend)                       0.00       0.75 f
+  mem_backbone_0/fe_mab[5] (omsp_mem_backbone)            0.00       0.75 f
+  mem_backbone_0/U32/Y (AO222X1_RVT)                      0.13       0.88 f
+  mem_backbone_0/pmem_addr[5] (omsp_mem_backbone)         0.00       0.88 f
+  pmem_addr[5] (out)                                      0.00       0.88 f
+  data arrival time                                                  0.88
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.88
+
+
+  Startpoint: pmem_dout[14]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_cen (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_mem_backbone  8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  pmem_dout[14] (in)                                      0.00       0.00 f
+  mem_backbone_0/pmem_dout[14] (omsp_mem_backbone)        0.00       0.00 f
+  mem_backbone_0/U86/Y (MUX21X1_RVT)                      0.22       0.23 f
+  mem_backbone_0/fe_mdb_in[14] (omsp_mem_backbone)        0.00       0.23 f
+  frontend_0/mdb_in[14] (omsp_frontend)                   0.00       0.23 f
+  frontend_0/U25/Y (AO221X1_RVT)                          0.54       0.76 f
+  frontend_0/mab[14] (omsp_frontend)                      0.00       0.76 f
+  mem_backbone_0/fe_mab[13] (omsp_mem_backbone)           0.00       0.76 f
+  mem_backbone_0/U24/Y (AND4X1_RVT)                       0.14       0.90 f
+  mem_backbone_0/U179/Y (NAND2X0_RVT)                     0.03       0.94 r
+  mem_backbone_0/U27/Y (AND2X1_RVT)                       0.13       1.06 r
+  mem_backbone_0/pmem_cen (omsp_mem_backbone)             0.00       1.06 r
+  pmem_cen (out)                                          0.00       1.06 r
+  data arrival time                                                  1.06
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.06
+
+
+  Startpoint: pmem_dout[11]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[10]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  pmem_dout[11] (in)                                      0.00       0.00 f
+  mem_backbone_0/pmem_dout[11] (omsp_mem_backbone)        0.00       0.00 f
+  mem_backbone_0/U89/Y (MUX21X1_RVT)                      0.23       0.23 f
+  mem_backbone_0/fe_mdb_in[11] (omsp_mem_backbone)        0.00       0.23 f
+  frontend_0/mdb_in[11] (omsp_frontend)                   0.00       0.23 f
+  frontend_0/U31/Y (AO221X1_RVT)                          0.78       1.02 f
+  frontend_0/mab[11] (omsp_frontend)                      0.00       1.02 f
+  mem_backbone_0/fe_mab[10] (omsp_mem_backbone)           0.00       1.02 f
+  mem_backbone_0/U37/Y (AO222X1_RVT)                      0.13       1.14 f
+  mem_backbone_0/pmem_addr[10] (omsp_mem_backbone)        0.00       1.14 f
+  pmem_addr[10] (out)                                     0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.14
+
+
+  Startpoint: pmem_dout[2]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[1]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_frontend      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  pmem_dout[2] (in)                                       0.00       0.00 f
+  mem_backbone_0/pmem_dout[2] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U83/Y (MUX21X1_RVT)                      0.23       0.23 f
+  mem_backbone_0/fe_mdb_in[2] (omsp_mem_backbone)         0.00       0.23 f
+  frontend_0/mdb_in[2] (omsp_frontend)                    0.00       0.23 f
+  frontend_0/U20/Y (AO22X1_RVT)                           0.74       0.98 f
+  frontend_0/U19/Y (AO221X1_RVT)                          0.04       1.02 f
+  frontend_0/mab[2] (omsp_frontend)                       0.00       1.02 f
+  mem_backbone_0/fe_mab[1] (omsp_mem_backbone)            0.00       1.02 f
+  mem_backbone_0/U36/Y (AO222X1_RVT)                      0.13       1.14 f
+  mem_backbone_0/pmem_addr[1] (omsp_mem_backbone)         0.00       1.14 f
+  pmem_addr[1] (out)                                      0.00       1.14 f
+  data arrival time                                                  1.14
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.14
+
+
+  Startpoint: pmem_dout[10]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[9]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  pmem_dout[10] (in)                                      0.00       0.00 f
+  mem_backbone_0/pmem_dout[10] (omsp_mem_backbone)        0.00       0.00 f
+  mem_backbone_0/U90/Y (MUX21X1_RVT)                      0.23       0.23 f
+  mem_backbone_0/fe_mdb_in[10] (omsp_mem_backbone)        0.00       0.23 f
+  frontend_0/mdb_in[10] (omsp_frontend)                   0.00       0.23 f
+  frontend_0/U33/Y (AO221X1_RVT)                          0.80       1.03 f
+  frontend_0/mab[10] (omsp_frontend)                      0.00       1.03 f
+  mem_backbone_0/fe_mab[9] (omsp_mem_backbone)            0.00       1.03 f
+  mem_backbone_0/U28/Y (AO222X1_RVT)                      0.13       1.15 f
+  mem_backbone_0/pmem_addr[9] (omsp_mem_backbone)         0.00       1.15 f
+  pmem_addr[9] (out)                                      0.00       1.15 f
+  data arrival time                                                  1.15
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.15
+
+
+  Startpoint: pmem_dout[3]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[2]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_frontend      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  pmem_dout[3] (in)                                       0.00       0.00 f
+  mem_backbone_0/pmem_dout[3] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U82/Y (MUX21X1_RVT)                      0.23       0.23 f
+  mem_backbone_0/fe_mdb_in[3] (omsp_mem_backbone)         0.00       0.23 f
+  frontend_0/mdb_in[3] (omsp_frontend)                    0.00       0.23 f
+  frontend_0/U18/Y (AO22X1_RVT)                           0.76       0.99 f
+  frontend_0/U17/Y (AO221X1_RVT)                          0.04       1.03 f
+  frontend_0/mab[3] (omsp_frontend)                       0.00       1.03 f
+  mem_backbone_0/fe_mab[2] (omsp_mem_backbone)            0.00       1.03 f
+  mem_backbone_0/U35/Y (AO222X1_RVT)                      0.13       1.16 f
+  mem_backbone_0/pmem_addr[2] (omsp_mem_backbone)         0.00       1.16 f
+  pmem_addr[2] (out)                                      0.00       1.16 f
+  data arrival time                                                  1.16
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.16
+
+
+  Startpoint: dmem_dout[5]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[4]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  dmem_dout[5] (in)                                       0.00       0.00 f
+  mem_backbone_0/dmem_dout[5] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U104/Y (AO222X1_RVT)                     0.07       0.08 f
+  mem_backbone_0/eu_mdb_in[5] (omsp_mem_backbone)         0.00       0.08 f
+  execution_unit_0/mdb_in[5] (omsp_execution_unit)        0.00       0.08 f
+  execution_unit_0/U172/Y (AO22X1_RVT)                    0.04       0.11 f
+  execution_unit_0/U110/Y (AO221X1_RVT)                   0.15       0.26 f
+  execution_unit_0/U109/Y (AO221X1_RVT)                   0.06       0.32 f
+  execution_unit_0/alu_0/op_dst[5] (omsp_alu)             0.00       0.32 f
+  execution_unit_0/alu_0/add_171/B[5] (omsp_alu_DW01_add_9)     0.00     0.32 f
+  execution_unit_0/alu_0/add_171/U1_5/S (FADDX1_RVT)      0.57       0.89 f
+  execution_unit_0/alu_0/add_171/SUM[5] (omsp_alu_DW01_add_9)     0.00     0.89 f
+  execution_unit_0/alu_0/alu_out_add[5] (omsp_alu)        0.00       0.89 f
+  execution_unit_0/mab[5] (omsp_execution_unit)           0.00       0.89 f
+  mem_backbone_0/eu_mab[4] (omsp_mem_backbone)            0.00       0.89 f
+  mem_backbone_0/U33/Y (AO222X1_RVT)                      0.51       1.40 f
+  mem_backbone_0/pmem_addr[4] (omsp_mem_backbone)         0.00       1.40 f
+  pmem_addr[4] (out)                                      0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.40
+
+
+  Startpoint: dmem_dout[4]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[3]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  dmem_dout[4] (in)                                       0.00       0.00 f
+  mem_backbone_0/dmem_dout[4] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U105/Y (AO222X1_RVT)                     0.07       0.08 f
+  mem_backbone_0/eu_mdb_in[4] (omsp_mem_backbone)         0.00       0.08 f
+  execution_unit_0/mdb_in[4] (omsp_execution_unit)        0.00       0.08 f
+  execution_unit_0/U173/Y (AO22X1_RVT)                    0.04       0.11 f
+  execution_unit_0/U112/Y (AO221X1_RVT)                   0.15       0.26 f
+  execution_unit_0/U111/Y (AO221X1_RVT)                   0.06       0.32 f
+  execution_unit_0/alu_0/op_dst[4] (omsp_alu)             0.00       0.32 f
+  execution_unit_0/alu_0/add_171/B[4] (omsp_alu_DW01_add_9)     0.00     0.32 f
+  execution_unit_0/alu_0/add_171/U1_4/S (FADDX1_RVT)      0.57       0.89 f
+  execution_unit_0/alu_0/add_171/SUM[4] (omsp_alu_DW01_add_9)     0.00     0.89 f
+  execution_unit_0/alu_0/alu_out_add[4] (omsp_alu)        0.00       0.89 f
+  execution_unit_0/mab[4] (omsp_execution_unit)           0.00       0.89 f
+  mem_backbone_0/eu_mab[3] (omsp_mem_backbone)            0.00       0.89 f
+  mem_backbone_0/U34/Y (AO222X1_RVT)                      0.51       1.40 f
+  mem_backbone_0/pmem_addr[3] (omsp_mem_backbone)         0.00       1.40 f
+  pmem_addr[3] (out)                                      0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.40
+
+
+  Startpoint: dmem_dout[1]
+              (input port clocked by dco_clk)
+  Endpoint: pmem_addr[0]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  dmem_dout[1] (in)                                       0.00       0.00 f
+  mem_backbone_0/dmem_dout[1] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U108/Y (AO222X1_RVT)                     0.07       0.08 f
+  mem_backbone_0/eu_mdb_in[1] (omsp_mem_backbone)         0.00       0.08 f
+  execution_unit_0/mdb_in[1] (omsp_execution_unit)        0.00       0.08 f
+  execution_unit_0/U176/Y (AO22X1_RVT)                    0.04       0.11 f
+  execution_unit_0/U118/Y (AO221X1_RVT)                   0.15       0.26 f
+  execution_unit_0/U117/Y (AO221X1_RVT)                   0.06       0.32 f
+  execution_unit_0/alu_0/op_dst[1] (omsp_alu)             0.00       0.32 f
+  execution_unit_0/alu_0/add_171/B[1] (omsp_alu_DW01_add_9)     0.00     0.32 f
+  execution_unit_0/alu_0/add_171/U1_1/S (FADDX1_RVT)      0.57       0.89 f
+  execution_unit_0/alu_0/add_171/SUM[1] (omsp_alu_DW01_add_9)     0.00     0.89 f
+  execution_unit_0/alu_0/alu_out_add[1] (omsp_alu)        0.00       0.89 f
+  execution_unit_0/mab[1] (omsp_execution_unit)           0.00       0.89 f
+  mem_backbone_0/eu_mab[0] (omsp_mem_backbone)            0.00       0.89 f
+  mem_backbone_0/U38/Y (AO222X1_RVT)                      0.51       1.40 f
+  mem_backbone_0/pmem_addr[0] (omsp_mem_backbone)         0.00       1.40 f
+  pmem_addr[0] (out)                                      0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.40
+
+
+  Startpoint: dmem_dout[1]
+              (input port clocked by dco_clk)
+  Endpoint: dmem_addr[0]
+            (output port clocked by dco_clk)
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  dmem_dout[1] (in)                                       0.00       0.00 f
+  mem_backbone_0/dmem_dout[1] (omsp_mem_backbone)         0.00       0.00 f
+  mem_backbone_0/U108/Y (AO222X1_RVT)                     0.07       0.08 f
+  mem_backbone_0/eu_mdb_in[1] (omsp_mem_backbone)         0.00       0.08 f
+  execution_unit_0/mdb_in[1] (omsp_execution_unit)        0.00       0.08 f
+  execution_unit_0/U176/Y (AO22X1_RVT)                    0.04       0.11 f
+  execution_unit_0/U118/Y (AO221X1_RVT)                   0.15       0.26 f
+  execution_unit_0/U117/Y (AO221X1_RVT)                   0.06       0.32 f
+  execution_unit_0/alu_0/op_dst[1] (omsp_alu)             0.00       0.32 f
+  execution_unit_0/alu_0/add_171/B[1] (omsp_alu_DW01_add_9)     0.00     0.32 f
+  execution_unit_0/alu_0/add_171/U1_1/S (FADDX1_RVT)      0.57       0.89 f
+  execution_unit_0/alu_0/add_171/SUM[1] (omsp_alu_DW01_add_9)     0.00     0.89 f
+  execution_unit_0/alu_0/alu_out_add[1] (omsp_alu)        0.00       0.89 f
+  execution_unit_0/mab[1] (omsp_execution_unit)           0.00       0.89 f
+  mem_backbone_0/eu_mab[0] (omsp_mem_backbone)            0.00       0.89 f
+  mem_backbone_0/U163/Y (MUX21X1_RVT)                     0.52       1.41 f
+  mem_backbone_0/dmem_addr[0] (omsp_mem_backbone)         0.00       1.41 f
+  dmem_addr[0] (out)                                      0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.41
+
+
+  Startpoint: per_dout[15]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[15]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[15] (in)                                       0.00       0.00 f
+  U41/Y (INVX1_RVT)                                       0.02       0.02 r
+  U40/Y (NAND2X0_RVT)                                     0.02       0.04 f
+  mem_backbone_0/per_dout[15] (omsp_mem_backbone)         0.00       0.04 f
+  mem_backbone_0/per_dout_val_reg[15]/D (DFFARX1_RVT)     0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[15]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[14]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[14]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[14] (in)                                       0.00       0.00 f
+  U43/Y (INVX1_RVT)                                       0.02       0.02 r
+  U42/Y (NAND2X0_RVT)                                     0.02       0.04 f
+  mem_backbone_0/per_dout[14] (omsp_mem_backbone)         0.00       0.04 f
+  mem_backbone_0/per_dout_val_reg[14]/D (DFFARX1_RVT)     0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[14]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[7]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[7]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[7] (in)                                        0.00       0.00 f
+  U45/Y (INVX1_RVT)                                       0.02       0.02 r
+  U44/Y (NAND2X0_RVT)                                     0.02       0.04 f
+  mem_backbone_0/per_dout[7] (omsp_mem_backbone)          0.00       0.04 f
+  mem_backbone_0/per_dout_val_reg[7]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[7]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[6]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[6]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[6] (in)                                        0.00       0.00 f
+  U47/Y (INVX1_RVT)                                       0.02       0.02 r
+  U46/Y (NAND2X0_RVT)                                     0.02       0.04 f
+  mem_backbone_0/per_dout[6] (omsp_mem_backbone)          0.00       0.04 f
+  mem_backbone_0/per_dout_val_reg[6]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[6]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[3]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[3]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[3] (in)                                        0.00       0.00 f
+  U49/Y (INVX1_RVT)                                       0.02       0.02 r
+  U48/Y (NAND2X0_RVT)                                     0.02       0.04 f
+  mem_backbone_0/per_dout[3] (omsp_mem_backbone)          0.00       0.04 f
+  mem_backbone_0/per_dout_val_reg[3]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[3]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[0]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[0]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[0] (in)                                        0.00       0.00 f
+  U51/Y (INVX1_RVT)                                       0.02       0.02 r
+  U50/Y (NAND2X0_RVT)                                     0.02       0.04 f
+  mem_backbone_0/per_dout[0] (omsp_mem_backbone)          0.00       0.04 f
+  mem_backbone_0/per_dout_val_reg[0]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[0]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[1]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[1] (in)                                        0.00       0.00 f
+  U18/Y (OR3X1_RVT)                                       0.04       0.05 f
+  mem_backbone_0/per_dout[1] (omsp_mem_backbone)          0.00       0.05 f
+  mem_backbone_0/per_dout_val_reg[1]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[1]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[4]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[4]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[4] (in)                                        0.00       0.00 f
+  U12/Y (OR3X1_RVT)                                       0.04       0.05 f
+  mem_backbone_0/per_dout[4] (omsp_mem_backbone)          0.00       0.05 f
+  mem_backbone_0/per_dout_val_reg[4]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[4]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[8]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[8]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[8] (in)                                        0.00       0.00 f
+  U4/Y (OR3X1_RVT)                                        0.04       0.05 f
+  mem_backbone_0/per_dout[8] (omsp_mem_backbone)          0.00       0.05 f
+  mem_backbone_0/per_dout_val_reg[8]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[8]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: per_dout[5]
+              (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/per_dout_val_reg[5]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: REGIN
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  per_dout[5] (in)                                        0.00       0.00 f
+  U10/Y (OR3X1_RVT)                                       0.04       0.05 f
+  mem_backbone_0/per_dout[5] (omsp_mem_backbone)          0.00       0.05 f
+  mem_backbone_0/per_dout_val_reg[5]/D (DFFARX1_RVT)      0.01       0.05 f
+  data arrival time                                                  0.05
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  mem_backbone_0/per_dout_val_reg[5]/CLK (DFFARX1_RVT)     0.00      0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[15]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[15]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[15]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[15]/Q (DFFARX1_RVT)     0.09      0.09 f
+  execution_unit_0/U164/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[15] (omsp_execution_unit)      0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[15] (omsp_mem_backbone)       0.00       0.13 f
+  mem_backbone_0/U140/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[15] (omsp_mem_backbone)         0.00       0.20 f
+  dmem_din[15] (out)                                      0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[9]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[9]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[9]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[9]/Q (DFFARX1_RVT)     0.09       0.09 f
+  execution_unit_0/U162/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[9] (omsp_execution_unit)       0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[9] (omsp_mem_backbone)        0.00       0.13 f
+  mem_backbone_0/U122/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[9] (omsp_mem_backbone)          0.00       0.20 f
+  dmem_din[9] (out)                                       0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[8]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[8]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[8]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[8]/Q (DFFARX1_RVT)     0.09       0.09 f
+  execution_unit_0/U163/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[8] (omsp_execution_unit)       0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[8] (omsp_mem_backbone)        0.00       0.13 f
+  mem_backbone_0/U124/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[8] (omsp_mem_backbone)          0.00       0.20 f
+  dmem_din[8] (out)                                       0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[14]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[14]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[14]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[14]/Q (DFFARX1_RVT)     0.09      0.09 f
+  execution_unit_0/U165/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[14] (omsp_execution_unit)      0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[14] (omsp_mem_backbone)       0.00       0.13 f
+  mem_backbone_0/U142/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[14] (omsp_mem_backbone)         0.00       0.20 f
+  dmem_din[14] (out)                                      0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[13]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[13]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[13]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[13]/Q (DFFARX1_RVT)     0.09      0.09 f
+  execution_unit_0/U166/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[13] (omsp_execution_unit)      0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[13] (omsp_mem_backbone)       0.00       0.13 f
+  mem_backbone_0/U144/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[13] (omsp_mem_backbone)         0.00       0.20 f
+  dmem_din[13] (out)                                      0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[12]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[12]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[12]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[12]/Q (DFFARX1_RVT)     0.09      0.09 f
+  execution_unit_0/U167/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[12] (omsp_execution_unit)      0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[12] (omsp_mem_backbone)       0.00       0.13 f
+  mem_backbone_0/U146/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[12] (omsp_mem_backbone)         0.00       0.20 f
+  dmem_din[12] (out)                                      0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[11]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[11]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[11]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[11]/Q (DFFARX1_RVT)     0.09      0.09 f
+  execution_unit_0/U168/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[11] (omsp_execution_unit)      0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[11] (omsp_mem_backbone)       0.00       0.13 f
+  mem_backbone_0/U148/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[11] (omsp_mem_backbone)         0.00       0.20 f
+  dmem_din[11] (out)                                      0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[10]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[10]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[10]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[10]/Q (DFFARX1_RVT)     0.09      0.09 f
+  execution_unit_0/U169/Y (AO22X1_RVT)                    0.04       0.13 f
+  execution_unit_0/mdb_out[10] (omsp_execution_unit)      0.00       0.13 f
+  mem_backbone_0/eu_mdb_out[10] (omsp_mem_backbone)       0.00       0.13 f
+  mem_backbone_0/U150/Y (MUX21X1_RVT)                     0.07       0.20 f
+  mem_backbone_0/dmem_din[10] (omsp_mem_backbone)         0.00       0.20 f
+  dmem_din[10] (out)                                      0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[2]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[2]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[2]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[2]/Q (DFFARX1_RVT)     0.09       0.09 f
+  execution_unit_0/mdb_out[2] (omsp_execution_unit)       0.00       0.09 f
+  mem_backbone_0/eu_mdb_out[2] (omsp_mem_backbone)        0.00       0.09 f
+  mem_backbone_0/U136/Y (MUX21X1_RVT)                     0.12       0.21 f
+  mem_backbone_0/dmem_din[2] (omsp_mem_backbone)          0.00       0.21 f
+  dmem_din[2] (out)                                       0.00       0.21 f
+  data arrival time                                                  0.21
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: execution_unit_0/mdb_out_nxt_reg[1]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dmem_din[1]
+            (output port clocked by dco_clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_execution_unit 8000                 saed32rvt_tt1p05v25c
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  execution_unit_0/mdb_out_nxt_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  execution_unit_0/mdb_out_nxt_reg[1]/Q (DFFARX1_RVT)     0.09       0.09 f
+  execution_unit_0/mdb_out[1] (omsp_execution_unit)       0.00       0.09 f
+  mem_backbone_0/eu_mdb_out[1] (omsp_mem_backbone)        0.00       0.09 f
+  mem_backbone_0/U138/Y (MUX21X1_RVT)                     0.12       0.21 f
+  mem_backbone_0/dmem_din[1] (omsp_mem_backbone)          0.00       0.21 f
+  dmem_din[1] (out)                                       0.00       0.21 f
+  data arrival time                                                  0.21
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: watchdog_0/wdtcnt_clr_toggle_reg
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[0]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_watchdog      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdtcnt_clr_toggle_reg/CLK (DFFARX1_RVT)      0.00       0.00 r
+  watchdog_0/wdtcnt_clr_toggle_reg/Q (DFFARX1_RVT)        0.09       0.09 f
+  watchdog_0/sync_cell_wdtcnt_clr/data_in (omsp_sync_cell_4)     0.00     0.09 f
+  watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[0]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: watchdog_0/wdt_evt_toggle_reg
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/sync_cell_wdt_evt/data_sync_reg[0]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_watchdog      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdt_evt_toggle_reg/CLK (DFFARX1_RVT)         0.00       0.00 r
+  watchdog_0/wdt_evt_toggle_reg/Q (DFFARX1_RVT)           0.09       0.09 f
+  watchdog_0/sync_cell_wdt_evt/data_in (omsp_sync_cell_2)     0.00     0.09 f
+  watchdog_0/sync_cell_wdt_evt/data_sync_reg[0]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/sync_cell_wdt_evt/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: watchdog_0/wdtisx_s_reg[1]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtisx_ss_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_watchdog      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdtisx_s_reg[1]/CLK (DFFARX1_RVT)            0.00       0.00 r
+  watchdog_0/wdtisx_s_reg[1]/Q (DFFARX1_RVT)              0.09       0.09 f
+  watchdog_0/wdtisx_ss_reg[1]/D (DFFARX1_RVT)             0.01       0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdtisx_ss_reg[1]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: watchdog_0/wdtisx_s_reg[0]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtisx_ss_reg[0]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_watchdog      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdtisx_s_reg[0]/CLK (DFFARX1_RVT)            0.00       0.00 r
+  watchdog_0/wdtisx_s_reg[0]/Q (DFFARX1_RVT)              0.09       0.09 f
+  watchdog_0/wdtisx_ss_reg[0]/D (DFFARX1_RVT)             0.01       0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdtisx_ss_reg[0]/CLK (DFFARX1_RVT)           0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: watchdog_0/wdtctl_reg[7]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdt_wkup_en_reg
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_watchdog      8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdtctl_reg[7]/CLK (DFFARX1_RVT)              0.00       0.00 r
+  watchdog_0/wdtctl_reg[7]/QN (DFFARX1_RVT)               0.06       0.06 f
+  watchdog_0/U54/Y (OA21X1_RVT)                           0.04       0.09 f
+  watchdog_0/wdt_wkup_en_reg/D (DFFARX1_RVT)              0.01       0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  watchdog_0/wdt_wkup_en_reg/CLK (DFFARX1_RVT)            0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_dco_wkup/data_sync_reg[0]/CLK
+              (internal path startpoint clocked by dco_clk')
+  Endpoint: clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk')
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+  omsp_sync_cell_0   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk' (rise edge)                             20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  input external delay                                    0.00      20.00 r
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00    20.00 r
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09    20.09 f
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/D (DFFARX1_RVT)     0.01    20.10 f
+  data arrival time                                                 20.10
+
+  clock dco_clk' (rise edge)                             20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00    20.00 r
+  library hold time                                      -0.01      19.99
+  data required time                                                19.99
+  --------------------------------------------------------------------------
+  data required time                                                19.99
+  data arrival time                                                -20.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_mclk_dma_wkup/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_mclk_dma_wkup/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_12  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_mclk_dma_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_mclk_dma_wkup/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_mclk_dma_wkup/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_mclk_dma_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_mclk_wkup/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_mclk_wkup/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_11  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_mclk_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_mclk_wkup/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_mclk_wkup/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_mclk_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_smclk_dma_wkup/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_smclk_dma_wkup/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_7   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_smclk_dma_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_smclk_dma_wkup/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_smclk_dma_wkup/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_smclk_dma_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_puc/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_puc/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by dco_clk)
+  Path Group: dco_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_6   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_puc/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_puc/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_puc/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock dco_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_puc/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/divax_s_reg[0]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/divax_ss_reg[0]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/divax_s_reg[0]/CLK (DFFARX1_RVT)         0.00       0.00 r
+  clock_module_0/divax_s_reg[0]/Q (DFFARX1_RVT)           0.09       0.09 f
+  clock_module_0/divax_ss_reg[0]/D (DFFARX1_RVT)          0.01       0.10 f
+  data arrival time                                                  0.10
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/divax_ss_reg[0]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/divax_s_reg[1]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/divax_ss_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/divax_s_reg[1]/CLK (DFFARX1_RVT)         0.00       0.00 r
+  clock_module_0/divax_s_reg[1]/Q (DFFARX1_RVT)           0.09       0.09 f
+  clock_module_0/divax_ss_reg[1]/D (DFFARX1_RVT)          0.01       0.10 f
+  data arrival time                                                  0.10
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/divax_ss_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_lfxt_disable/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by lfxt_clk')
+  Endpoint: clock_module_0/sync_cell_lfxt_disable/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk')
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+  omsp_sync_cell_15  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk' (rise edge)                            20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock_module_0/sync_cell_lfxt_disable/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00    20.00 r
+  clock_module_0/sync_cell_lfxt_disable/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09    20.09 f
+  clock_module_0/sync_cell_lfxt_disable/data_sync_reg[1]/D (DFFARX1_RVT)     0.01    20.10 f
+  data arrival time                                                 20.10
+
+  clock lfxt_clk' (rise edge)                            20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock_module_0/sync_cell_lfxt_disable/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00    20.00 r
+  library hold time                                      -0.01      19.99
+  data required time                                                19.99
+  --------------------------------------------------------------------------
+  data required time                                                19.99
+  data arrival time                                                -20.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[0]/CLK
+              (internal path startpoint clocked by lfxt_clk')
+  Endpoint: clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk')
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+  omsp_sync_cell_14  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk' (rise edge)                            20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  input external delay                                    0.00      20.00 r
+  clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00    20.00 r
+  clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09    20.09 f
+  clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[1]/D (DFFARX1_RVT)     0.01    20.10 f
+  data arrival time                                                 20.10
+
+  clock lfxt_clk' (rise edge)                            20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00    20.00 r
+  library hold time                                      -0.01      19.99
+  data required time                                                19.99
+  --------------------------------------------------------------------------
+  data required time                                                19.99
+  data arrival time                                                -20.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_13  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_puc_lfxt/data_sync_reg[0]/CLK
+              (internal path startpoint clocked by lfxt_clk)
+  Endpoint: clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_10  ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_oscoff/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/sync_cell_oscoff/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_9   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_oscoff/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_oscoff/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_oscoff/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_oscoff/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/sync_cell_aclk_dma_wkup/data_sync_reg[0]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/sync_cell_aclk_dma_wkup/data_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_sync_cell_8   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_aclk_dma_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  clock_module_0/sync_cell_aclk_dma_wkup/data_sync_reg[0]/Q (DFFARX1_RVT)     0.09     0.09 f
+  clock_module_0/sync_cell_aclk_dma_wkup/data_sync_reg[1]/D (DFFARX1_RVT)     0.01     0.10 f
+  data arrival time                                                  0.10
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/sync_cell_aclk_dma_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: clock_module_0/aclk_div_reg[0]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/aclk_div_reg[0]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/aclk_div_reg[0]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  clock_module_0/aclk_div_reg[0]/QN (DFFARX1_RVT)         0.06       0.06 f
+  clock_module_0/U19/Y (XNOR2X1_RVT)                      0.05       0.11 f
+  clock_module_0/aclk_div_reg[0]/D (DFFARX1_RVT)          0.01       0.12 f
+  data arrival time                                                  0.12
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/aclk_div_reg[0]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: clock_module_0/aclk_div_reg[2]
+              (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/aclk_div_reg[2]
+            (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  openMSP430         16000                 saed32rvt_tt1p05v25c
+  omsp_clock_module  8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/aclk_div_reg[2]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  clock_module_0/aclk_div_reg[2]/QN (DFFARX1_RVT)         0.06       0.06 f
+  clock_module_0/U31/Y (XOR2X1_RVT)                       0.10       0.17 r
+  clock_module_0/aclk_div_reg[2]/D (DFFARX1_RVT)          0.01       0.18 r
+  data arrival time                                                  0.18
+
+  clock lfxt_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock_module_0/aclk_div_reg[2]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  library hold time                                      -0.01      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+1

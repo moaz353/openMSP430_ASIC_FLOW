@@ -1,0 +1,558 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Mon Sep  7 11:00:55 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    267
+    Unloaded inputs (LINT-8)                                        4
+    Unconnected ports (LINT-28)                                   118
+    Feedthrough (LINT-29)                                          17
+    Shorted outputs (LINT-31)                                      62
+    Constant outputs (LINT-52)                                     66
+
+Cells                                                             131
+    Connected to power or ground (LINT-32)                        125
+    Nets connected to multiple pins on same cell (LINT-33)          6
+
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'openMSP430', net 'multiplier_0/mult_396/FS_1/A[23]' driven by pin 'multiplier_0/mult_396/FS_1/A[23]' has no loads. (LINT-2)
+Warning: In design 'openMSP430', net 'multiplier_0/mult_396/FS_1/B[22]' driven by pin 'multiplier_0/mult_396/FS_1/B[22]' has no loads. (LINT-2)
+Warning: In design 'openMSP430', net 'multiplier_0/mult_396/FS_1/B[23]' driven by pin 'multiplier_0/mult_396/FS_1/B[23]' has no loads. (LINT-2)
+Warning: In design 'openMSP430', net 'multiplier_0/mult_396/FS_1/A[22]' driven by pin 'multiplier_0/mult_396/FS_1/A[22]' has no loads. (LINT-2)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[23]' is unloaded. (LINT-8)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[22]' is unloaded. (LINT-8)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'B[23]' is unloaded. (LINT-8)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'B[22]' is unloaded. (LINT-8)
+Warning: In design 'omsp_clock_module', port 'per_din[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_clock_module', port 'per_din[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_clock_module', port 'per_din[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_clock_module', port 'per_din[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_clock_module', port 'per_din[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_clock_module', port 'per_din[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_execution_unit', port 'inst_ad[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_execution_unit', port 'inst_ad[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_execution_unit', port 'inst_ad[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_execution_unit', port 'inst_ad[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_execution_unit', port 'inst_ad[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_execution_unit', port 'inst_ad[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_sfr', port 'per_din[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_watchdog', port 'aclk' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_watchdog', port 'aclk_en' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_watchdog', port 'per_din[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_watchdog', port 'per_din[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_watchdog', port 'smclk_en' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_addr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_broadcast[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_scl' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'dbg_i2c_sda_in' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mab[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mb_en' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mb_wr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'eu_mb_wr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_dbg', port 'pc[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_register_file', port 'reg_sp_val[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu', port 'inst_alu[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu', port 'inst_jmp[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu', port 'inst_so[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu', port 'inst_so[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu', port 'inst_so[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu', port 'inst_so[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_0', port 'A[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_0', port 'B[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu_DW01_add_9', port 'A[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu_DW01_add_9', port 'B[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu_DW01_add_9', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_alu_DW01_add_9', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW02_mult_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW02_mult_0', port 'PRODUCT[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW02_mult_0', port 'PRODUCT[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'SUM[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'SUM[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_multiplier_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'omsp_clock_module', input port 'cpu_en' is connected directly to output port 'cpu_en_s'. (LINT-29)
+Warning: In design 'omsp_clock_module', input port 'dbg_en' is connected directly to output port 'dbg_en_s'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[7]' is connected directly to output port 'pc_sw[7]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[6]' is connected directly to output port 'pc_sw[6]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[5]' is connected directly to output port 'pc_sw[5]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[4]' is connected directly to output port 'pc_sw[4]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[3]' is connected directly to output port 'pc_sw[3]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[2]' is connected directly to output port 'pc_sw[2]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[1]' is connected directly to output port 'pc_sw[1]'. (LINT-29)
+Warning: In design 'omsp_register_file', input port 'reg_dest_val[0]' is connected directly to output port 'pc_sw[0]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[6]' is connected directly to output port 'SUM[6]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[5]' is connected directly to output port 'SUM[5]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[4]' is connected directly to output port 'SUM[4]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[3]' is connected directly to output port 'SUM[3]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[2]' is connected directly to output port 'SUM[2]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[1]' is connected directly to output port 'SUM[1]'. (LINT-29)
+Warning: In design 'omsp_multiplier_DW01_add_1', input port 'A[0]' is connected directly to output port 'SUM[0]'. (LINT-29)
+Warning: In design 'omsp_clock_module', output port 'aclk_en' is connected directly to output port 'smclk_en'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[15]' is connected directly to output port 'pc_nxt[15]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[14]' is connected directly to output port 'pc_nxt[14]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[13]' is connected directly to output port 'pc_nxt[13]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[12]' is connected directly to output port 'pc_nxt[12]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[11]' is connected directly to output port 'pc_nxt[11]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[10]' is connected directly to output port 'pc_nxt[10]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[9]' is connected directly to output port 'pc_nxt[9]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[8]' is connected directly to output port 'pc_nxt[8]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[7]' is connected directly to output port 'pc_nxt[7]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[6]' is connected directly to output port 'pc_nxt[6]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[5]' is connected directly to output port 'pc_nxt[5]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[4]' is connected directly to output port 'pc_nxt[4]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[3]' is connected directly to output port 'pc_nxt[3]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[2]' is connected directly to output port 'pc_nxt[2]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[1]' is connected directly to output port 'pc_nxt[1]'. (LINT-31)
+Warning: In design 'omsp_frontend', output port 'mab[0]' is connected directly to output port 'pc_nxt[0]'. (LINT-31)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[13]' is connected directly to output port 'per_addr[8]'. (LINT-31)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[13]' is connected directly to output port 'per_addr[9]'. (LINT-31)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[13]' is connected directly to output port 'per_addr[10]'. (LINT-31)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[13]' is connected directly to output port 'per_addr[11]'. (LINT-31)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[13]' is connected directly to output port 'per_addr[12]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[2]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[4]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[5]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[6]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[7]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[8]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[10]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[11]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[12]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[13]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[14]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[15]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[17]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[18]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[19]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[21]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[22]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[23]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[24]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[25]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[26]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[27]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[29]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to output port 'cpu_id[30]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to output port 'cpu_id[0]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to output port 'cpu_id[1]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to output port 'cpu_id[3]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to output port 'cpu_id[9]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to output port 'cpu_id[16]'. (LINT-31)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to output port 'cpu_id[20]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[15]' is connected directly to output port 'per_dout[9]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[15]' is connected directly to output port 'per_dout[10]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[15]' is connected directly to output port 'per_dout[12]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[14]' is connected directly to output port 'per_dout[5]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[14]' is connected directly to output port 'per_dout[8]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[14]' is connected directly to output port 'per_dout[11]'. (LINT-31)
+Warning: In design 'omsp_watchdog', output port 'per_dout[14]' is connected directly to output port 'per_dout[13]'. (LINT-31)
+Warning: In design 'omsp_alu', output port 'alu_stat_wr[3]' is connected directly to output port 'alu_stat_wr[0]'. (LINT-31)
+Warning: In design 'omsp_alu', output port 'alu_stat_wr[3]' is connected directly to output port 'alu_stat_wr[1]'. (LINT-31)
+Warning: In design 'omsp_alu', output port 'alu_stat_wr[3]' is connected directly to output port 'alu_stat_wr[2]'. (LINT-31)
+Warning: In design 'openMSP430', a pin on submodule 'clock_module_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[13]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'clock_module_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[12]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'clock_module_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[11]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'clock_module_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[10]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'clock_module_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[9]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'clock_module_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[8]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'execution_unit_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inst_ad[7]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'execution_unit_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inst_ad[5]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'execution_unit_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inst_ad[3]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'execution_unit_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inst_ad[2]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[7]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[6]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[5]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[4]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[3]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[2]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[1]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[0]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[7]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[6]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[5]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[4]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[3]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[2]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[1]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[0]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[13]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[12]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[11]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[10]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[9]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'sfr_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[8]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'aclk_en' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[13]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[12]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[11]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[10]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[9]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[8]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'watchdog_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'smclk_en' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'multiplier_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[13]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'multiplier_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[12]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'multiplier_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[11]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'multiplier_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[10]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'multiplier_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[9]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'multiplier_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'per_addr[8]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[31]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[30]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[29]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[28]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[27]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[26]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[25]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[24]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[23]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[22]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[21]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[20]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[19]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[18]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[17]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[16]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[15]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[14]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[13]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[12]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[11]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[10]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[9]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[8]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[7]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[6]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[5]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[4]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[3]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[2]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[1]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_id[0]' is connected to logic 1. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[7]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[6]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[5]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[4]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[3]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[2]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[1]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_inst[0]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[7]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[6]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[5]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[4]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[3]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[2]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[1]' is connected to logic 0. 
+Warning: In design 'openMSP430', a pin on submodule 'dbg_0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'cpu_nr_total[0]' is connected to logic 0. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'and_dco_dis1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a' is connected to logic 1. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'and_dco_mclk_wkup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'b' is connected to logic 1. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'scan_mux_dco_wkup_observe' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'data_in_func' is connected to logic 0. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'sync_cell_dco_wkup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'data_in' is connected to logic 1. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'and_lfxt_dis1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a' is connected to logic 0. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'and_lfxt_mclk_wkup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'b' is connected to logic 0. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'scan_mux_lfxt_wkup_observe' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'data_in_func' is connected to logic 0. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'sync_cell_lfxt_wkup' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'data_in' is connected to logic 1. 
+Warning: In design 'omsp_clock_module', a pin on submodule 'sync_cell_puc_lfxt' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'data_in' is connected to logic 1. 
+Warning: In design 'omsp_multiplier', a pin on submodule 'add_402' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[32]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier', a pin on submodule 'add_402' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[32]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier', a pin on submodule 'add_402' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'omsp_multiplier', a pin on submodule 'mult_396' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'omsp_alu', a pin on submodule 'add_171' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[16]' is connected to logic 0. 
+Warning: In design 'omsp_alu', a pin on submodule 'add_171' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[16]' is connected to logic 0. 
+Warning: In design 'omsp_alu', a pin on submodule 'add_171' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[14]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[13]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[12]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[11]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'omsp_multiplier_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'openMSP430', the same net is connected to more than one pin on submodule 'sfr_0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'cpu_nr_inst[7]', 'cpu_nr_inst[6]'', 'cpu_nr_inst[5]', 'cpu_nr_inst[4]', 'cpu_nr_inst[3]', 'cpu_nr_inst[2]', 'cpu_nr_inst[1]', 'cpu_nr_inst[0]', 'cpu_nr_total[7]', 'cpu_nr_total[6]', 'cpu_nr_total[5]', 'cpu_nr_total[4]', 'cpu_nr_total[3]', 'cpu_nr_total[2]', 'cpu_nr_total[1]', 'cpu_nr_total[0]'.
+Warning: In design 'openMSP430', the same net is connected to more than one pin on submodule 'dbg_0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'cpu_nr_inst[7]', 'cpu_nr_inst[6]'', 'cpu_nr_inst[5]', 'cpu_nr_inst[4]', 'cpu_nr_inst[3]', 'cpu_nr_inst[2]', 'cpu_nr_inst[1]', 'cpu_nr_inst[0]', 'cpu_nr_total[7]', 'cpu_nr_total[6]', 'cpu_nr_total[5]', 'cpu_nr_total[4]', 'cpu_nr_total[3]', 'cpu_nr_total[2]', 'cpu_nr_total[1]', 'cpu_nr_total[0]'.
+Warning: In design 'omsp_multiplier', the same net is connected to more than one pin on submodule 'add_402'. (LINT-33)
+   Net 'n1' is connected to pins 'A[32]', 'B[32]'', 'CI'.
+Warning: In design 'omsp_alu', the same net is connected to more than one pin on submodule 'add_171'. (LINT-33)
+   Net 'n57' is connected to pins 'B[16]', 'CI''.
+Warning: In design 'omsp_multiplier_DW02_mult_0', the same net is connected to more than one pin on submodule 'FS_1'. (LINT-33)
+   Net 'n6' is connected to pins 'B[14]', 'B[13]'', 'B[12]', 'B[11]', 'B[10]', 'B[9]', 'B[8]', 'B[6]', 'B[5]', 'B[4]', 'B[3]', 'B[2]', 'B[1]'.
+Warning: In design 'omsp_multiplier_DW02_mult_0', the same net is connected to more than one pin on submodule 'FS_1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'B[0]', 'CI''.
+Warning: In design 'openMSP430', output port 'aclk_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'openMSP430', output port 'dbg_i2c_sda_out' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'openMSP430', output port 'per_addr[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'openMSP430', output port 'per_addr[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'openMSP430', output port 'per_addr[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'openMSP430', output port 'per_addr[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'openMSP430', output port 'per_addr[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'openMSP430', output port 'per_addr[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'openMSP430', output port 'smclk_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'aclk_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'per_dout[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'per_dout[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'per_dout[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'per_dout[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'per_dout[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'per_dout[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_clock_module', output port 'smclk_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_frontend', output port 'inst_ad[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_frontend', output port 'inst_ad[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_frontend', output port 'inst_ad[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_frontend', output port 'inst_ad[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_mem_backbone', output port 'per_addr[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[31]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[30]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[29]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[28]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[27]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[26]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[25]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[24]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[23]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[22]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[21]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[20]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[19]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[18]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[17]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[16]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[9]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[3]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[1]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_sfr', output port 'cpu_id[0]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'omsp_watchdog', output port 'per_dout[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_watchdog', output port 'per_dout[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_watchdog', output port 'per_dout[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_watchdog', output port 'per_dout[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_watchdog', output port 'per_dout[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_watchdog', output port 'per_dout[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'omsp_dbg', output port 'dbg_i2c_sda_out' is connected directly to 'logic 1'. (LINT-52)
+1
