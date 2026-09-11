@@ -1,0 +1,7 @@
+Command check_pg_drc started  at Fri Sep 11 21:19:48 2026
+Begin building search trees for block openMSP430.ndm:temp_floorplan_ends.design
+Done building search trees for block openMSP430.ndm:temp_floorplan_ends.design (time 0s)
+Command check_pg_drc finished at Fri Sep 11 21:19:50 2026
+CPU usage for check_pg_drc: 1.72 seconds ( 0.00 hours)
+Elapsed time for check_pg_drc: 1.72 seconds ( 0.00 hours)
+No errors found.

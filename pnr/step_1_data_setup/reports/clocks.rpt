@@ -1,0 +1,28 @@
+****************************************
+Report : clock
+Design : openMSP430
+Mode   : default
+Version: O-2018.06-SP1
+Date   : Fri Sep 11 21:19:39 2026
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+dco_clk         40.00   {0 20}                        {dco_clk}
+lfxt_clk        40.00   {0 20}                        {lfxt_clk}
+
+****************************************
+Report : clock_skew
+Design : openMSP430
+Mode   : default
+Version: O-2018.06-SP1
+Date   : Fri Sep 11 21:19:39 2026
+****************************************
+
+1

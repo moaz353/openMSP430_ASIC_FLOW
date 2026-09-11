@@ -5,7 +5,6 @@
 # Purpose     : Shared Tcl procedures that implement the recurring patterns of
 #               the flow: open/save/close blocks, PG connection, QoR
 #               snapshots, standard reports and final output writing.
-#               Extracted from repeated code in the reference lab scripts.
 #
 # Flow Stage  : Common (ICC2-centric, reused by all PnR/signoff stages)
 #

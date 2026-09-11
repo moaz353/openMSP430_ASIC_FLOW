@@ -18,7 +18,7 @@
 ## 🚀 Project Status
 
 > [!IMPORTANT]
-> **Current stage:** `syn` 🟢
+> **Current stage:** `pnr` 🟢
 
 Synthesis has been completed using Synopsys Design Compiler.
 
@@ -26,13 +26,15 @@ Generated synthesis reports and outputs are available under `syn/`.
 
 The ASIC implementation is being developed progressively from synthesis through physical design, timing analysis, and final signoff.
 
+The physical design flow has progressed through data setup, floorplanning, and power planning, with the corresponding implementation scripts, reports, and layout images available under `pnr/`.
 
 ### 📈 Progress
 
 - [✅] Import openMSP430 RTL — **Done**
 - [✅] ASIC synthesis — **Done**
-- [⏳] Floorplanning — _Pending_
-- [⏳] Power planning — _Pending_
+- [✅] PnR Data Setup — **Done**
+- [✅] Floorplanning — **Done**
+- [✅] Power Planning — **Done**
 - [⏳] Placement — _Pending_
 - [⏳] Clock Tree Synthesis (CTS) — _Pending_
 - [⏳] Routing — _Pending_
@@ -101,14 +103,29 @@ rtl/openMSP430.v
 ├── verdi_rtl_analysis/
 │   ├── readme.md
 │   └── schematic/
-└── syn/
-    ├── run_syn.tcl
+├── syn/
+│   ├── run_syn.tcl
+│   ├── readme.md
+│   ├── scripts/
+│   ├── reports/
+│   │  └── qor/
+│   └── output/
+│       └── images/
+└── pnr/
+    ├── run_flow.tcl
     ├── readme.md
-    ├── scripts/
-    ├── reports/
-    │  └── qor/
-    └── output/
-        └── images/
+    ├── step_1_data_setup/
+    │   ├── images
+    │   ├── reports
+    │   └── scripts
+    ├── step_2_floorplanning/
+    │   ├── images
+    │   ├── reports
+    │   └── scripts
+    └── step_3_powerplanning/
+        ├── images
+        ├── reports
+        └── scripts
 ```
 
 The `common/` directory contains shared functions, variables, and paths used across the flow.
@@ -119,7 +136,9 @@ The `rtl/` directory contains the selected RTL files required as the design sour
 
 The `verdi_rtl_analysis/` directory contains Verdi RTL analysis and schematics.
 
-The `syn/`  directory contains the Synopsys Design Compiler synthesis flow, including scripts, reports, and generated outputs.
+The `syn/` directory contains the Synopsys Design Compiler synthesis flow, including scripts, reports, and generated outputs.
+
+The `pnr/` directory contains the physical design flow for the openMSP430. Detailed documentation for the completed PNR stages is available in `pnr/readme.md`.
 
 ASIC implementation scripts, constraints, reports, physical design data, and signoff results will be added as the project progresses.
 
@@ -127,12 +146,14 @@ ASIC implementation scripts, constraints, reports, physical design data, and sig
 
 ## ⚙️ ASIC Implementation Flow
 
-The planned implementation flow is:
+The ASIC implementation flow is:
 
 ```text
 RTL
   ↓
 Synthesis
+  ↓
+PnR Data Setup
   ↓
 Floorplanning
   ↓

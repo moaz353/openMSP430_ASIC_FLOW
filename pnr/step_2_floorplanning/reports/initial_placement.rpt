@@ -1,0 +1,24 @@
+****************************************
+Report : report_placement
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Fri Sep 11 21:19:44 2026
+****************************************
+
+  Wire length report (all)
+  ==================
+  wire length in design temp_data_setup: 91698.819 microns.
+  wire length in design temp_data_setup (see through blk pins): 91698.819 microns.
+
+  Physical hierarchy violations report
+  ====================================
+  Violations in design temp_data_setup:
+     0 cells have placement violation.
+
+  Voltage area violations report
+  ====================================
+  Voltage area placement violations in design temp_data_setup:
+     0 cells placed outside the voltage area which they belong to.
+
+Information: Default error view temp_data_setup_dpplace.err is created in GUI error browser. (DPP-054)
+1

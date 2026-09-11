@@ -1,0 +1,315 @@
+****************************************
+Report : disable_timing
+Design : openMSP430
+Mode   : default
+Version: O-2018.06-SP1
+Date   : Fri Sep 11 21:19:44 2026
+****************************************
+
+Attributes
+    c - case-analysis
+    C - Conditional arc
+    d - default conditional arc
+    f - false net-arc
+    l - loop breaking
+    L - db inherited loopbreaking
+    m - mode
+    p - propagated constant
+    u - user-defined
+    U - User-defined library arcs
+    n - negative power supply
+
+
+Cell or Port                From    To      Sense           Flag  Reason
+--------------------------------------------------------------------------------
+U11                         A2      Y       positive_unate  p     A2 = 0
+U11                         A2      Y       positive_unate  p     A2 = 0
+U25                         A2      Y       positive_unate  p     A2 = 0
+U25                         A2      Y       positive_unate  p     A2 = 0
+U29                         A2      Y       positive_unate  p     A2 = 0
+U29                         A2      Y       positive_unate  p     A2 = 0
+U34                         A1      Y       positive_unate  p     A1 = 1
+U34                         A1      Y       positive_unate  p     A1 = 1
+U36                         A2      Y       negative_unate  p     A2 = 0
+U36                         A2      Y       negative_unate  p     A2 = 0
+U37                         A2      Y       negative_unate  p     A2 = 0
+U37                         A2      Y       negative_unate  p     A2 = 0
+U38                         A2      Y       negative_unate  p     A2 = 0
+U38                         A2      Y       negative_unate  p     A2 = 0
+U5                          A2      Y       positive_unate  p     A2 = 0
+U5                          A2      Y       positive_unate  p     A2 = 0
+U57                         A1      Y       negative_unate  p     A1 = 1
+U57                         A1      Y       negative_unate  p     A1 = 1
+U65                         A1      Y       negative_unate  p     A1 = 1
+U65                         A1      Y       negative_unate  p     A1 = 1
+clock_module_0/U100         A4      Y       negative_unate  p     A4 = 0
+clock_module_0/U100         A3      Y       negative_unate  p     A3 = 0
+clock_module_0/U100         A4      Y       negative_unate  p     A4 = 0
+clock_module_0/U100         A2      Y       negative_unate  p     A2 = 0
+clock_module_0/U100         A3      Y       negative_unate  p     A3 = 0
+clock_module_0/U100         A2      Y       negative_unate  p     A2 = 0
+clock_module_0/U119         A2      Y       positive_unate  p     A2 = 0
+clock_module_0/U119         A2      Y       positive_unate  p     A2 = 0
+clock_module_0/U56          A2      Y       negative_unate  p     A2 = 0
+clock_module_0/U56          A2      Y       negative_unate  p     A2 = 0
+clock_module_0/U98          A2      Y       negative_unate  p     A2 = 0
+clock_module_0/U98          A2      Y       negative_unate  p     A2 = 0
+clock_module_0/U99          A2      Y       positive_unate  p     A2 = 0
+clock_module_0/U99          A1      Y       positive_unate  p     A1 = 0
+clock_module_0/U99          A1      Y       positive_unate  p     A1 = 0
+clock_module_0/U99          A2      Y       positive_unate  p     A2 = 0
+clock_module_0/and_dco_dis1/U1 A2   Y       positive_unate  p     A2 = 1
+clock_module_0/and_dco_dis1/U1 A2   Y       positive_unate  p     A2 = 1
+clock_module_0/and_dco_mclk_wkup/U1 A1 Y    positive_unate  p     A1 = 1
+clock_module_0/and_dco_mclk_wkup/U1 A1 Y    positive_unate  p     A1 = 1
+clock_module_0/scan_mux_dco_wkup_observe/U2 A4 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_dco_wkup_observe/U2 A3 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_dco_wkup_observe/U2 A4 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_dco_wkup_observe/U2 A3 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_lfxt_wkup_observe/U2 A4 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_lfxt_wkup_observe/U2 A3 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_lfxt_wkup_observe/U2 A4 Y positive_unate p A3 = 0
+clock_module_0/scan_mux_lfxt_wkup_observe/U2 A3 Y positive_unate p A3 = 0
+clock_module_0/sync_cell_dco_wkup/data_sync_reg[0] CLK D hold_clk_rise p D = 1
+clock_module_0/sync_cell_dco_wkup/data_sync_reg[0] CLK D setup_clk_rise p D = 1
+clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[0] CLK D setup_clk_rise p D = 1
+clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[0] CLK D hold_clk_rise p D = 1
+clock_module_0/sync_cell_puc_lfxt/data_sync_reg[0] CLK D setup_clk_rise p D = 1
+clock_module_0/sync_cell_puc_lfxt/data_sync_reg[0] CLK D hold_clk_rise p D = 1
+clock_module_0/sync_reset_por/data_sync_reg[0] CLK D setup_clk_rise p D = 0
+clock_module_0/sync_reset_por/data_sync_reg[0] CLK D hold_clk_rise p D = 0
+dbg_0/U131                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U131                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U131                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U131                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U132                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U132                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U132                  A2      Y       positive_unate  p     A1 = 0, A3 = 1
+dbg_0/U132                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U132                  A2      Y       positive_unate  p     A1 = 0, A3 = 1
+dbg_0/U132                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U134                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U134                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U134                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U134                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U135                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U135                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U135                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U135                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U135                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U135                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U135                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U135                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U137                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U137                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U137                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U137                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U138                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U138                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U138                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U138                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U138                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U138                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U138                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U138                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U139                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U139                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U140                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U140                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U140                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U140                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U143                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U143                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U144                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U144                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U144                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U144                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U148                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U148                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U148                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U148                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U150                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U150                  A4      Y       positive_unate  p     A1 = 1, A3 = 0
+dbg_0/U150                  A1      Y       positive_unate  p     A1 = 1
+dbg_0/U150                  A4      Y       positive_unate  p     A1 = 1, A3 = 0
+dbg_0/U150                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U150                  A1      Y       positive_unate  p     A1 = 1
+dbg_0/U153                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U153                  A2      Y       positive_unate  p     A1 = 0
+dbg_0/U153                  A2      Y       positive_unate  p     A1 = 0
+dbg_0/U153                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U155                  A2      Y       positive_unate  p     A1 = 0, A3 = 1
+dbg_0/U155                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U155                  A2      Y       positive_unate  p     A1 = 0, A3 = 1
+dbg_0/U155                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U155                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U155                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U157                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U157                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U157                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U157                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U157                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U157                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U157                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U157                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U159                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U159                  A2      Y       positive_unate  p     A1 = 0
+dbg_0/U159                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U159                  A2      Y       positive_unate  p     A1 = 0
+dbg_0/U162                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U162                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U162                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U162                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U164                  A2      Y       positive_unate  p     A1 = 0, A3 = 1
+dbg_0/U164                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U164                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U164                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U164                  A2      Y       positive_unate  p     A1 = 0, A3 = 1
+dbg_0/U164                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U166                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U166                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U166                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U166                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U167                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U167                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U167                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U167                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U167                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U167                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U167                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U167                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U169                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U169                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U169                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U169                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U170                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U170                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U170                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U170                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U170                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U170                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U170                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U170                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U172                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U172                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U172                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U172                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U173                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U173                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U173                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U173                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U173                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U173                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U173                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U173                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U175                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U175                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U175                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U175                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U176                  A4      Y       positive_unate  p     A1 = 1, A3 = 0
+dbg_0/U176                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U176                  A4      Y       positive_unate  p     A1 = 1, A3 = 0
+dbg_0/U176                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U176                  A1      Y       positive_unate  p     A1 = 1
+dbg_0/U176                  A1      Y       positive_unate  p     A1 = 1
+dbg_0/U178                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U178                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U178                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U178                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U179                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U179                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U179                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U179                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U179                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U179                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U179                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U179                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U181                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U181                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U181                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U181                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U182                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U182                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U182                  A3      Y       positive_unate  p     A3 = 0
+dbg_0/U182                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U182                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U182                  A4      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U182                  A2      Y       positive_unate  p     A1 = 0, A3 = 0
+dbg_0/U182                  A1      Y       positive_unate  p     A1 = 0
+dbg_0/U184                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U184                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U184                  A5      Y       positive_unate  p     A5 = 0
+dbg_0/U184                  A6      Y       positive_unate  p     A5 = 0
+dbg_0/U189                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U189                  A1      Y       positive_unate  p     A1 = 1
+dbg_0/U189                  A3      Y       positive_unate  p     A3 = 1
+dbg_0/U189                  A1      Y       positive_unate  p     A1 = 1
+multiplier_0/U197           A1      Y       negative_unate  p     A1 = 1
+multiplier_0/U197           A1      Y       negative_unate  p     A1 = 1
+multiplier_0/U198           A1      Y       positive_unate  p     A1 = 0
+multiplier_0/U198           A2      Y       positive_unate  p     A2 = 0
+multiplier_0/U198           A2      Y       positive_unate  p     A2 = 0
+multiplier_0/U198           A1      Y       positive_unate  p     A1 = 0
+multiplier_0/U4             A4      Y       negative_unate  p     A4 = 0
+multiplier_0/U4             A2      Y       negative_unate  p     A2 = 0
+multiplier_0/U4             A4      Y       negative_unate  p     A4 = 0
+multiplier_0/U4             A2      Y       negative_unate  p     A2 = 0
+sfr_0/U10                   A1      Y       positive_unate  p     A1 = 0
+sfr_0/U10                   A2      Y       positive_unate  p     A1 = 0
+sfr_0/U10                   A1      Y       positive_unate  p     A1 = 0
+sfr_0/U10                   A2      Y       positive_unate  p     A1 = 0
+sfr_0/U12                   A2      Y       positive_unate  p     A1 = 0
+sfr_0/U12                   A1      Y       positive_unate  p     A1 = 0
+sfr_0/U12                   A1      Y       positive_unate  p     A1 = 0
+sfr_0/U12                   A2      Y       positive_unate  p     A1 = 0
+sfr_0/U14                   A4      Y       positive_unate  p     A3 = 0
+sfr_0/U14                   A3      Y       positive_unate  p     A3 = 0
+sfr_0/U14                   A3      Y       positive_unate  p     A3 = 0
+sfr_0/U14                   A4      Y       positive_unate  p     A3 = 0
+sfr_0/U5                    A1      Y       positive_unate  p     A1 = 0
+sfr_0/U5                    A2      Y       positive_unate  p     A1 = 0
+sfr_0/U5                    A1      Y       positive_unate  p     A1 = 0
+sfr_0/U5                    A2      Y       positive_unate  p     A1 = 0
+sfr_0/U55                   A1      Y       negative_unate  p     A1 = 1
+sfr_0/U55                   A1      Y       negative_unate  p     A1 = 1
+sfr_0/U57                   A1      Y       positive_unate  p     A1 = 0
+sfr_0/U57                   A2      Y       positive_unate  p     A2 = 0
+sfr_0/U57                   A1      Y       positive_unate  p     A1 = 0
+sfr_0/U57                   A2      Y       positive_unate  p     A2 = 0
+sfr_0/U58                   A3      Y       negative_unate  p     A3 = 0
+sfr_0/U58                   A3      Y       negative_unate  p     A3 = 0
+sfr_0/U58                   A1      Y       negative_unate  p     A1 = 0
+sfr_0/U58                   A1      Y       negative_unate  p     A1 = 0
+sfr_0/U6                    A3      Y       positive_unate  p     A3 = 0
+sfr_0/U6                    A4      Y       positive_unate  p     A3 = 0
+sfr_0/U6                    A3      Y       positive_unate  p     A3 = 0
+sfr_0/U6                    A4      Y       positive_unate  p     A3 = 0
+sfr_0/U9                    A2      Y       positive_unate  p     A1 = 0
+sfr_0/U9                    A1      Y       positive_unate  p     A1 = 0
+sfr_0/U9                    A2      Y       positive_unate  p     A1 = 0
+sfr_0/U9                    A1      Y       positive_unate  p     A1 = 0
+sfr_0/wakeup_cell_nmi/wkup_out_reg CLK D    setup_clk_rise  p     D = 1
+sfr_0/wakeup_cell_nmi/wkup_out_reg CLK D    hold_clk_rise   p     D = 1
+watchdog_0/U11              A2      Y       negative_unate  p     A2 = 1
+watchdog_0/U11              A2      Y       negative_unate  p     A2 = 1
+watchdog_0/U13              A3      Y       positive_unate  p     A3 = 1
+watchdog_0/U13              A3      Y       positive_unate  p     A3 = 1
+watchdog_0/U17              A1      Y       negative_unate  p     A1 = 0
+watchdog_0/U17              A1      Y       negative_unate  p     A1 = 0
+watchdog_0/U35              A1      Y       negative_unate  p     A1 = 1
+watchdog_0/U35              A1      Y       negative_unate  p     A1 = 1
+watchdog_0/U40              A3      Y       negative_unate  p     A3 = 1
+watchdog_0/U40              A3      Y       negative_unate  p     A3 = 1
+watchdog_0/U40              A4      Y       negative_unate  p     A4 = 1
+watchdog_0/U40              A4      Y       negative_unate  p     A4 = 1
+watchdog_0/U49              A3      Y       negative_unate  p     A3 = 1
+watchdog_0/U49              A4      Y       negative_unate  p     A4 = 1
+watchdog_0/U49              A3      Y       negative_unate  p     A3 = 1
+watchdog_0/U49              A2      Y       negative_unate  p     A2 = 1
+watchdog_0/U49              A4      Y       negative_unate  p     A4 = 1
+watchdog_0/U49              A2      Y       negative_unate  p     A2 = 1
+watchdog_0/sync_reset_por/data_sync_reg[0] CLK D setup_clk_rise p D = 0
+watchdog_0/sync_reset_por/data_sync_reg[0] CLK D hold_clk_rise p  D = 0
+watchdog_0/wakeup_cell_wdog/wkup_out_reg CLK D setup_clk_rise p   D = 1
+watchdog_0/wakeup_cell_wdog/wkup_out_reg CLK D hold_clk_rise p    D = 1
+1
