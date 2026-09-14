@@ -1,0 +1,54 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 12 04:41:29 2026
+****************************************
+
+  Startpoint: sfr_0/nmi_capture_rst_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: sfr_0/wakeup_cell_nmi/wkup_out_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  sfr_0/nmi_capture_rst_reg/CLK (DFFASX1_RVT)                        0.00      0.00      0.00 r
+  sfr_0/nmi_capture_rst_reg/Q (DFFASX1_RVT)                          0.01      0.05      0.05 f
+  sfr_0/nmi_capture_rst (net)                       1      0.64
+  sfr_0/wakeup_cell_nmi/scan_mux_rst/U2/A3 (AO22X1_RVT)              0.01      0.00      0.05 f
+  sfr_0/wakeup_cell_nmi/scan_mux_rst/U2/Y (AO22X1_RVT)               0.01      0.02      0.07 f
+  sfr_0/wakeup_cell_nmi/scan_mux_rst/data_out (net)
+                                                    1      1.08
+  sfr_0/wakeup_cell_nmi/U3/A (INVX1_RVT)                             0.01      0.00      0.07 f
+  sfr_0/wakeup_cell_nmi/U3/Y (INVX1_RVT)                             0.01      0.01      0.08 r
+  sfr_0/wakeup_cell_nmi/n1 (net)                    1      1.17
+  sfr_0/wakeup_cell_nmi/wkup_out_reg/RSTB (DFFARX1_RVT)              0.01      0.00      0.08 r
+  data arrival time                                                                      0.08
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  sfr_0/wakeup_cell_nmi/wkup_out_reg/CLK (DFFARX1_RVT)               0.00      0.00      0.00 r
+  library hold time                                                            0.12      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.08
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+1

@@ -10,6 +10,7 @@ its own `scripts/`, `reports/`, and `images/`.
 source ./step_1_data_setup/scripts/master.tcl
 source ./step_2_floorplanning/scripts/master.tcl
 source ./step_3_powerplanning/scripts/master.tcl
+source ./step_4_placement/scripts/master.tcl
 ```
 
 ## Flow Structure
@@ -19,12 +20,12 @@ Intended stage order:
 1. Data Setup — completed
 2. Floorplanning — completed
 3. Power Planning — completed
-4. Placement — pending
+4. Placement — completed
 5. CTS — pending
 6. Routing — pending
 7. Finishing — pending
 
-Only Steps 1–3 are currently completed and documented below. Steps 4–7 are reserved for the subsequent stages of the PNR flow.
+Only Steps 1–4 are currently completed and documented below. Steps 5–7 are reserved for the subsequent stages of the PNR flow.
 
 ## Completed Stages
 
@@ -88,6 +89,36 @@ Full grid:
 PG patterns and strategies are summarized in `pg_patterns.rpt` and
 `pg_strategies.rpt`.
 
+### 4. Placement (`step_4_placement/`)
+
+Opens the Step 3 checkpoint (`openMSP430_3_powerplan_ends` via
+`temp_powerplan_ends`), keeps recovery/removal and case-analysis timing
+checks enabled, allows coarse placement to continue without scan
+definitions (`place.coarse.continue_on_missing_scandef`), sets the
+optimizer instance-name prefix to `place`, applies the MCMM setup from
+`common/mcmm.tcl`, then runs `place_opt` followed by
+`legalize_placement` and saves the `openMSP430_4_place_ends` checkpoint.
+
+Results (`reports/`): `place_legality.rpt` (`check_legality -verbose`)
+reports 0 total violations; QoR snapshot
+`qor_snapshot/placement.qor` reports 4420 leaf cells, cell area
+14894.62, 4876 nets with 0 max-transition/max-capacitance violations,
+and 0 total negative slack / 0 violating setup paths in both
+`func_slow` and `func_fast` (hold violations remain, e.g. worst hold
+-0.04 with 183 `dco_clk` hold violations in `func_fast`); max/min
+timing paths are in `timing/placement.max.tim` and
+`timing/placement.min.tim`. Library info is in `ndm_lib.rpt`.
+
+![Placement](step_4_placement/images/placement-design.png)
+
+![Cell density](step_4_placement/images/cell-density.png)
+
+![Pin density](step_4_placement/images/pin-density.png)
+
+![Power density](step_4_placement/images/power-density.png)
+
+![Hierarchical placement](step_4_placement/images/design_hier_placement.png)
+
 ## Directory Organization
 
 Each completed step follows the same layout:
@@ -97,11 +128,11 @@ Each completed step follows the same layout:
 - `reports/` — tool-generated checks and summaries for that stage
 - `images/` — layout screenshots for that stage
 
-`run_flow.tcl` at the `pnr/` top level launches the completed stages in
-sequence via their `master.tcl` drivers.
+`run_flow.tcl` at the `pnr/` top level launches the stages in
+sequence via their `master.tcl` drivers (currently Steps 1–4).
 
 ## Pending Stages
 
-Placement, Clock Tree Synthesis (CTS), Routing, and Finishing are the
+Clock Tree Synthesis (CTS), Routing, and Finishing are the
 subsequent stages of the flow. They are not yet implemented or documented
 in this directory.

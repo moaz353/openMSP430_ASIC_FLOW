@@ -55,12 +55,12 @@ read_parasitic_tech \
 set_parasitics_parameters \
     -early_spec tlup_min \
     -late_spec  tlup_min \
-    -corners    ${$MCMM_CORNER_FAST}
+    -corners    $MCMM_CORNER_FAST
 
 set_parasitics_parameters \
     -early_spec tlup_max \
     -late_spec  tlup_max \
-    -corners    ${$MCMM_CORNER_SLOW}
+    -corners    $MCMM_CORNER_SLOW
 
 # ###########################################################################
 # 5. Create the functional mode and the two scenarios

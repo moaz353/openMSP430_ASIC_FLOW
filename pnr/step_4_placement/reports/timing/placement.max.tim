@@ -1,0 +1,165 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 12 04:41:29 2026
+****************************************
+
+  Startpoint: dmem_dout[8] (input port clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_dco_wkup/data_sync_reg[1] (recovery check against rising-edge clock clocked by dco_clk')
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: REGIN
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  input external delay                                                         2.25      2.25
+
+  dmem_dout[8] (in)                                                  0.02      0.01      2.26 r
+  dmem_dout[8] (net)                                1      1.57
+  mem_backbone_0/placeZBUF_inst_461/A (NBUFFX2_RVT)                  0.02      0.00      2.26 r
+  mem_backbone_0/placeZBUF_inst_461/Y (NBUFFX2_RVT)                  0.08      0.09      2.34 r
+  mem_backbone_0/placeZBUF_4 (net)                  2     15.57
+  mem_backbone_0/U101/A3 (AO222X1_RVT)                               0.08      0.00      2.34 r
+  mem_backbone_0/U101/Y (AO222X1_RVT)                                0.10      0.17      2.52 r
+  mem_backbone_0/eu_mdb_in[8] (net)                 4      7.40
+  execution_unit_0/U177/A2 (AO22X1_RVT)                              0.10      0.00      2.52 r
+  execution_unit_0/U177/Y (AO22X1_RVT)                               0.08      0.14      2.66 r
+  execution_unit_0/mdb_in_bw[0] (net)               3      5.64
+  execution_unit_0/U90/A4 (AO222X1_RVT)                              0.08      0.00      2.66 r
+  execution_unit_0/U90/Y (AO222X1_RVT)                               0.05      0.13      2.79 r
+  execution_unit_0/n78 (net)                        1      1.35
+  execution_unit_0/U86/A1 (OR2X1_RVT)                                0.05      0.00      2.79 r
+  execution_unit_0/U86/Y (OR2X1_RVT)                                 0.07      0.10      2.89 r
+  execution_unit_0/op_src[0] (net)                  3      5.94
+  execution_unit_0/alu_0/U26/A1 (XOR2X1_RVT)                         0.07      0.00      2.89 r
+  execution_unit_0/alu_0/U26/Y (XOR2X1_RVT)                          0.10      0.18      3.06 f
+  execution_unit_0/alu_0/op_src_inv[0] (net)        6      8.03
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_0/A (FADDX1_RVT)
+                                                                     0.10      0.00      3.06 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_0/CO (FADDX1_RVT)
+                                                                     0.05      0.12      3.19 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/carry[1] (net)
+                                                    1      2.26
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_1/CI (FADDX1_RVT)
+                                                                     0.05      0.00      3.19 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_1/CO (FADDX1_RVT)
+                                                                     0.05      0.09      3.28 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/carry[2] (net)
+                                                    1      2.21
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_2/CI (FADDX1_RVT)
+                                                                     0.05      0.00      3.28 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_2/CO (FADDX1_RVT)
+                                                                     0.04      0.09      3.37 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/carry[3] (net)
+                                                    1      1.74
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_3/CI (FADDX1_RVT)
+                                                                     0.04      0.00      3.37 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_3/S (FADDX1_RVT)
+                                                                     0.06      0.16      3.54 r
+  execution_unit_0/alu_0/N13 (net)                  3      3.21
+  execution_unit_0/alu_0/U143/A3 (OA21X1_RVT)                        0.06      0.00      3.54 r
+  execution_unit_0/alu_0/U143/Y (OA21X1_RVT)                         0.03      0.07      3.61 r
+  execution_unit_0/alu_0/n9 (net)                   1      1.07
+  execution_unit_0/alu_0/U7/A2 (OR2X1_RVT)                           0.03      0.00      3.61 r
+  execution_unit_0/alu_0/U7/Y (OR2X1_RVT)                            0.06      0.08      3.68 r
+  execution_unit_0/alu_0/n4 (net)                   3      4.65
+  execution_unit_0/alu_0/U106/A1 (AND2X1_RVT)                        0.06      0.00      3.68 r
+  execution_unit_0/alu_0/U106/Y (AND2X1_RVT)                         0.03      0.06      3.75 r
+  execution_unit_0/alu_0/add_102_C185_aco/carry[2] (net)
+                                                    1      1.89
+  execution_unit_0/alu_0/add_102_C185_aco/U1_2/CI (FADDX1_RVT)       0.03      0.00      3.75 r
+  execution_unit_0/alu_0/add_102_C185_aco/U1_2/CO (FADDX1_RVT)       0.05      0.10      3.85 r
+  execution_unit_0/alu_0/add_102_C185_aco/carry[3] (net)
+                                                    2      2.39
+  execution_unit_0/alu_0/U104/A1 (AND2X1_RVT)                        0.05      0.00      3.85 r
+  execution_unit_0/alu_0/U104/Y (AND2X1_RVT)                         0.03      0.06      3.91 r
+  execution_unit_0/alu_0/add_102_C185_aco/carry[4] (net)
+                                                    1      1.30
+  execution_unit_0/alu_0/U103/A2 (XOR2X1_RVT)                        0.03      0.00      3.91 r
+  execution_unit_0/alu_0/U103/Y (XOR2X1_RVT)                         0.05      0.13      4.04 f
+  execution_unit_0/alu_0/alu_dadd0[4]1 (net)        1      2.28
+  execution_unit_0/alu_0/add_1_root_add_100_2_C186/U1_0/CI (FADDX1_RVT)
+                                                                     0.05      0.00      4.04 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C186/U1_0/S (FADDX1_RVT)
+                                                                     0.04      0.15      4.19 r
+  execution_unit_0/alu_0/alu_dadd1[0] (net)         1      1.39
+  execution_unit_0/alu_0/U17/A1 (AO222X2_RVT)                        0.04      0.00      4.19 r
+  execution_unit_0/alu_0/U17/Y (AO222X2_RVT)                         0.08      0.17      4.36 r
+  execution_unit_0/alu_0/alu_out[4] (net)           5      8.39
+  execution_unit_0/register_file_0/U399/A1 (AO21X2_RVT)              0.08      0.00      4.36 r
+  execution_unit_0/register_file_0/U399/Y (AO21X2_RVT)               0.08      0.14      4.51 r
+  execution_unit_0/register_file_0/cpuoff (net)     5     10.01
+  frontend_0/U69/A2 (NAND2X0_RVT)                                    0.08      0.00      4.51 r
+  frontend_0/U69/Y (NAND2X0_RVT)                                     0.05      0.05      4.56 f
+  frontend_0/n74 (net)                              1      0.79
+  frontend_0/U68/A4 (AO22X2_RVT)                                     0.05      0.00      4.56 f
+  frontend_0/U68/Y (AO22X2_RVT)                                      0.08      0.12      4.67 f
+  frontend_0/mclk_enable (net)                      3     13.96
+  clock_module_0/and_cpuoff_mclk_en/U1/A1 (AND2X1_RVT)               0.08      0.00      4.67 f
+  clock_module_0/and_cpuoff_mclk_en/U1/Y (AND2X1_RVT)                0.06      0.10      4.78 f
+  clock_module_0/and_cpuoff_mclk_en/y (net)         1      5.44
+  clock_module_0/and_dco_dis1/U1/A1 (AND2X1_RVT)                     0.06      0.00      4.78 f
+  clock_module_0/and_dco_dis1/U1/Y (AND2X1_RVT)                      0.03      0.07      4.85 f
+  clock_module_0/and_dco_dis1/y (net)               1      1.36
+  clock_module_0/U55/A2 (NOR2X0_RVT)                                 0.03      0.00      4.85 f
+  clock_module_0/U55/Y (NOR2X0_RVT)                                  0.02      0.07      4.92 r
+  clock_module_0/n117 (net)                         1      0.79
+  clock_module_0/and_dco_dis2/U1/A1 (AND2X1_RVT)                     0.02      0.00      4.92 r
+  clock_module_0/and_dco_dis2/U1/Y (AND2X1_RVT)                      0.03      0.05      4.97 r
+  clock_module_0/and_dco_dis2/y (net)               1      1.08
+  clock_module_0/and_dco_dis3/U1/A1 (AND2X1_RVT)                     0.03      0.00      4.97 r
+  clock_module_0/and_dco_dis3/U1/Y (AND2X1_RVT)                      0.03      0.05      5.02 r
+  clock_module_0/and_dco_dis3/y (net)               1      1.25
+  clock_module_0/U45/A (INVX1_RVT)                                   0.03      0.00      5.02 r
+  clock_module_0/U45/Y (INVX1_RVT)                                   0.02      0.02      5.04 f
+  clock_module_0/n23 (net)                          1      0.88
+  clock_module_0/and_dco_dis5/U1/A2 (AND2X1_RVT)                     0.02      0.00      5.04 f
+  clock_module_0/and_dco_dis5/U1/Y (AND2X1_RVT)                      0.03      0.06      5.10 f
+  clock_module_0/and_dco_dis5/y (net)               2      1.79
+  clock_module_0/and_dco_en_wkup/U1/A1 (AND2X1_RVT)                  0.03      0.00      5.10 f
+  clock_module_0/and_dco_en_wkup/U1/Y (AND2X1_RVT)                   0.03      0.05      5.16 f
+  clock_module_0/and_dco_en_wkup/y (net)            1      1.01
+  clock_module_0/U120/A3 (OR3X1_RVT)                                 0.03      0.00      5.16 f
+  clock_module_0/U120/Y (OR3X1_RVT)                                  0.04      0.07      5.22 f
+  clock_module_0/N169 (net)                         2      2.05
+  clock_module_0/U112/A1 (OR2X1_RVT)                                 0.04      0.00      5.22 f
+  clock_module_0/U112/Y (OR2X1_RVT)                                  0.03      0.06      5.29 f
+  clock_module_0/_9_net_ (net)                      1      0.83
+  clock_module_0/scan_mux_dco_wkup/U2/A3 (AO22X1_RVT)                0.03      0.00      5.29 f
+  clock_module_0/scan_mux_dco_wkup/U2/Y (AO22X1_RVT)                 0.03      0.06      5.34 f
+  clock_module_0/scan_mux_dco_wkup/data_out (net)
+                                                    1      1.64
+  clock_module_0/sync_cell_dco_wkup/U3/A (INVX1_RVT)                 0.03      0.00      5.34 f
+  clock_module_0/sync_cell_dco_wkup/U3/Y (INVX1_RVT)                 0.04      0.04      5.38 r
+  clock_module_0/sync_cell_dco_wkup/n1 (net)        2      3.03
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/RSTB (DFFARX1_RVT)
+                                                                     0.04      0.00      5.38 r
+  data arrival time                                                                      5.38
+
+  clock dco_clk' (rise edge)                                                  20.00     20.00
+  clock network delay (ideal)                                                  0.00     20.00
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00     20.00 r
+  library setup time                                                           0.04     20.04
+  data required time                                                                    20.04
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                    20.04
+  data arrival time                                                                     -5.38
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                           14.65
+
+
+1
