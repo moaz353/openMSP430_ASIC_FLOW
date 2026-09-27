@@ -1,0 +1,64 @@
+***********************************************
+Report          : create_qor_snapshot (clock)
+Design          : openMSP430
+Version         : O-2018.06-SP1
+Date            : Sat Sep 26 03:04:59 2026
+Time unit       : 1.00ns
+Resistance unit : 1.00MOhm
+Capacitance unit: 1.00fF
+Voltage unit    : 1.00V
+Current unit    : 1.00uA
+Power unit      : 1.00pW
+Location        : /home/ICer/Mo_AZ/openMSP430_ASIC_FLOW/pnr/step_5_cts/reports/qor_snapshot
+***********************************************
+No. of scenario = 2
+s1 = func_fast
+s2 = func_slow
+------------------------------------------------------------------------
+WNS of each timing group:                       s1        s2 
+------------------------------------------------------------------------
+REGIN                                      11.4396   11.1764 
+REGOUT                                     31.3242   31.0099 
+FEEDTHROUGH                                28.3694   28.0659 
+dco_clk                                    14.3944   14.1204 
+lfxt_clk                                   14.5190   14.2440 
+------------------------------------------------------------------------
+Setup WNS:                                 11.4396   11.1764     11.1764 
+Setup TNS:                                  0.0000    0.0000      0.0000
+Number of setup violations:                      0         0           0 
+Hold WNS:                                  -0.0055   -0.1052     -0.1052 
+Hold TNS:                                  -0.0055   -0.3389     -0.3389 
+Number of hold violations:                       1        10          10 
+Number of max trans violations:                  0         0           0 
+Number of max cap violations:                    1        10           0 
+Number of min pulse width violations:            0         0           0 
+------------------------------------------------------------------------
+Area:                                                          26811.430
+Cell count:                                                         6238
+Buf/inv cell count:                                                 2421
+Std cell utilization:                                             0.7615
+CPU(s):                                                              227
+Mem(Mb):                                                             682
+Host name:                                                        IC_EDA
+------------------------------------------------------------------------
+Histogram:             s1   s2 
+------------------------------------------------------------------------
+Max violations:         0    0 
+   above ~ -0.7  ---    0    0 
+    -0.6 ~ -0.7  ---    0    0 
+    -0.5 ~ -0.6  ---    0    0 
+    -0.4 ~ -0.5  ---    0    0 
+    -0.3 ~ -0.4  ---    0    0 
+    -0.2 ~ -0.3  ---    0    0 
+    -0.1 ~ -0.2  ---    0    0 
+       0 ~ -0.1  ---    0    0 
+------------------------------------------------------------------------
+Min violations:         1   10 
+  -0.06 ~ above  ---    0    3 
+  -0.05 ~ -0.06  ---    0    0 
+  -0.04 ~ -0.05  ---    0    0 
+  -0.03 ~ -0.04  ---    0    0 
+  -0.02 ~ -0.03  ---    0    0 
+  -0.01 ~ -0.02  ---    0    1 
+      0 ~ -0.01  ---    1    5 
+------------------------------------------------------------------------

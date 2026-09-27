@@ -1,0 +1,196 @@
+#------------------------------------------#
+name: M1_rail_strategy_pwr
+region: 
+	Region: core area
+	Coordinate: {{12.0000 12.0000} {12.0000 199.2640} {200.0240 199.2640} {200.0240 12.0000} }
+
+Pattern Expression :
+	pattern: M1_rail
+	nets: VDD
+	parameters: 0.06 0.06
+	offset: undefined undefined
+	offset start: boundary
+
+Instantiated Pattern :
+Pattern Name: M1_rail
+Type: Standard Cell Rail Pattern
+Rail Width: 0.0600 0.0600 
+Rail Layers: M1 
+Rail Shift: undefined undefined 
+Rail Masks: no_mask no_mask 
+Rail pin DRC option: false
+Mark as follow pin option: false
+Parameters: 
+
+
+Extension: 
+
+Blockage: 
+#------------------------------------------#
+name: M1_rail_strategy_gnd
+region: 
+	Region: core area
+	Coordinate: {{12.0000 12.0000} {12.0000 199.2640} {200.0240 199.2640} {200.0240 12.0000} }
+
+Pattern Expression :
+	pattern: M1_rail
+	nets: VSS
+	parameters: 0.06 0.06
+	offset: undefined undefined
+	offset start: boundary
+
+Instantiated Pattern :
+Pattern Name: M1_rail
+Type: Standard Cell Rail Pattern
+Rail Width: 0.0600 0.0600 
+Rail Layers: M1 
+Rail Shift: undefined undefined 
+Rail Masks: no_mask no_mask 
+Rail pin DRC option: false
+Mark as follow pin option: false
+Parameters: 
+
+
+Extension: 
+
+Blockage: 
+#------------------------------------------#
+name: VDDVSS_MID_MESH_HORIZONTAL
+region: 
+	Region: core area
+	Coordinate: {{12.0000 12.0000} {12.0000 199.2640} {200.0240 199.2640} {200.0240 12.0000} }
+
+Pattern Expression :
+	pattern: MID_MESH_HORIZONTAL
+	nets: VSS VDD
+	parameters: 
+	offset: undefined undefined
+	offset start: boundary
+	pitch: undefined undefined
+	repeat: undefined undefined
+
+Instantiated Pattern :
+Pattern Name: MID_MESH_HORIZONTAL
+Type: Mesh Pattern
+Parameters: 
+Layers: 
+{ {horizontal_layer : M5} {width : {0.56 }} {spacing : interleaving} {trim : true}    {pitch : 30.1} {offset : 2.7} } 
+Via Rules: 
+{intersection: all} {via_master : {default}}
+
+
+Extension: 
+	Nets: 
+	Layers: 
+	Sides: 
+	Direction: LRTB
+	Stop: design boundary and generate pin
+
+
+Blockage: 
+#------------------------------------------#
+name: VDDVSS_TOP_MESH_VERTICAL
+region: 
+	Region: core area
+	Coordinate: {{12.0000 12.0000} {12.0000 199.2640} {200.0240 199.2640} {200.0240 12.0000} }
+
+Pattern Expression :
+	pattern: TOP_MESH_VERTICAL
+	nets: VSS VDD
+	parameters: 
+	offset: undefined undefined
+	offset start: boundary
+	pitch: undefined undefined
+	repeat: undefined undefined
+
+Instantiated Pattern :
+Pattern Name: TOP_MESH_VERTICAL
+Type: Mesh Pattern
+Parameters: 
+Layers: 
+{ {vertical_layer : M6} {width : {0.56 }} {spacing : interleaving} {trim : true}    {pitch : 30.1} {offset : 2.7} } 
+Via Rules: 
+{intersection: all} {via_master : {default}}
+
+
+Extension: 
+	Nets: 
+	Layers: 
+	Sides: 
+	Direction: LRTB
+	Stop: design boundary and generate pin
+
+
+Blockage: 
+#------------------------------------------#
+name: VDDVSS_TOP_MESH_HORIZONTAL
+region: 
+	Region: core area
+	Coordinate: {{12.0000 12.0000} {12.0000 199.2640} {200.0240 199.2640} {200.0240 12.0000} }
+
+Pattern Expression :
+	pattern: TOP_MESH_HORIZONTAL
+	nets: VSS VDD
+	parameters: 
+	offset: undefined undefined
+	offset start: boundary
+	pitch: undefined undefined
+	repeat: undefined undefined
+
+Instantiated Pattern :
+Pattern Name: TOP_MESH_HORIZONTAL
+Type: Mesh Pattern
+Parameters: 
+Layers: 
+{ {horizontal_layer : M7} {width : {0.6 }} {spacing : interleaving} {trim : true}    {pitch : 30.1} {offset : 2.7} } 
+Via Rules: 
+{intersection: all} {via_master : {default}}
+
+
+Extension: 
+	Nets: 
+	Layers: 
+	Sides: 
+	Direction: LRTB
+	Stop: design boundary and generate pin
+
+
+Blockage: 
+#------------------------------------------#
+name: RING
+region: 
+	Region: core area
+	Coordinate: {{12.0000 12.0000} {12.0000 199.2640} {200.0240 199.2640} {200.0240 12.0000} }
+
+Pattern Expression :
+	pattern: ring_pattern
+	nets: VSS VDD
+	parameters: 
+	offset: undefined undefined
+	offset start: boundary
+	skip_sides: 
+	side_offset: 
+
+Instantiated Pattern :
+Pattern Name: ring_pattern
+Type: Ring Pattern
+Symbolic Nets: VSS VDD 
+Ring Width:
+	{side: horizontal}{width: 2.5}
+	{side: vertical}{width: 2.5}
+Ring Layer:
+	{side: horizontal}{layer: M7}
+	{side: vertical}{layer: M6}
+Ring Spacing:
+	{side: horizontal}{spacing: 2}
+	{side: vertical}{spacing: 2}
+Corner Bridge: false
+Via Rules: 
+	{intersection: all} {via_master : {default}}
+Parameters: 
+
+
+Extension: 
+
+Blockage: 
+#------------------------------------------#

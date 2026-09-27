@@ -34,16 +34,16 @@ set RAIL_WIDTH             {0.06 0.06}
 #   - top horizontal      on $pns_hlayer    (M7)
 
 set MESH_MID_LAYER    $pns_mid_layer
-set MESH_MID_WIDTH    0.23
-set MESH_MID_PITCH    9.98
+set MESH_MID_WIDTH    0.56
+set MESH_MID_PITCH    30.1
 
 set MESH_TOP_V_LAYER  $pns_vlayer
-set MESH_TOP_V_WIDTH  0.23
-set MESH_TOP_V_PITCH  9.98
+set MESH_TOP_V_WIDTH  0.56
+set MESH_TOP_V_PITCH  30.1
 
 set MESH_TOP_H_LAYER  $pns_hlayer
-set MESH_TOP_H_WIDTH  0.4
-set MESH_TOP_H_PITCH  9.98
+set MESH_TOP_H_WIDTH  0.6
+set MESH_TOP_H_PITCH  30.1
 
 set MESH_OFFSET       2.7
 
@@ -52,8 +52,8 @@ set MESH_OFFSET       2.7
 # ###########################################################################
 set RING_H_LAYER  $pns_hlayer
 set RING_V_LAYER  $pns_vlayer
-set RING_H_WIDTH  2.2
-set RING_V_WIDTH  2.2
+set RING_H_WIDTH  2.5
+set RING_V_WIDTH  2.5
 set RING_H_SPACE  2.0
 set RING_V_SPACE  2.0
 

@@ -1,0 +1,36 @@
+Total ECO cells found: 34
+-----------------------------------
+CELL: eco_cell | ORIGIN: 77.3600 94.1000 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: clock_module_0/clock_gate_smclk/eco_cell | ORIGIN: 140.5160 130.0230 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/eco_cell | ORIGIN: 67.8600 156.7590 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell | ORIGIN: 31.6840 186.7620 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_0 | ORIGIN: 29.7080 196.8870 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_1 | ORIGIN: 90.6600 164.8570 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_10_2 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_10_3 | ORIGIN: 22.4120 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_11_3 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_11_4 | ORIGIN: 22.4120 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_12_4 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_12_5 | ORIGIN: 22.4120 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_13_5 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_1_0 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_2 | ORIGIN: 29.7080 196.8870 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_2_0 | ORIGIN: 103.8840 191.6090 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_3 | ORIGIN: 29.7080 196.8870 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_3_0 | ORIGIN: 105.2520 166.7910 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_4 | ORIGIN: 20.2840 198.2970 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_4_0 | ORIGIN: 90.6600 164.8570 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_5 | ORIGIN: 20.2840 198.2970 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_5_0 | ORIGIN: 29.7080 196.8870 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_6 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_6_0 | ORIGIN: 20.2840 198.2970 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_6_1 | ORIGIN: 29.7080 196.8870 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_7 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_7_0 | ORIGIN: 22.4120 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_7_1 | ORIGIN: 20.2840 198.2970 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_8_0 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_8_1 | ORIGIN: 22.4120 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_8_2 | ORIGIN: 20.2840 198.2970 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_9_1 | ORIGIN: 26.6680 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_9_2 | ORIGIN: 22.4120 193.5430 | STATUS: placed | ECO_CHANGE: add_buffer
+CELL: dbg_0/dbg_uart_0/eco_cell_9_3 | ORIGIN: 20.2840 198.2970 | STATUS: placed | ECO_CHANGE: add_buffer

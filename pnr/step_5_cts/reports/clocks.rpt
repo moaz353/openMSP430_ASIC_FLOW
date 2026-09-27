@@ -1,0 +1,20 @@
+****************************************
+Report : clock
+Design : openMSP430
+Mode   : func
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:05:00 2026
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+dco_clk         40.00   {0 20}              p         {dco_clk}
+lfxt_clk        40.00   {0 20}              p         {lfxt_clk}
+
+1

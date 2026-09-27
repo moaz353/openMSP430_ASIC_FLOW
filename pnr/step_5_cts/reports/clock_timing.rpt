@@ -1,0 +1,35 @@
+Information: The stitching and editing of coupling caps is turned OFF for design 'openMSP430.ndm:temp_place_ends.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 6676, routed nets = 65, across physical hierarchy nets = 0, parasitics cached nets = 376, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:05:00 2026
+****************************************
+
+  Mode: func
+  Clock: dco_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  dbg_0/mem_data_reg[4]/CLK                             0.33              rp-+       slow
+  clock_module_0/dco_disable_reg/CLK                    0.06      0.27    rp-+       slow
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: lfxt_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  clock_module_0/sync_cell_lfxt_disable/data_sync_reg[1]/CLK
+                                                        0.14              rpi-+      slow
+  clock_module_0/sync_cell_lfxt_wkup/data_sync_reg[0]/CLK
+                                                        0.04      0.09    rpi-+      slow
+
+------------------------------------------------------------------------------------------
+1

@@ -1,0 +1,403 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:02:25 2026
+****************************************
+
+  Startpoint: sfr_0/nmi_capture_rst_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: sfr_0/wakeup_cell_nmi/wkup_out_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  sfr_0/nmi_capture_rst_reg/CLK (DFFASX1_RVT)                        0.00      0.00      0.00 r
+  sfr_0/nmi_capture_rst_reg/Q (DFFASX1_RVT)                          0.01      0.05      0.05 f
+  sfr_0/nmi_capture_rst (net)                       1      0.59
+  sfr_0/wakeup_cell_nmi/scan_mux_rst/U2/A3 (AO22X1_RVT)              0.01      0.00      0.05 f
+  sfr_0/wakeup_cell_nmi/scan_mux_rst/U2/Y (AO22X1_RVT)               0.01      0.02      0.07 f
+  sfr_0/wakeup_cell_nmi/scan_mux_rst/data_out (net)
+                                                    1      0.95
+  sfr_0/wakeup_cell_nmi/U3/A (INVX1_RVT)                             0.01      0.00      0.07 f
+  sfr_0/wakeup_cell_nmi/U3/Y (INVX1_RVT)                             0.01      0.01      0.07 r
+  sfr_0/wakeup_cell_nmi/n1 (net)                    1      1.34
+  sfr_0/wakeup_cell_nmi/wkup_out_reg/RSTB (DFFARX1_RVT)              0.01      0.00      0.07 r
+  data arrival time                                                                      0.07
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  sfr_0/wakeup_cell_nmi/wkup_out_reg/CLK (DFFARX1_RVT)               0.00      0.00      0.00 r
+  library hold time                                                            0.12      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.07
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/wdtifg_clr_reg_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wakeup_cell_wdog/wkup_out_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/wdtifg_clr_reg_reg/CLK (DFFASX1_RVT)                    0.00      0.00      0.00 r
+  watchdog_0/wdtifg_clr_reg_reg/Q (DFFASX1_RVT)                      0.01      0.05      0.05 f
+  watchdog_0/wdtifg_clr_reg (net)                   1      1.10
+  watchdog_0/wakeup_cell_wdog/scan_mux_rst/U2/A3 (AO22X1_RVT)        0.01      0.00      0.05 f
+  watchdog_0/wakeup_cell_wdog/scan_mux_rst/U2/Y (AO22X1_RVT)         0.01      0.02      0.07 f
+  watchdog_0/wakeup_cell_wdog/scan_mux_rst/data_out (net)
+                                                    1      0.96
+  watchdog_0/wakeup_cell_wdog/U3/A (INVX1_RVT)                       0.01      0.00      0.07 f
+  watchdog_0/wakeup_cell_wdog/U3/Y (INVX1_RVT)                       0.01      0.01      0.08 r
+  watchdog_0/wakeup_cell_wdog/n1 (net)              1      1.34
+  watchdog_0/wakeup_cell_wdog/wkup_out_reg/RSTB (DFFARX1_RVT)        0.01      0.00      0.08 r
+  data arrival time                                                                      0.08
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wakeup_cell_wdog/wkup_out_reg/CLK (DFFARX1_RVT)         0.00      0.00      0.00 r
+  library hold time                                                            0.12      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.08
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[0] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[0]/RSTB (DFFARX1_RVT)
+                                                                     0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[0]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[1] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[1]/RSTB (DFFARX1_RVT)
+                                                                     0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/sync_cell_wdtcnt_clr/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/sync_cell_wdtcnt_incr/data_sync_reg[0] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/sync_cell_wdtcnt_incr/data_sync_reg[0]/RSTB (DFFARX1_RVT)
+                                                                     0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/sync_cell_wdtcnt_incr/data_sync_reg[0]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdt_evt_toggle_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/wdt_evt_toggle_reg/RSTB (DFFARX1_RVT)                   0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdt_evt_toggle_reg/CLK (DFFARX1_RVT)                    0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtisx_s_reg[1] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/wdtisx_s_reg[1]/RSTB (DFFARX1_RVT)                      0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdtisx_s_reg[1]/CLK (DFFARX1_RVT)                       0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtcnt_reg[15] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/wdtcnt_reg[15]/RSTB (DFFARX1_RVT)                       0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdtcnt_reg[15]/CLK (DFFARX1_RVT)                        0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtisx_s_reg[0] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/wdtisx_s_reg[0]/RSTB (DFFARX1_RVT)                      0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdtisx_s_reg[0]/CLK (DFFARX1_RVT)                       0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+
+  Startpoint: watchdog_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtcnt_reg[14] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)       0.00      0.00      0.00 r
+  watchdog_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)         0.01      0.05      0.05 f
+  watchdog_0/sync_reset_por/rst_s (net)             1      0.89
+  watchdog_0/scan_mux_wdt_rst/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  watchdog_0/scan_mux_wdt_rst/U2/Y (AO22X1_RVT)                      0.02      0.03      0.08 f
+  watchdog_0/scan_mux_wdt_rst/data_out (net)        1      4.19
+  watchdog_0/placeHFSINV_1856_3/A (INVX8_RVT)                        0.02      0.00      0.08 f
+  watchdog_0/placeHFSINV_1856_3/Y (INVX8_RVT)                        0.02      0.02      0.09 r
+  watchdog_0/placeHFSNET_3 (net)                   27     42.18
+  watchdog_0/wdtcnt_reg[14]/RSTB (DFFARX1_RVT)                       0.02      0.00      0.09 r
+  data arrival time                                                                      0.09
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdtcnt_reg[14]/CLK (DFFARX1_RVT)                        0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.09
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.04
+
+
+1

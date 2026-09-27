@@ -1,0 +1,36 @@
+Total ECO cells found: 34
+-----------------------------------
+CELL: eco_cell | ORIGIN: 76.7520 93.9280 | STATUS: placed
+CELL: clock_module_0/clock_gate_smclk/eco_cell | ORIGIN: 139.9840 130.7120 | STATUS: placed
+CELL: dbg_0/eco_cell | ORIGIN: 68.2400 164.1520 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell | ORIGIN: 31.6080 187.5600 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_0 | ORIGIN: 22.0320 174.1840 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_1 | ORIGIN: 84.8080 160.8080 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_10_2 | ORIGIN: 63.6800 164.1520 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_10_3 | ORIGIN: 48.4800 157.4640 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_11_3 | ORIGIN: 65.2000 164.1520 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_11_4 | ORIGIN: 62.0080 174.1840 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_12_4 | ORIGIN: 77.6640 197.5920 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_12_5 | ORIGIN: 38.4480 147.4320 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_13_5 | ORIGIN: 79.1840 197.5920 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_1_0 | ORIGIN: 17.7760 174.1840 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_2 | ORIGIN: 56.2320 194.2480 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_2_0 | ORIGIN: 101.0720 190.9040 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_3 | ORIGIN: 58.9680 197.5920 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_3_0 | ORIGIN: 111.8640 160.8080 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_4 | ORIGIN: 38.7520 160.8080 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_4_0 | ORIGIN: 83.2880 160.8080 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_5 | ORIGIN: 57.4480 174.1840 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_5_0 | ORIGIN: 80.2480 197.5920 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_6 | ORIGIN: 66.7200 164.1520 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_6_0 | ORIGIN: 57.4480 197.5920 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_6_1 | ORIGIN: 63.5280 174.1840 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_7 | ORIGIN: 26.7440 140.7440 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_7_0 | ORIGIN: 21.1200 177.5280 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_7_1 | ORIGIN: 36.6240 164.1520 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_8_0 | ORIGIN: 39.9680 147.4320 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_8_1 | ORIGIN: 46.9600 157.4640 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_8_2 | ORIGIN: 38.1440 164.1520 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_9_1 | ORIGIN: 54.8640 167.4960 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_9_2 | ORIGIN: 22.6400 177.5280 | STATUS: placed
+CELL: dbg_0/dbg_uart_0/eco_cell_9_3 | ORIGIN: 37.2320 160.8080 | STATUS: placed

@@ -1,0 +1,217 @@
+****************************************
+Report : qor
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:04:55 2026
+****************************************
+
+
+Scenario           'func_fast'
+Timing Path Group  'dco_clk'
+----------------------------------------
+Levels of Logic:                     41
+Critical Path Length:            5.4355
+Critical Path Slack:            14.3944
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:           -0.0055
+Total Hold Violation:           -0.0055
+No. of Hold Violations:               1
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'lfxt_clk'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:            5.2695
+Critical Path Slack:            14.5190
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                     59
+Critical Path Length:           10.7849
+Critical Path Slack:            28.3694
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:            8.3764
+Critical Path Slack:            11.4396
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                     61
+Critical Path Length:            7.8440
+Critical Path Slack:            31.3242
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'dco_clk'
+----------------------------------------
+Levels of Logic:                     41
+Critical Path Length:            5.5081
+Critical Path Slack:            14.1204
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:           -0.1052
+Total Hold Violation:           -0.3385
+No. of Hold Violations:               9
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'lfxt_clk'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:            5.3405
+Critical Path Slack:            14.2440
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                     59
+Critical Path Length:           10.8837
+Critical Path Slack:            28.0659
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:            8.4370
+Critical Path Slack:            11.1764
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:            0.0000
+Total Hold Violation:            0.0000
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                     61
+Critical Path Length:            7.9549
+Critical Path Slack:            31.0099
+Critical Path Clk Period:       40.0000
+Total Negative Slack:            0.0000
+No. of Violating Paths:               0
+Worst Hold Violation:           -0.0004
+Total Hold Violation:           -0.0004
+No. of Hold Violations:               1
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:            115
+Hierarchical Port Count:           2836
+Leaf Cell Count:                   6238
+Buf/Inv Cell Count:                2421
+Buf Cell Count:                    2026
+Inv Cell Count:                     395
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          5467
+Sequential Cell Count:              771
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:          21393.5878
+Noncombinational Area:        5417.8418
+Buf/Inv Area:                12952.1948
+Total Buffer Area:           11971.9614
+Total Inverter Area:           980.2334
+Macro/Black Box Area:            0.0000
+Net Area:                             0
+Net XLength:                     0.0000
+Net YLength:                     0.0000
+----------------------------------------
+Cell Area (netlist):                        26811.4296
+Cell Area (netlist and physical only):      26811.4300
+Net Length:                      0.0000
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              6697
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:04:55 2026
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+func_fast          (Setup)          11.4396         0.0000              0
+func_slow          (Setup)          11.1764         0.0000              0
+Design             (Setup)          11.1764         0.0000              0
+
+func_fast          (Hold)           -0.0055        -0.0055              1
+func_slow          (Hold)           -0.1052        -0.3389             10
+Design             (Hold)           -0.1052        -0.3389             10
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                        26811.4296
+Cell Area (netlist and physical only):      26811.4300
+Nets with DRC Violations:        0
+1

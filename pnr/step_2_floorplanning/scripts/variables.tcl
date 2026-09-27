@@ -21,8 +21,8 @@ set NEW_CHECKPOINT  "${DESIGN_NAME}_2_floorplan_ends"
 
 # Core utilization and core-to-die boundary offsets used for floorplan sizing.
 
-set CORE_UTILIZATION      0.7
-set CORE_OFFSET           {10 10 10 10}
+set CORE_UTILIZATION      0.41
+set CORE_OFFSET           {12 12 12 12}
 
 # Wire track pattern for the M1 standard-cell rails (from the PDK). --- M1 pitch = 0.152
 set WIRE_TRACK_LAYER      "M1"

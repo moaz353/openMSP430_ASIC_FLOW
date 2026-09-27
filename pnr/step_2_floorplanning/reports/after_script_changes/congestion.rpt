@@ -1,0 +1,18 @@
+Warning: Layer M8 does not have a preferred direction, skipped.
+Warning: Layer M9 does not have a preferred direction, skipped.
+Warning: Layer MRDL does not have a preferred direction, skipped.
+****************************************
+Report : congestion
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:01:17 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |       2 |     1 |       2  ( 0.01%) |       2
+H routing |       2 |     1 |       2  ( 0.01%) |       2
+V routing |       0 |     0 |       0  ( 0.00%) |       0
+
+1

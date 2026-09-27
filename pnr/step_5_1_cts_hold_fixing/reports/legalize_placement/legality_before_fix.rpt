@@ -1,0 +1,796 @@
+
+************************
+
+running check_legality
+
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Warning: Routing direction of metal layer M8 is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Warning: Routing direction of metal layer M9 is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Warning: Routing direction of metal layer MRDL is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 243 total shapes.
+Layer M2: cached 0 shapes out of 1302 total shapes.
+Cached 1468 vias out of 6945 total vias.
+
+check_legality for block design openMSP430 ... 
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Warning: Routing direction of metal layer M8 is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Warning: Routing direction of metal layer M9 is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Warning: Routing direction of metal layer MRDL is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+Design has no advanced rules
+Checking legality
+Checking cell legality:
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Sorting rows.
+Checking spacing rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Checking packing rule legality.
+
+
+****************************************
+  Report : Legality
+****************************************
+
+VIOLATIONS BY CATEGORY:
+   MOVABLE  APP-FIXED USER-FIXED  DESCRIPTION
+       142          0          0  Two objects overlap.
+         0          0          0  A cell violates a pnet.
+         0          0          0  A cell is illegal at a site.
+        34          0          0  A cell is not aligned with a site.
+         0          0          0  A cell has an illegal orientation.
+         0          0          0  A cell spacing rule is violated.
+         0          0          0  A layer rule is violated.
+         6          0          0  A cell is in the wrong region.
+         0          0          0  Two cells violate cts margins.
+         0          0          0  Two cells violate coloring.
+
+       182          0          0  TOTAL
+
+TOTAL 182 Violations.
+
+VIOLATIONS BY SUBCATEGORY:
+     MOVABLE  APP-FIXED USER-FIXED  DESCRIPTION
+
+       142          0          0    Two objects overlap.
+         142          0          0    Two cells overlap.
+           0          0          0    Two cells have overlapping keepout margins.
+           0          0          0    A cell overlaps a blockage.
+           0          0          0    A cell keepout margin overlaps a blockage.
+
+         0          0          0    A cell violates a pnet.
+
+         0          0          0    A cell is illegal at a site.
+           0          0          0    A cell violates pin-track alignment rules.
+           0          0          0    A cell is illegal at a site.
+           0          0          0    A cell violates legal index rule.
+           0          0          0    A cell has the wrong variant for its location.
+
+        34          0          0    A cell is not aligned with a site.
+          34          0          0    A cell is not aligned with the base site.
+           0          0          0    A cell is not aligned with an overlaid site.
+
+         0          0          0    A cell has an illegal orientation.
+
+         0          0          0    A cell spacing rule is violated.
+           0          0          0    A spacing rule is violated in a row.
+           0          0          0    A spacing rule is violated between adjacent rows.
+           0          0          0    A cell violates vertical abutment rule.
+           0          0          0    A cell violates metal spacing rule.
+
+         0          0          0    A layer rule is violated.
+           0          0          0    A layer VTH rule is violated.
+           0          0          0    A layer OD rule is violated.
+           0          0          0    A layer OD max-width rule is violated.
+           0          0          0    A layer ALL_OD corner rule is violated.
+           0          0          0    A layer max-vertical-length rule is violated.
+           0          0          0    A layer TPO rule is violated.
+           0          0          0    Filler cell insertion cannot satisfy layer rules.
+
+         6          0          0    A cell is in the wrong region.
+           0          0          0    A cell is outside its hard bound.
+           6          0          0    A cell is in the wrong voltage area.
+           0          0          0    A cell violates an exclusive movebound.
+
+         0          0          0    Two cells violate cts margins.
+
+         0          0          0    Two cells violate coloring.
+
+****************************************
+  Report : Legality Violations
+****************************************
+
+-----------------------------------------------------------------
+Category:    [movable]    Two objects overlap.
+Subcategory: [movable]    Two cells overlap.
+-----------------------------------------------------------------
+
+Cell dbg_0/dbg_uart_0/U90 and Cell dbg_0/dbg_uart_0/eco_cell overlap.
+Cell dbg_0/dbg_uart_0/U90 rect: { 30.848 185.888 32.824 187.560 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell rect: { 31.684 186.762 32.900 188.434 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4382 and Cell dbg_0/dbg_uart_0/eco_cell overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4382 rect: { 32.824 187.560 36.776 189.232 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell rect: { 31.684 186.762 32.900 188.434 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4875 and Cell dbg_0/dbg_uart_0/eco_cell_3_0 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4875 rect: { 102.744 167.496 106.696 169.168 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_3_0 rect: { 105.252 166.791 106.468 168.463 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_5446 and Cell dbg_0/dbg_uart_0/eco_cell overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_5446 rect: { 32.824 185.888 36.776 187.560 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell rect: { 31.684 186.762 32.900 188.434 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 and Cell dbg_0/dbg_uart_0/eco_cell_11_4 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 rect: { 19.904 194.248 25.680 195.920 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 and Cell dbg_0/dbg_uart_0/eco_cell_9_2 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 rect: { 19.904 194.248 25.680 195.920 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 and Cell dbg_0/dbg_uart_0/eco_cell_10_3 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 rect: { 19.904 194.248 25.680 195.920 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 and Cell dbg_0/dbg_uart_0/eco_cell_12_5 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 rect: { 19.904 194.248 25.680 195.920 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 and Cell dbg_0/dbg_uart_0/eco_cell_7_0 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 rect: { 19.904 194.248 25.680 195.920 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 and Cell dbg_0/dbg_uart_0/eco_cell_8_1 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_3971 rect: { 19.904 194.248 25.680 195.920 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4803 and Cell dbg_0/dbg_uart_0/eco_cell_1 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4803 rect: { 89.824 165.824 95.600 167.496 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_1 rect: { 90.660 164.857 92.180 166.529 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4803 and Cell dbg_0/dbg_uart_0/eco_cell_4_0 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4803 rect: { 89.824 165.824 95.600 167.496 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_4_0 rect: { 90.660 164.857 92.180 166.529 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 and Cell dbg_0/dbg_uart_0/eco_cell_6_1 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 rect: { 27.200 197.592 32.976 199.264 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 and Cell dbg_0/dbg_uart_0/eco_cell_5_0 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 rect: { 27.200 197.592 32.976 199.264 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 and Cell dbg_0/dbg_uart_0/eco_cell_0 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 rect: { 27.200 197.592 32.976 199.264 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_0 rect: { 29.708 196.887 30.924 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 and Cell dbg_0/dbg_uart_0/eco_cell_2 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 rect: { 27.200 197.592 32.976 199.264 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_2 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 and Cell dbg_0/dbg_uart_0/eco_cell_3 overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_4938 rect: { 27.200 197.592 32.976 199.264 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_3 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/cpu_stat_reg[2] and Cell dbg_0/eco_cell overlap.
+Cell dbg_0/cpu_stat_reg[2] rect: { 67.480 155.792 71.736 157.464 } (um)
+Cell dbg_0/eco_cell rect: { 67.860 156.759 69.076 158.431 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4_0 and Cell dbg_0/dbg_uart_0/sync_cnt_reg[7] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4_0 rect: { 90.660 164.857 92.180 166.529 } (um)
+Cell dbg_0/dbg_uart_0/sync_cnt_reg[7] rect: { 90.280 164.152 94.536 165.824 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1 and Cell dbg_0/dbg_uart_0/sync_cnt_reg[7] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1 rect: { 90.660 164.857 92.180 166.529 } (um)
+Cell dbg_0/dbg_uart_0/sync_cnt_reg[7] rect: { 90.280 164.152 94.536 165.824 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1 and Cell dbg_0/dbg_uart_0/eco_cell_4_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1 rect: { 90.660 164.857 92.180 166.529 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_4_0 rect: { 90.660 164.857 92.180 166.529 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 and Cell dbg_0/dbg_uart_0/eco_cell_6_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] rect: { 29.328 195.920 33.584 197.592 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] rect: { 29.328 195.920 33.584 197.592 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_2 and Cell dbg_0/dbg_uart_0/eco_cell_6_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_2 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_2 and Cell dbg_0/dbg_uart_0/eco_cell_5_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_2 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_2 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_2 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] rect: { 29.328 195.920 33.584 197.592 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_2 and Cell dbg_0/dbg_uart_0/eco_cell_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_2 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_3 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_3 and Cell dbg_0/dbg_uart_0/eco_cell_6_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_3 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_3 and Cell dbg_0/dbg_uart_0/eco_cell_5_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_3 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_3 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_3 rect: { 29.708 196.887 31.228 198.559 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] rect: { 29.328 195.920 33.584 197.592 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] rect: { 19.904 197.592 24.160 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 and Cell dbg_0/dbg_uart_0/eco_cell_9_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 and Cell dbg_0/dbg_uart_0/eco_cell_8_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 and Cell dbg_0/dbg_uart_0/eco_cell_7_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] rect: { 19.904 197.592 24.160 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 and Cell dbg_0/dbg_uart_0/eco_cell_9_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 and Cell dbg_0/dbg_uart_0/eco_cell_8_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] rect: { 19.904 197.592 24.160 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 and Cell dbg_0/dbg_uart_0/eco_cell_9_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] rect: { 19.904 197.592 24.160 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] rect: { 19.904 197.592 24.160 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 and Cell dbg_0/dbg_uart_0/eco_cell_9_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 and Cell dbg_0/dbg_uart_0/eco_cell_8_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 and Cell dbg_0/dbg_uart_0/eco_cell_5 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 and Cell dbg_0/dbg_uart_0/eco_cell_7_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 and Cell dbg_0/dbg_uart_0/eco_cell_6_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[16] rect: { 19.904 197.592 24.160 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 and Cell dbg_0/dbg_uart_0/eco_cell_9_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 and Cell dbg_0/dbg_uart_0/eco_cell_8_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 and Cell dbg_0/dbg_uart_0/eco_cell_7_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 and Cell dbg_0/dbg_uart_0/eco_cell_6_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 and Cell dbg_0/dbg_uart_0/eco_cell_9_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] rect: { 22.032 192.576 26.288 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 and Cell dbg_0/dbg_uart_0/eco_cell_8_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 and Cell dbg_0/dbg_uart_0/eco_cell_9_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] rect: { 22.032 192.576 26.288 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] rect: { 22.032 192.576 26.288 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 and Cell dbg_0/dbg_uart_0/eco_cell_11_4 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 and Cell dbg_0/dbg_uart_0/eco_cell_9_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 and Cell dbg_0/dbg_uart_0/eco_cell_12_5 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 and Cell dbg_0/dbg_uart_0/eco_cell_7_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] rect: { 22.032 192.576 26.288 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 and Cell dbg_0/dbg_uart_0/eco_cell_8_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 and Cell dbg_0/dbg_uart_0/eco_cell_9_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 and Cell dbg_0/dbg_uart_0/eco_cell_12_5 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 and Cell dbg_0/dbg_uart_0/eco_cell_7_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] rect: { 22.032 192.576 26.288 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 and Cell dbg_0/dbg_uart_0/eco_cell_8_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 and Cell dbg_0/dbg_uart_0/eco_cell_9_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 and Cell dbg_0/dbg_uart_0/eco_cell_7_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[15] rect: { 22.032 192.576 26.288 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 and Cell dbg_0/dbg_uart_0/eco_cell_8_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 rect: { 22.412 193.543 23.932 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 rect: { 22.412 193.543 23.932 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_7 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_11_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_1_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_13_5 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_6 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 and Cell dbg_0/dbg_uart_0/eco_cell_12_4 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_7 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_1_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_13_5 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_6 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 and Cell dbg_0/dbg_uart_0/eco_cell_12_4 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/eco_cell_7 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/eco_cell_1_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/eco_cell_13_5 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 and Cell dbg_0/dbg_uart_0/eco_cell_6 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/eco_cell_7 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/eco_cell_1_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 and Cell dbg_0/dbg_uart_0/eco_cell_6 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6 and Cell dbg_0/dbg_uart_0/eco_cell_7 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_6 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_0 and Cell dbg_0/dbg_uart_0/eco_cell_6_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_0 rect: { 29.708 196.887 30.924 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_0 and Cell dbg_0/dbg_uart_0/eco_cell_5_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_0 rect: { 29.708 196.887 30.924 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_0 rect: { 29.708 196.887 30.924 198.559 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[6] rect: { 29.328 195.920 33.584 197.592 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_0 and Cell dbg_0/dbg_uart_0/eco_cell_2 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_0 rect: { 29.708 196.887 30.924 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_2 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_0 and Cell dbg_0/dbg_uart_0/eco_cell_3 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_0 rect: { 29.708 196.887 30.924 198.559 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_3 rect: { 29.708 196.887 31.228 198.559 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 and Cell dbg_0/dbg_uart_0/eco_cell_9_1 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[9] rect: { 25.680 194.248 29.936 195.920 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 and Cell dbg_0/dbg_uart_0/eco_cell_8_0 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 and Cell dbg_0/dbg_uart_0/eco_cell_7 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_7 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 and Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+Cell dbg_0/dbg_uart_0/xfer_buf_reg[17] rect: { 26.288 192.576 30.544 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 and Cell dbg_0/dbg_uart_0/eco_cell_6 overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 rect: { 26.668 193.543 27.884 195.215 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_6 rect: { 26.668 193.543 28.188 195.215 } (um)
+
+Cell clock_module_0/clock_gate_smclk/eco_cell and Cell multiplier_0/acc_sel_reg overlap.
+Cell clock_module_0/clock_gate_smclk/eco_cell rect: { 140.516 130.023 141.732 131.695 } (um)
+Cell multiplier_0/acc_sel_reg rect: { 141.200 130.712 145.456 132.384 } (um)
+
+Cell clock_module_0/clock_gate_smclk/eco_cell and Cell clock_module_0/clock_gate_smclk/enable_latch_reg overlap.
+Cell clock_module_0/clock_gate_smclk/eco_cell rect: { 140.516 130.023 141.732 131.695 } (um)
+Cell clock_module_0/clock_gate_smclk/enable_latch_reg rect: { 139.528 129.040 142.568 130.712 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_2_0 and Cell dbg_0/dbg_uart_0/xfer_cnt_reg[14] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_2_0 rect: { 103.884 191.609 105.100 193.281 } (um)
+Cell dbg_0/dbg_uart_0/xfer_cnt_reg[14] rect: { 99.704 192.576 103.960 194.248 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_2_0 and Cell dbg_0/dbg_uart_0/sync_cnt_reg[17] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_2_0 rect: { 103.884 191.609 105.100 193.281 } (um)
+Cell dbg_0/dbg_uart_0/sync_cnt_reg[17] rect: { 103.504 190.904 107.760 192.576 } (um)
+
+Cell eco_cell and Cell execution_unit_0/alu_0/U133 overlap.
+Cell eco_cell rect: { 77.360 94.100 78.576 95.772 } (um)
+Cell execution_unit_0/alu_0/U133 rect: { 77.968 93.928 78.880 95.600 } (um)
+
+Cell dbg_0/eco_cell and Cell dbg_0/placeHFSBUF_9439_7 overlap.
+Cell dbg_0/eco_cell rect: { 67.860 156.759 69.076 158.431 } (um)
+Cell dbg_0/placeHFSBUF_9439_7 rect: { 66.720 157.464 70.368 159.136 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_3_0 and Cell dbg_0/dbg_uart_0/sync_cnt_reg[9] overlap.
+Cell dbg_0/dbg_uart_0/eco_cell_3_0 rect: { 105.252 166.791 106.468 168.463 } (um)
+Cell dbg_0/dbg_uart_0/sync_cnt_reg[9] rect: { 104.872 165.824 109.128 167.496 } (um)
+
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_5386 and Cell dbg_0/dbg_uart_0/eco_cell overlap.
+Cell dbg_0/dbg_uart_0/clockcopt_h_inst_5386 rect: { 31.608 187.560 32.824 189.232 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell rect: { 31.684 186.762 32.900 188.434 } (um)
+
+Cell clockZBUF_inst_5998 and Cell eco_cell overlap.
+Cell clockZBUF_inst_5998 rect: { 76.752 93.928 77.968 95.600 } (um)
+Cell eco_cell rect: { 77.360 94.100 78.576 95.772 } (um)
+
+Cell dbg_0/dbg_uart_0/U26 and Cell dbg_0/dbg_uart_0/eco_cell_2_0 overlap.
+Cell dbg_0/dbg_uart_0/U26 rect: { 103.960 192.576 106.544 194.248 } (um)
+Cell dbg_0/dbg_uart_0/eco_cell_2_0 rect: { 103.884 191.609 105.100 193.281 } (um)
+
+
+-----------------------------------------------------------------
+Category:    [movable]    A cell is not aligned with a site.
+Subcategory: [movable]    A cell is not aligned with the base site.
+-----------------------------------------------------------------
+
+Cell dbg_0/dbg_uart_0/eco_cell_4_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_1 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_5_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_1 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_2 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_3 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_1 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_2 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_3 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_4 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_5 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_1 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_10_2 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_11_3 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_12_4 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_13_5 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_6 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_7 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_1_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell clock_module_0/clock_gate_smclk/eco_cell is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_2_0 is not on a base site row or is misaligned with the sites in the row.
+
+Cell eco_cell is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/eco_cell is not on a base site row or is misaligned with the sites in the row.
+
+Cell dbg_0/dbg_uart_0/eco_cell_3_0 is not on a base site row or is misaligned with the sites in the row.
+
+
+-----------------------------------------------------------------
+Category:    [movable]    A cell is in the wrong region.
+Subcategory: [movable]    A cell is in the wrong voltage area.
+-----------------------------------------------------------------
+
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 is not inside Voltage Area DEFAULT_VA.
+Cell dbg_0/dbg_uart_0/eco_cell_6_0 rect: { 20.284 198.297 21.804 199.969 } (um)
+Voltage Area DEFAULT_VA rects: { 12.000 12.000 200.024 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 is not inside Voltage Area DEFAULT_VA.
+Cell dbg_0/dbg_uart_0/eco_cell_7_1 rect: { 20.284 198.297 21.804 199.969 } (um)
+Voltage Area DEFAULT_VA rects: { 12.000 12.000 200.024 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 is not inside Voltage Area DEFAULT_VA.
+Cell dbg_0/dbg_uart_0/eco_cell_8_2 rect: { 20.284 198.297 21.804 199.969 } (um)
+Voltage Area DEFAULT_VA rects: { 12.000 12.000 200.024 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 is not inside Voltage Area DEFAULT_VA.
+Cell dbg_0/dbg_uart_0/eco_cell_9_3 rect: { 20.284 198.297 21.804 199.969 } (um)
+Voltage Area DEFAULT_VA rects: { 12.000 12.000 200.024 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_4 is not inside Voltage Area DEFAULT_VA.
+Cell dbg_0/dbg_uart_0/eco_cell_4 rect: { 20.284 198.297 21.804 199.969 } (um)
+Voltage Area DEFAULT_VA rects: { 12.000 12.000 200.024 199.264 } (um)
+
+Cell dbg_0/dbg_uart_0/eco_cell_5 is not inside Voltage Area DEFAULT_VA.
+Cell dbg_0/dbg_uart_0/eco_cell_5 rect: { 20.284 198.297 21.804 199.969 } (um)
+Voltage Area DEFAULT_VA rects: { 12.000 12.000 200.024 199.264 } (um)
+
+
+
+
+check_legality for block design openMSP430 failed!
+
+check_legality failed.
+
+**************************
+
+0

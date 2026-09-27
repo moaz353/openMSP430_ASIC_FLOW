@@ -1,0 +1,25 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:05:16 2026
+****************************************
+
+
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   execution_unit_0/register_file_0/copt_net_991
+                                0.08           0.08           0.00  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Total number of violation(s): 0
+1

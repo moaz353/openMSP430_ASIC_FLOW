@@ -44,6 +44,11 @@ source ${COMMON_DIR}/mcmm.tcl
 # ###########################################################################
 # 5. Placement and optimization
 # ###########################################################################
+# Limit local placement density to preserve whitespace for CTS and
+# post-CTS hold-fixing optimization.
+
+set_app_options -name place.coarse.max_density -value 0.40
+
 place_opt
 
 legalize_placement

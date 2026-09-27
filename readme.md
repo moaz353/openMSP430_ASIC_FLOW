@@ -26,7 +26,7 @@ Generated synthesis reports and outputs are available under `syn/`.
 
 The ASIC implementation is being developed progressively from synthesis through physical design, timing analysis, and final signoff.
 
-The physical design flow has progressed through data setup, floorplanning, power planning, and placement, with the corresponding implementation scripts, reports, and layout images available under `pnr/`.
+The physical design flow has progressed through data setup, floorplanning, power planning, placement, clock tree synthesis (CTS), CTS hold fixing, and electrical fixing, with the corresponding implementation scripts, reports, and layout images available under `pnr/`.
 
 ### 📈 Progress
 
@@ -36,7 +36,9 @@ The physical design flow has progressed through data setup, floorplanning, power
 - [✅] Floorplanning — **Done**
 - [✅] Power Planning — **Done**
 - [✅] Placement — **Done**
-- [⏳] Clock Tree Synthesis (CTS) — _Pending_
+- [✅] Clock Tree Synthesis (CTS) — **Done**
+- [✅] CTS Hold Fixing — **Done**
+- [✅] Electrical Fixing — **Done**
 - [⏳] Routing — _Pending_
 - [⏳] Static Timing Analysis (STA) — _Pending_
 - [⏳] Physical verification — _Pending_
@@ -126,8 +128,19 @@ rtl/openMSP430.v
     │   ├── images
     │   ├── reports
     │   └── scripts
-    └── step_4_placement/
-        ├── images
+    ├── step_4_placement/
+    │   ├── images
+    │   ├── reports
+    │   └── scripts
+    ├── step_5_cts/
+    │   ├── images
+    │   ├── reports
+    │   └── scripts
+    ├── step_5_1_cts_hold_fixing/
+    │   ├── images
+    │   ├── reports
+    │   └── scripts
+    └── step_5_2_elec_fixing/
         ├── reports
         └── scripts
 ```

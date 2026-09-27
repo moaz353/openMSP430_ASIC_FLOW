@@ -1,0 +1,474 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:05:07 2026
+****************************************
+
+  Startpoint: frontend_0/exec_jmp_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: frontend_0/exec_jmp_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.07      0.07
+
+  frontend_0/exec_jmp_reg/CLK (DFFARX1_RVT)                          0.01      0.00      0.07 r
+  frontend_0/exec_jmp_reg/Q (DFFARX1_RVT)                            0.01      0.05      0.12 r
+  frontend_0/n352 (net)                             1      0.70
+  frontend_0/clockcopt_h_inst_4685/A (DELLN2X2_RVT)                  0.01      0.00      0.12 r
+  frontend_0/clockcopt_h_inst_4685/Y (DELLN2X2_RVT)                  0.01      0.08      0.20 r
+  frontend_0/copt_net_839 (net)                     3      2.86
+  frontend_0/clockcopt_h_inst_5190/A (DELLN1X2_RVT)                  0.01      0.00      0.20 r
+  frontend_0/clockcopt_h_inst_5190/Y (DELLN1X2_RVT)                  0.01      0.06      0.27 r
+  frontend_0/copt_net_1334 (net)                    1      0.99
+  frontend_0/U63/A4 (AO221X1_RVT)                                    0.01      0.00      0.27 r
+  frontend_0/U63/Y (AO221X1_RVT)                                     0.02      0.03      0.29 r
+  frontend_0/n405 (net)                             1      1.12
+  frontend_0/exec_jmp_reg/D (DFFARX1_RVT)                            0.02      0.00      0.29 r
+  data arrival time                                                                      0.29
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.20      0.20
+  frontend_0/exec_jmp_reg/CLK (DFFARX1_RVT)                          0.03      0.00      0.20 r
+  clock uncertainty                                                            0.10      0.30
+  library hold time                                                           -0.00      0.29
+  data required time                                                                     0.29
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.29
+  data arrival time                                                                     -0.29
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/sync_cnt_reg[2] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/sync_cnt_reg[2] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/sync_cnt_reg[2]/CLK (DFFARX1_RVT)                 0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/sync_cnt_reg[2]/Q (DFFARX1_RVT)                   0.02      0.06      0.16 r
+  dbg_0/dbg_uart_0/sync_cnt[2] (net)                2      2.44
+  dbg_0/dbg_uart_0/add_215_S2/U1_1_2/A0 (HADDX1_RVT)                 0.02      0.00      0.16 r
+  dbg_0/dbg_uart_0/add_215_S2/U1_1_2/SO (HADDX1_RVT)                 0.01      0.02      0.18 r
+  dbg_0/dbg_uart_0/add_215_S2/SUM[2] (net)          1      0.86
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4351/A (DELLN2X2_RVT)            0.01      0.00      0.18 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4351/Y (DELLN2X2_RVT)            0.01      0.08      0.26 r
+  dbg_0/dbg_uart_0/copt_net_519 (net)               1      1.08
+  dbg_0/dbg_uart_0/U63/A1 (AND2X1_RVT)                               0.01      0.00      0.26 r
+  dbg_0/dbg_uart_0/U63/Y (AND2X1_RVT)                                0.01      0.02      0.28 r
+  dbg_0/dbg_uart_0/n115 (net)                       1      1.05
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5150/A (DELLN2X2_RVT)            0.01      0.00      0.28 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5150/Y (DELLN2X2_RVT)            0.01      0.08      0.36 r
+  dbg_0/dbg_uart_0/copt_net_1295 (net)              1      1.40
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5151/A (DELLN1X2_RVT)            0.01      0.00      0.36 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5151/Y (DELLN1X2_RVT)            0.01      0.06      0.42 r
+  dbg_0/dbg_uart_0/copt_net_1296 (net)              1      2.16
+  dbg_0/dbg_uart_0/sync_cnt_reg[2]/D (DFFARX1_RVT)                   0.01      0.00      0.42 r
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/dbg_uart_0/sync_cnt_reg[2]/CLK (DFFARX1_RVT)                 0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: dbg_0/mem_addr_reg[4] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/mem_addr_reg[6] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/mem_addr_reg[4]/CLK (DFFARX1_RVT)                            0.02      0.00      0.10 r
+  dbg_0/mem_addr_reg[4]/Q (DFFARX1_RVT)                              0.01      0.05      0.16 r
+  dbg_0/aps_rename_63_ (net)                        1      1.08
+  dbg_0/clockcopt_h_inst_4221/A (DELLN2X2_RVT)                       0.01      0.00      0.16 r
+  dbg_0/clockcopt_h_inst_4221/Y (DELLN2X2_RVT)                       0.01      0.08      0.24 r
+  dbg_0/dbg_mem_addr[4] (net)                       4      3.99
+  dbg_0/U272/A1 (AND2X1_RVT)                                         0.01      0.00      0.24 r
+  dbg_0/U272/Y (AND2X1_RVT)                                          0.01      0.02      0.26 r
+  dbg_0/add_436/carry[5] (net)                      2      2.29
+  dbg_0/U270/A2 (AND2X1_RVT)                                         0.01      0.00      0.26 r
+  dbg_0/U270/Y (AND2X1_RVT)                                          0.02      0.02      0.28 r
+  dbg_0/add_436/carry[6] (net)                      2      3.43
+  dbg_0/U269/A2 (XOR2X1_RVT)                                         0.02      0.00      0.28 r
+  dbg_0/U269/Y (XOR2X1_RVT)                                          0.01      0.02      0.31 r
+  dbg_0/N162 (net)                                  1      0.74
+  dbg_0/clockcopt_h_inst_5508/A (DELLN2X2_RVT)                       0.01      0.00      0.31 r
+  dbg_0/clockcopt_h_inst_5508/Y (DELLN2X2_RVT)                       0.01      0.08      0.39 r
+  dbg_0/copt_net_1641 (net)                         1      0.70
+  dbg_0/clockcopt_h_inst_5587/A (NBUFFX2_RVT)                        0.01      0.00      0.39 r
+  dbg_0/clockcopt_h_inst_5587/Y (NBUFFX2_RVT)                        0.01      0.02      0.40 r
+  dbg_0/copt_net_1718 (net)                         1      1.70
+  dbg_0/U230/A3 (AO22X1_RVT)                                         0.01      0.00      0.40 r
+  dbg_0/U230/Y (AO22X1_RVT)                                          0.01      0.02      0.42 r
+  dbg_0/N178 (net)                                  1      0.92
+  dbg_0/mem_addr_reg[6]/D (DFFARX1_RVT)                              0.01      0.00      0.42 r
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/mem_addr_reg[6]/CLK (DFFARX1_RVT)                            0.06      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/xfer_cnt_reg[5] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/xfer_cnt_reg[5] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/xfer_cnt_reg[5]/CLK (DFFARX1_RVT)                 0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/xfer_cnt_reg[5]/Q (DFFARX1_RVT)                   0.02      0.06      0.16 r
+  dbg_0/dbg_uart_0/xfer_cnt[5] (net)                3      3.63
+  dbg_0/dbg_uart_0/U177/A2 (XNOR2X2_RVT)                             0.02      0.00      0.16 r
+  dbg_0/dbg_uart_0/U177/Y (XNOR2X2_RVT)                              0.01      0.03      0.19 r
+  dbg_0/dbg_uart_0/N121 (net)                       1      0.94
+  dbg_0/dbg_uart_0/U113/A1 (AO222X2_RVT)                             0.01      0.00      0.19 r
+  dbg_0/dbg_uart_0/U113/Y (AO222X2_RVT)                              0.02      0.05      0.24 r
+  dbg_0/dbg_uart_0/n149 (net)                       1      1.58
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5542/A (DELLN1X2_RVT)            0.02      0.00      0.24 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5542/Y (DELLN1X2_RVT)            0.01      0.06      0.30 r
+  dbg_0/dbg_uart_0/copt_net_1674 (net)              1      1.16
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5541/A (DELLN3X2_RVT)            0.01      0.00      0.30 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5541/Y (DELLN3X2_RVT)            0.01      0.12      0.42 r
+  dbg_0/dbg_uart_0/copt_net_1673 (net)              1      2.20
+  dbg_0/dbg_uart_0/xfer_cnt_reg[5]/D (DFFARX1_RVT)                   0.01      0.00      0.42 r
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/dbg_uart_0/xfer_cnt_reg[5]/CLK (DFFARX1_RVT)                 0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: dbg_0/mem_ctl_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_mem_rd_dly_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/mem_ctl_reg[1]/CLK (DFFARX1_RVT)                             0.02      0.00      0.10 r
+  dbg_0/mem_ctl_reg[1]/QN (DFFARX1_RVT)                              0.03      0.05      0.16 r
+  dbg_0/n17 (net)                                   3      5.58
+  dbg_0/U97/A2 (AND2X2_RVT)                                          0.03      0.00      0.16 r
+  dbg_0/U97/Y (AND2X2_RVT)                                           0.01      0.02      0.18 r
+  dbg_0/dbg_mem_rd (net)                            1      1.14
+  dbg_0/clockcopt_h_inst_3967/A (DELLN3X2_RVT)                       0.01      0.00      0.18 r
+  dbg_0/clockcopt_h_inst_3967/Y (DELLN3X2_RVT)                       0.01      0.12      0.30 r
+  dbg_0/copt_net_144 (net)                          1      0.93
+  dbg_0/clockcopt_h_inst_3968/A (DELLN3X2_RVT)                       0.01      0.00      0.30 r
+  dbg_0/clockcopt_h_inst_3968/Y (DELLN3X2_RVT)                       0.01      0.12      0.42 r
+  dbg_0/copt_net_145 (net)                          1      2.17
+  dbg_0/dbg_mem_rd_dly_reg/D (DFFARX1_RVT)                           0.01      0.00      0.42 r
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/dbg_mem_rd_dly_reg/CLK (DFFARX1_RVT)                         0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: frontend_0/exec_src_wr_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: frontend_0/e_state_reg[2] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.07      0.07
+
+  frontend_0/exec_src_wr_reg/CLK (DFFARX1_RVT)                       0.01      0.00      0.07 r
+  frontend_0/exec_src_wr_reg/QN (DFFARX1_RVT)                        0.01      0.04      0.10 f
+  frontend_0/n349 (net)                             1      0.63
+  frontend_0/U460/A1 (NAND2X0_RVT)                                   0.01      0.00      0.10 f
+  frontend_0/U460/Y (NAND2X0_RVT)                                    0.02      0.02      0.13 r
+  frontend_0/n202 (net)                             2      2.20
+  frontend_0/U459/A2 (OR3X1_RVT)                                     0.02      0.00      0.13 r
+  frontend_0/U459/Y (OR3X1_RVT)                                      0.01      0.03      0.15 r
+  frontend_0/n236 (net)                             2      1.87
+  frontend_0/U293/A2 (NAND3X0_RVT)                                   0.01      0.00      0.15 r
+  frontend_0/U293/Y (NAND3X0_RVT)                                    0.03      0.02      0.18 f
+  frontend_0/n196 (net)                             2      1.68
+  frontend_0/clockcopt_h_inst_5502/A (DELLN1X2_RVT)                  0.03      0.00      0.18 f
+  frontend_0/clockcopt_h_inst_5502/Y (DELLN1X2_RVT)                  0.01      0.07      0.25 f
+  frontend_0/copt_net_1635 (net)                    1      0.81
+  frontend_0/U250/A1 (OA21X1_RVT)                                    0.01      0.00      0.25 f
+  frontend_0/U250/Y (OA21X1_RVT)                                     0.01      0.02      0.27 f
+  frontend_0/n182 (net)                             2      1.55
+  frontend_0/U247/A3 (AO222X1_RVT)                                   0.01      0.00      0.27 f
+  frontend_0/U247/Y (AO222X1_RVT)                                    0.02      0.03      0.30 f
+  frontend_0/e_state_nxt[2] (net)                   2      2.41
+  frontend_0/e_state_reg[2]/D (DFFARX1_RVT)                          0.02      0.00      0.30 f
+  data arrival time                                                                      0.30
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.20      0.20
+  frontend_0/e_state_reg[2]/CLK (DFFARX1_RVT)                        0.03      0.00      0.20 r
+  clock uncertainty                                                            0.10      0.30
+  library hold time                                                            0.00      0.30
+  data required time                                                                     0.30
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.30
+  data arrival time                                                                     -0.30
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/sync_cnt_reg[6] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/sync_cnt_reg[6] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/sync_cnt_reg[6]/CLK (DFFASX1_RVT)                 0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/sync_cnt_reg[6]/Q (DFFASX1_RVT)                   0.01      0.05      0.15 r
+  dbg_0/dbg_uart_0/sync_cnt[6] (net)                1      0.71
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4874/A (DELLN2X2_RVT)            0.01      0.00      0.15 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4874/Y (DELLN2X2_RVT)            0.01      0.08      0.23 r
+  dbg_0/dbg_uart_0/copt_net_1025 (net)              1      0.79
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5368/A (DELLN2X2_RVT)            0.01      0.00      0.23 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5368/Y (DELLN2X2_RVT)            0.01      0.08      0.32 r
+  dbg_0/dbg_uart_0/copt_net_1511 (net)              4      4.24
+  dbg_0/dbg_uart_0/U59/A3 (AO22X1_RVT)                               0.01      0.00      0.32 r
+  dbg_0/dbg_uart_0/U59/Y (AO22X1_RVT)                                0.01      0.02      0.34 r
+  dbg_0/dbg_uart_0/n111 (net)                       1      1.99
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5555/A (DELLN2X2_RVT)            0.01      0.00      0.34 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5555/Y (DELLN2X2_RVT)            0.01      0.08      0.42 r
+  dbg_0/dbg_uart_0/copt_net_1687 (net)              1      2.82
+  dbg_0/dbg_uart_0/sync_cnt_reg[6]/D (DFFASX1_RVT)                   0.01      0.00      0.42 r
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/dbg_uart_0/sync_cnt_reg[6]/CLK (DFFASX1_RVT)                 0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                            0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/divax_s_reg[1] (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/divax_ss_reg[1] (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                             0.04      0.04
+
+  clock_module_0/divax_s_reg[1]/CLK (DFFARX1_RVT)                    0.01      0.00      0.04 r
+  clock_module_0/divax_s_reg[1]/Q (DFFARX1_RVT)                      0.01      0.05      0.09 r
+  clock_module_0/divax_s[1] (net)                   1      0.91
+  clock_module_0/clockcopt_h_inst_4187/A (DELLN3X2_RVT)              0.01      0.00      0.09 r
+  clock_module_0/clockcopt_h_inst_4187/Y (DELLN3X2_RVT)              0.01      0.12      0.21 r
+  clock_module_0/copt_net_364 (net)                 1      1.17
+  clock_module_0/divax_ss_reg[1]/D (DFFARX1_RVT)                     0.01      0.00      0.21 r
+  data arrival time                                                                      0.21
+
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (propagated)                                             0.11      0.11
+  clock_module_0/divax_ss_reg[1]/CLK (DFFARX1_RVT)                   0.03      0.00      0.11 r
+  clock uncertainty                                                            0.10      0.21
+  library hold time                                                           -0.00      0.21
+  data required time                                                                     0.21
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.21
+  data arrival time                                                                     -0.21
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: frontend_0/irq_num_reg[2] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: sfr_0/nmie_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.09      0.09
+
+  frontend_0/irq_num_reg[2]/CLK (DFFASX1_RVT)                        0.02      0.00      0.09 r
+  frontend_0/irq_num_reg[2]/Q (DFFASX1_RVT)                          0.01      0.05      0.14 r
+  frontend_0/n357 (net)                             1      0.67
+  frontend_0/clockcopt_h_inst_4979/A (DELLN2X2_RVT)                  0.01      0.00      0.14 r
+  frontend_0/clockcopt_h_inst_4979/Y (DELLN2X2_RVT)                  0.01      0.08      0.22 r
+  frontend_0/copt_net_1126 (net)                    2      2.77
+  frontend_0/clockcopt_h_inst_5278/A (NBUFFX2_RVT)                   0.01      0.00      0.22 r
+  frontend_0/clockcopt_h_inst_5278/Y (NBUFFX2_RVT)                   0.01      0.02      0.24 r
+  frontend_0/copt_net_1421 (net)                    1      1.22
+  frontend_0/clockcopt_h_inst_5279/A (NBUFFX2_RVT)                   0.01      0.00      0.24 r
+  frontend_0/clockcopt_h_inst_5279/Y (NBUFFX2_RVT)                   0.01      0.02      0.26 r
+  frontend_0/copt_net_1422 (net)                    2      2.39
+  frontend_0/U80/A2 (AND3X1_RVT)                                     0.01      0.00      0.26 r
+  frontend_0/U80/Y (AND3X1_RVT)                                      0.02      0.03      0.28 r
+  frontend_0/n38 (net)                              3      2.90
+  frontend_0/U42/A1 (AND2X2_RVT)                                     0.02      0.00      0.28 r
+  frontend_0/U42/Y (AND2X2_RVT)                                      0.03      0.04      0.32 r
+  frontend_0/nmi_acc (net)                          2     15.10
+  sfr_0/U32/A2 (NOR2X0_RVT)                                          0.03      0.00      0.32 r
+  sfr_0/U32/Y (NOR2X0_RVT)                                           0.01      0.03      0.34 f
+  sfr_0/n25 (net)                                   1      0.80
+  sfr_0/U31/A3 (AO22X1_RVT)                                          0.01      0.00      0.34 f
+  sfr_0/U31/Y (AO22X1_RVT)                                           0.01      0.02      0.36 f
+  sfr_0/n38 (net)                                   1      1.04
+  sfr_0/nmie_reg/D (DFFARX1_RVT)                                     0.01      0.00      0.36 f
+  data arrival time                                                                      0.36
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.26      0.26
+  sfr_0/nmie_reg/CLK (DFFARX1_RVT)                                   0.06      0.00      0.26 r
+  clock uncertainty                                                            0.10      0.36
+  library hold time                                                            0.00      0.36
+  data required time                                                                     0.36
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.36
+  data arrival time                                                                     -0.36
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/xfer_buf_reg[11] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/xfer_buf_reg[10] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.11      0.11
+
+  dbg_0/dbg_uart_0/xfer_buf_reg[11]/CLK (DFFARX1_RVT)                0.02      0.00      0.11 r
+  dbg_0/dbg_uart_0/xfer_buf_reg[11]/Q (DFFARX1_RVT)                  0.01      0.06      0.16 r
+  dbg_0/dbg_uart_0/xfer_buf_nxt[10] (net)           2      1.37
+  dbg_0/dbg_uart_0/U94/A3 (AO22X1_RVT)                               0.01      0.00      0.16 r
+  dbg_0/dbg_uart_0/U94/Y (AO22X1_RVT)                                0.01      0.02      0.18 r
+  dbg_0/dbg_uart_0/n130 (net)                       1      0.95
+  dbg_0/dbg_uart_0/clockcopt_h_inst_3971/A (DELLN3X2_RVT)            0.01      0.00      0.18 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_3971/Y (DELLN3X2_RVT)            0.01      0.12      0.30 r
+  dbg_0/dbg_uart_0/copt_net_148 (net)               1      1.28
+  dbg_0/dbg_uart_0/clockcopt_h_inst_3970/A (DELLN3X2_RVT)            0.01      0.00      0.30 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_3970/Y (DELLN3X2_RVT)            0.01      0.12      0.42 r
+  dbg_0/dbg_uart_0/copt_net_147 (net)               1      1.55
+  dbg_0/dbg_uart_0/xfer_buf_reg[10]/D (DFFARX1_RVT)                  0.01      0.00      0.42 r
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/dbg_uart_0/xfer_buf_reg[10]/CLK (DFFARX1_RVT)                0.06      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1

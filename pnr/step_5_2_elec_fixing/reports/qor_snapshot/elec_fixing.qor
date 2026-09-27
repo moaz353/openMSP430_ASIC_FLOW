@@ -1,0 +1,190 @@
+****************************************
+Report : qor
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:05:23 2026
+****************************************
+
+
+Scenario           'func_fast'
+Timing Path Group  'dco_clk'
+----------------------------------------
+Levels of Logic:                     41
+Critical Path Length:              5.43
+Critical Path Slack:              14.39
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'lfxt_clk'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:              5.27
+Critical Path Slack:              14.52
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                     59
+Critical Path Length:             10.79
+Critical Path Slack:              28.37
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:              8.38
+Critical Path Slack:              11.43
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                     61
+Critical Path Length:              7.84
+Critical Path Slack:              31.32
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'dco_clk'
+----------------------------------------
+Levels of Logic:                     41
+Critical Path Length:              5.51
+Critical Path Slack:              14.11
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'lfxt_clk'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:              5.34
+Critical Path Slack:              14.25
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'FEEDTHROUGH'
+----------------------------------------
+Levels of Logic:                     59
+Critical Path Length:             10.88
+Critical Path Slack:              28.07
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:              8.44
+Critical Path Slack:              11.17
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                     61
+Critical Path Length:              7.96
+Critical Path Slack:              31.01
+Critical Path Clk Period:         40.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:            115
+Hierarchical Port Count:           2836
+Leaf Cell Count:                   6280
+Buf/Inv Cell Count:                2463
+Buf Cell Count:                    2042
+Inv Cell Count:                     421
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          5509
+Sequential Cell Count:              771
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            21502.11
+Noncombinational Area:          5417.84
+Buf/Inv Area:                  13059.44
+Total Buffer Area:             12006.78
+Total Inverter Area:            1052.66
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          26919.95
+Cell Area (netlist and physical only):        26919.95
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              6739
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

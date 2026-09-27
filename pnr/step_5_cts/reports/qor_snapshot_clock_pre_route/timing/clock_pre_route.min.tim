@@ -1,0 +1,505 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:04:55 2026
+****************************************
+
+  Startpoint: dbg_0/dbg_uart_0/xfer_buf_reg[18] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/xfer_buf_reg[17] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/xfer_buf_reg[18]/CLK (DFFARX1_RVT)                0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/xfer_buf_reg[18]/Q (DFFARX1_RVT)                  0.02      0.06      0.16 f
+  dbg_0/dbg_uart_0/xfer_buf_nxt[17] (net)           2      2.62
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4375/A (NBUFFX2_RVT)             0.02      0.00      0.16 f
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4375/Y (NBUFFX2_RVT)             0.01      0.02      0.18 f
+  dbg_0/dbg_uart_0/copt_net_541 (net)               1      1.08
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4374/A (NBUFFX2_RVT)             0.01      0.00      0.18 f
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4374/Y (NBUFFX2_RVT)             0.01      0.01      0.19 f
+  dbg_0/dbg_uart_0/copt_net_540 (net)               1      0.76
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4373/A (DELLN2X2_RVT)            0.01      0.00      0.19 f
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4373/Y (DELLN2X2_RVT)            0.02      0.10      0.29 f
+  dbg_0/dbg_uart_0/copt_net_539 (net)               4      5.45
+  dbg_0/dbg_uart_0/U101/A2 (AO222X1_RVT)                             0.02      0.00      0.29 f
+  dbg_0/dbg_uart_0/U101/Y (AO222X1_RVT)                              0.01      0.03      0.32 f
+  dbg_0/dbg_uart_0/n137 (net)                       1      1.43
+  dbg_0/dbg_uart_0/xfer_buf_reg[17]/D (DFFARX1_RVT)                  0.01      0.00      0.32 f
+  data arrival time                                                                      0.32
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/dbg_uart_0/xfer_buf_reg[17]/CLK (DFFARX1_RVT)                0.05      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                            0.00      0.43
+  data required time                                                                     0.43
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.43
+  data arrival time                                                                     -0.32
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.11
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/xfer_buf_reg[15] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/xfer_buf_reg[15] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/xfer_buf_reg[15]/CLK (DFFARX1_RVT)                0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/xfer_buf_reg[15]/Q (DFFARX1_RVT)                  0.01      0.05      0.16 r
+  dbg_0/dbg_uart_0/xfer_buf_nxt[14] (net)           1      0.86
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4378/A (DELLN2X2_RVT)            0.01      0.00      0.16 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4378/Y (DELLN2X2_RVT)            0.01      0.08      0.24 r
+  dbg_0/dbg_uart_0/copt_net_544 (net)               1      0.55
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5453/A (DELLN2X2_RVT)            0.01      0.00      0.24 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5453/Y (DELLN2X2_RVT)            0.02      0.09      0.32 r
+  dbg_0/dbg_uart_0/copt_net_1594 (net)              5      5.96
+  dbg_0/dbg_uart_0/U99/A6 (AO222X1_RVT)                              0.02      0.00      0.32 r
+  dbg_0/dbg_uart_0/U99/Y (AO222X1_RVT)                               0.02      0.03      0.35 r
+  dbg_0/dbg_uart_0/n135 (net)                       1      1.15
+  dbg_0/dbg_uart_0/xfer_buf_reg[15]/D (DFFARX1_RVT)                  0.02      0.00      0.35 r
+  data arrival time                                                                      0.35
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/dbg_uart_0/xfer_buf_reg[15]/CLK (DFFARX1_RVT)                0.05      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.35
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.07
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/xfer_buf_reg[6] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/xfer_buf_reg[6] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/xfer_buf_reg[6]/CLK (DFFARX1_RVT)                 0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/xfer_buf_reg[6]/Q (DFFARX1_RVT)                   0.01      0.06      0.16 r
+  dbg_0/dbg_uart_0/xfer_buf_nxt[5] (net)            1      1.36
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4382/A (DELLN2X2_RVT)            0.01      0.00      0.16 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4382/Y (DELLN2X2_RVT)            0.01      0.08      0.24 r
+  dbg_0/dbg_uart_0/copt_net_548 (net)               1      1.04
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5451/A (DELLN2X2_RVT)            0.01      0.00      0.24 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5451/Y (DELLN2X2_RVT)            0.01      0.08      0.32 r
+  dbg_0/dbg_uart_0/copt_net_1592 (net)              3      2.90
+  dbg_0/dbg_uart_0/U90/A5 (AO222X1_RVT)                              0.01      0.00      0.32 r
+  dbg_0/dbg_uart_0/U90/Y (AO222X1_RVT)                               0.02      0.03      0.35 r
+  dbg_0/dbg_uart_0/n126 (net)                       1      1.79
+  dbg_0/dbg_uart_0/xfer_buf_reg[6]/D (DFFARX1_RVT)                   0.02      0.00      0.35 r
+  data arrival time                                                                      0.35
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/dbg_uart_0/xfer_buf_reg[6]/CLK (DFFARX1_RVT)                 0.05      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.35
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.07
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/xfer_buf_reg[17] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/xfer_buf_reg[16] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/xfer_buf_reg[17]/CLK (DFFARX1_RVT)                0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/xfer_buf_reg[17]/Q (DFFARX1_RVT)                  0.01      0.05      0.16 r
+  dbg_0/dbg_uart_0/xfer_buf_nxt[16] (net)           1      0.78
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4358/A (DELLN1X2_RVT)            0.01      0.00      0.16 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4358/Y (DELLN1X2_RVT)            0.01      0.06      0.22 r
+  dbg_0/dbg_uart_0/copt_net_526 (net)               1      1.08
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5446/A (DELLN2X2_RVT)            0.01      0.00      0.22 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5446/Y (DELLN2X2_RVT)            0.02      0.09      0.31 r
+  dbg_0/dbg_uart_0/copt_net_1587 (net)              4      5.84
+  dbg_0/dbg_uart_0/U100/A2 (AO222X1_RVT)                             0.02      0.00      0.31 r
+  dbg_0/dbg_uart_0/U100/Y (AO222X1_RVT)                              0.02      0.05      0.35 r
+  dbg_0/dbg_uart_0/n136 (net)                       1      1.95
+  dbg_0/dbg_uart_0/xfer_buf_reg[16]/D (DFFARX1_RVT)                  0.02      0.00      0.35 r
+  data arrival time                                                                      0.35
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/dbg_uart_0/xfer_buf_reg[16]/CLK (DFFARX1_RVT)                0.05      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.35
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.07
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/sync_cnt_reg[7] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/sync_cnt_reg[7] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/sync_cnt_reg[7]/CLK (DFFASX1_RVT)                 0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/sync_cnt_reg[7]/Q (DFFASX1_RVT)                   0.01      0.05      0.15 r
+  dbg_0/dbg_uart_0/sync_cnt[7] (net)                1      1.02
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4873/A (DELLN2X2_RVT)            0.01      0.00      0.15 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4873/Y (DELLN2X2_RVT)            0.01      0.08      0.23 r
+  dbg_0/dbg_uart_0/copt_net_1024 (net)              1      0.86
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5371/A (DELLN1X2_RVT)            0.01      0.00      0.23 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5371/Y (DELLN1X2_RVT)            0.01      0.06      0.30 r
+  dbg_0/dbg_uart_0/copt_net_1514 (net)              1      1.54
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5578/A (DELLN2X2_RVT)            0.01      0.00      0.30 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5578/Y (DELLN2X2_RVT)            0.01      0.09      0.38 r
+  dbg_0/dbg_uart_0/copt_net_1709 (net)              4      5.16
+  dbg_0/dbg_uart_0/U58/A3 (AO22X1_RVT)                               0.01      0.00      0.38 r
+  dbg_0/dbg_uart_0/U58/Y (AO22X1_RVT)                                0.01      0.02      0.40 r
+  dbg_0/dbg_uart_0/n110 (net)                       1      1.30
+  dbg_0/dbg_uart_0/sync_cnt_reg[7]/D (DFFASX1_RVT)                   0.01      0.00      0.40 r
+  data arrival time                                                                      0.40
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/dbg_uart_0/sync_cnt_reg[7]/CLK (DFFASX1_RVT)                 0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                            0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.40
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.02
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/sync_cnt_reg[8] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/sync_cnt_reg[9] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/dbg_uart_0/sync_cnt_reg[8]/CLK (DFFASX1_RVT)                 0.02      0.00      0.10 r
+  dbg_0/dbg_uart_0/sync_cnt_reg[8]/Q (DFFASX1_RVT)                   0.01      0.05      0.15 r
+  dbg_0/dbg_uart_0/sync_cnt[8] (net)                1      0.85
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4875/A (DELLN2X2_RVT)            0.01      0.00      0.15 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4875/Y (DELLN2X2_RVT)            0.01      0.08      0.23 r
+  dbg_0/dbg_uart_0/copt_net_1026 (net)              1      0.91
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5370/A (DELLN3X2_RVT)            0.01      0.00      0.23 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5370/Y (DELLN3X2_RVT)            0.01      0.12      0.36 r
+  dbg_0/dbg_uart_0/copt_net_1513 (net)              4      4.60
+  dbg_0/dbg_uart_0/add_215_S2/U1_1_8/A0 (HADDX1_RVT)                 0.01      0.00      0.36 r
+  dbg_0/dbg_uart_0/add_215_S2/U1_1_8/C1 (HADDX1_RVT)                 0.01      0.02      0.38 r
+  dbg_0/dbg_uart_0/add_215_S2/carry[9] (net)        1      1.35
+  dbg_0/dbg_uart_0/add_215_S2/U1_1_9/B0 (HADDX1_RVT)                 0.01      0.00      0.38 r
+  dbg_0/dbg_uart_0/add_215_S2/U1_1_9/SO (HADDX1_RVT)                 0.01      0.02      0.40 f
+  dbg_0/dbg_uart_0/add_215_S2/SUM[9] (net)          1      0.68
+  dbg_0/dbg_uart_0/U56/A1 (AO22X1_RVT)                               0.01      0.00      0.40 f
+  dbg_0/dbg_uart_0/U56/Y (AO22X1_RVT)                                0.01      0.02      0.42 f
+  dbg_0/dbg_uart_0/n108 (net)                       1      0.87
+  dbg_0/dbg_uart_0/sync_cnt_reg[9]/D (DFFASX1_RVT)                   0.01      0.00      0.42 f
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/dbg_uart_0/sync_cnt_reg[9]/CLK (DFFASX1_RVT)                 0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                            0.00      0.43
+  data required time                                                                     0.43
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.43
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.00
+
+
+
+  Startpoint: dbg_0/cpu_stat_reg[2] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/cpu_stat_reg[2] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+
+  dbg_0/cpu_stat_reg[2]/CLK (DFFARX1_RVT)                            0.02      0.00      0.10 r
+  dbg_0/cpu_stat_reg[2]/QN (DFFARX1_RVT)                             0.02      0.04      0.15 r
+  dbg_0/n7 (net)                                    1      1.39
+  dbg_0/clockcopt_h_inst_4390/A (DELLN2X2_RVT)                       0.02      0.00      0.15 r
+  dbg_0/clockcopt_h_inst_4390/Y (DELLN2X2_RVT)                       0.01      0.08      0.23 r
+  dbg_0/copt_net_555 (net)                          1      1.02
+  dbg_0/clockcopt_h_inst_4765/A (DELLN2X2_RVT)                       0.01      0.00      0.23 r
+  dbg_0/clockcopt_h_inst_4765/Y (DELLN2X2_RVT)                       0.01      0.08      0.31 r
+  dbg_0/copt_net_917 (net)                          1      2.73
+  dbg_0/clockcopt_h_inst_5723/A (NBUFFX2_RVT)                        0.01      0.00      0.31 r
+  dbg_0/clockcopt_h_inst_5723/Y (NBUFFX2_RVT)                        0.01      0.01      0.32 r
+  dbg_0/copt_net_1852 (net)                         1      0.70
+  dbg_0/clockcopt_h_inst_5795/A (NBUFFX2_RVT)                        0.01      0.00      0.32 r
+  dbg_0/clockcopt_h_inst_5795/Y (NBUFFX2_RVT)                        0.01      0.01      0.34 r
+  dbg_0/copt_net_1920 (net)                         1      0.80
+  dbg_0/clockcopt_h_inst_5852/A (NBUFFX2_RVT)                        0.01      0.00      0.34 r
+  dbg_0/clockcopt_h_inst_5852/Y (NBUFFX2_RVT)                        0.01      0.01      0.35 r
+  dbg_0/copt_net_1973 (net)                         1      0.97
+  dbg_0/clockcopt_h_inst_5869/A (NBUFFX2_RVT)                        0.01      0.00      0.35 r
+  dbg_0/clockcopt_h_inst_5869/Y (NBUFFX2_RVT)                        0.01      0.02      0.37 r
+  dbg_0/copt_net_1990 (net)                         1      2.42
+  dbg_0/clockcopt_h_inst_5876/A (NBUFFX2_RVT)                        0.01      0.00      0.37 r
+  dbg_0/clockcopt_h_inst_5876/Y (NBUFFX2_RVT)                        0.01      0.02      0.39 r
+  dbg_0/copt_net_1997 (net)                         1      3.36
+  dbg_0/U252/A3 (AO21X1_RVT)                                         0.01      0.00      0.39 r
+  dbg_0/U252/Y (AO21X1_RVT)                                          0.01      0.02      0.40 r
+  dbg_0/n166 (net)                                  1      1.14
+  dbg_0/U251/A2 (NAND2X0_RVT)                                        0.01      0.00      0.40 r
+  dbg_0/U251/Y (NAND2X0_RVT)                                         0.02      0.02      0.42 f
+  dbg_0/N111 (net)                                  1      1.53
+  dbg_0/cpu_stat_reg[2]/D (DFFARX1_RVT)                              0.02      0.00      0.42 f
+  data arrival time                                                                      0.42
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.32      0.32
+  dbg_0/cpu_stat_reg[2]/CLK (DFFARX1_RVT)                            0.05      0.00      0.32 r
+  clock uncertainty                                                            0.10      0.42
+  library hold time                                                           -0.00      0.42
+  data required time                                                                     0.42
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.42
+  data arrival time                                                                     -0.42
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.00
+
+
+
+  Startpoint: frontend_0/e_state_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: pmem_addr[6] (output port clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: REGOUT
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.07      0.07
+
+  frontend_0/e_state_reg[1]/CLK (DFFARX1_RVT)                        0.01      0.00      0.07 r
+  frontend_0/e_state_reg[1]/Q (DFFARX1_RVT)                          0.01      0.05      0.12 r
+  frontend_0/e_state[1] (net)                       1      0.74
+  placeZBUF_inst_524/A (NBUFFX2_RVT)                                 0.01      0.00      0.12 r
+  placeZBUF_inst_524/Y (NBUFFX2_RVT)                                 0.02      0.03      0.15 r
+  placeZBUF_115 (net)                              11     11.78
+  execution_unit_0/U185/A3 (NAND3X2_RVT)                             0.02      0.00      0.15 r
+  execution_unit_0/U185/Y (NAND3X2_RVT)                              0.02      0.04      0.19 f
+  execution_unit_0/n38 (net)                        7      8.41
+  execution_unit_0/placeHFSINV_881_169/A (INVX2_RVT)                 0.02      0.00      0.19 f
+  execution_unit_0/placeHFSINV_881_169/Y (INVX2_RVT)                 0.03      0.02      0.21 r
+  execution_unit_0/placeHFSNET_130 (net)            9     12.49
+  execution_unit_0/alu_0/U3/A2 (AND2X4_RVT)                          0.03      0.00      0.21 r
+  execution_unit_0/alu_0/U3/Y (AND2X4_RVT)                           0.02      0.03      0.23 r
+  execution_unit_0/alu_0/n161 (net)                 1      1.32
+  execution_unit_0/alu_0/clockcopt_h_inst_5819/A (NBUFFX4_RVT)       0.02      0.00      0.23 r
+  execution_unit_0/alu_0/clockcopt_h_inst_5819/Y (NBUFFX4_RVT)       0.03      0.03      0.26 r
+  execution_unit_0/alu_0/copt_net_1942 (net)       16     26.25
+  execution_unit_0/alu_0/U28/A2 (XOR2X1_RVT)                         0.03      0.00      0.26 r
+  execution_unit_0/alu_0/U28/Y (XOR2X1_RVT)                          0.03      0.04      0.30 r
+  execution_unit_0/alu_0/op_src_inv[7] (net)        6      6.79
+  execution_unit_0/alu_0/U109/A2 (AND2X1_RVT)                        0.03      0.00      0.30 r
+  execution_unit_0/alu_0/U109/Y (AND2X1_RVT)                         0.02      0.02      0.32 r
+  execution_unit_0/alu_0/op_src_in_jmp[7] (net)     1      2.62
+  execution_unit_0/alu_0/add_171/U1_7/A (FADDX2_RVT)                 0.02      0.00      0.32 r
+  execution_unit_0/alu_0/add_171/U1_7/S (FADDX2_RVT)                 0.02      0.03      0.35 f
+  execution_unit_0/alu_0/add_171/SUM[7] (net)       1      0.73
+  clockZBUF_inst_5998/A (NBUFFX2_RVT)                                0.02      0.00      0.35 f
+  clockZBUF_inst_5998/Y (NBUFFX2_RVT)                                0.02      0.03      0.38 f
+  clockZBUF_37 (net)                                5      8.74
+  mem_backbone_0/U31/A5 (AO222X2_RVT)                                0.02      0.00      0.38 f
+  mem_backbone_0/U31/Y (AO222X2_RVT)                                 0.03      0.03      0.41 f
+  mem_backbone_0/pmem_addr[6] (net)                 1      9.14
+  pmem_addr[6] (out)                                                 0.03      0.00      0.41 f
+  data arrival time                                                                      0.41
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.31      0.31
+  clock uncertainty                                                            0.10      0.41
+  output external delay                                                        0.00      0.41
+  data required time                                                                     0.41
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.41
+  data arrival time                                                                     -0.41
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.00
+
+
+
+  Startpoint: dbg_0/dbg_uart_0/sync_cnt_reg[17] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: dbg_0/dbg_uart_0/sync_cnt_reg[17] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.11      0.11
+
+  dbg_0/dbg_uart_0/sync_cnt_reg[17]/CLK (DFFASX1_RVT)                0.02      0.00      0.11 r
+  dbg_0/dbg_uart_0/sync_cnt_reg[17]/Q (DFFASX1_RVT)                  0.01      0.05      0.16 r
+  dbg_0/dbg_uart_0/sync_cnt[17] (net)               2      1.86
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4286/A (DELLN2X2_RVT)            0.01      0.00      0.16 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_4286/Y (DELLN2X2_RVT)            0.01      0.08      0.24 r
+  dbg_0/dbg_uart_0/copt_net_454 (net)               1      1.97
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5227/A (DELLN2X2_RVT)            0.01      0.00      0.24 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5227/Y (DELLN2X2_RVT)            0.01      0.08      0.32 r
+  dbg_0/dbg_uart_0/copt_net_1370 (net)              1      1.84
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5579/A (DELLN1X2_RVT)            0.01      0.00      0.32 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5579/Y (DELLN1X2_RVT)            0.02      0.07      0.39 r
+  dbg_0/dbg_uart_0/copt_net_1710 (net)              2      7.05
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5759/A (NBUFFX2_RVT)             0.02      0.00      0.39 r
+  dbg_0/dbg_uart_0/clockcopt_h_inst_5759/Y (NBUFFX2_RVT)             0.01      0.02      0.41 r
+  dbg_0/dbg_uart_0/copt_net_1887 (net)              1      3.38
+  dbg_0/dbg_uart_0/U48/A3 (AO22X1_RVT)                               0.01      0.00      0.41 r
+  dbg_0/dbg_uart_0/U48/Y (AO22X1_RVT)                                0.01      0.02      0.43 r
+  dbg_0/dbg_uart_0/n100 (net)                       1      1.28
+  dbg_0/dbg_uart_0/sync_cnt_reg[17]/D (DFFASX1_RVT)                  0.01      0.00      0.43 r
+  data arrival time                                                                      0.43
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.33      0.33
+  dbg_0/dbg_uart_0/sync_cnt_reg[17]/CLK (DFFASX1_RVT)                0.06      0.00      0.33 r
+  clock uncertainty                                                            0.10      0.43
+  library hold time                                                            0.00      0.43
+  data required time                                                                     0.43
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.43
+  data arrival time                                                                     -0.43
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.00
+
+
+
+  Startpoint: clock_module_0/smclk_div_reg[0] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/clock_gate_smclk/enable_latch_reg (positive level-sensitive latch clocked by dco_clk')
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.06      0.06
+
+  clock_module_0/smclk_div_reg[0]/CLK (DFFARX1_RVT)                  0.03      0.00      0.06 r
+  clock_module_0/smclk_div_reg[0]/QN (DFFARX1_RVT)                   0.02      0.05      0.10 f
+  clock_module_0/n96 (net)                          2      2.82
+  clock_module_0/U5/A3 (AO21X1_RVT)                                  0.02      0.00      0.10 f
+  clock_module_0/U5/Y (AO21X1_RVT)                                   0.02      0.02      0.13 f
+  clock_module_0/n1 (net)                           1      3.37
+  clock_module_0/U10/A1 (AOI221X1_RVT)                               0.02      0.00      0.13 f
+  clock_module_0/U10/Y (AOI221X1_RVT)                                0.01      0.03      0.16 r
+  clock_module_0/smclk_div_en (net)                 1      1.48
+  clock_module_0/clock_gate_smclk/U4/A1 (OR2X1_RVT)                  0.01      0.00      0.16 r
+  clock_module_0/clock_gate_smclk/U4/Y (OR2X1_RVT)                   0.01      0.02      0.18 r
+  clock_module_0/clock_gate_smclk/enable_in (net)
+                                                    1      1.50
+  clock_module_0/clock_gate_smclk/clockcopt_h_inst_4497/A (DELLN1X2_RVT)
+                                                                     0.01      0.00      0.18 r
+  clock_module_0/clock_gate_smclk/clockcopt_h_inst_4497/Y (DELLN1X2_RVT)
+                                                                     0.01      0.06      0.24 r
+  clock_module_0/clock_gate_smclk/copt_net_656 (net)
+                                                    1      1.11
+  clock_module_0/clock_gate_smclk/clockcopt_h_inst_4496/A (DELLN2X2_RVT)
+                                                                     0.01      0.00      0.24 r
+  clock_module_0/clock_gate_smclk/clockcopt_h_inst_4496/Y (DELLN2X2_RVT)
+                                                                     0.01      0.08      0.33 r
+  clock_module_0/clock_gate_smclk/copt_net_655 (net)
+                                                    1      1.89
+  clock_module_0/clock_gate_smclk/enable_latch_reg/D (LATCHX1_RVT)   0.01      0.00      0.33 r
+  data arrival time                                                                      0.33
+
+  clock dco_clk' (fall edge)                                                   0.00      0.00
+  clock network delay (propagated)                                             0.23      0.23
+  clock_module_0/clock_gate_smclk/enable_latch_reg/CLK (LATCHX1_RVT)
+                                                                     0.08      0.00      0.23 f
+  clock uncertainty                                                            0.10      0.33
+  library hold time                                                           -0.01      0.33
+  data required time                                                                     0.33
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.33
+  data arrival time                                                                     -0.33
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.00
+
+
+1

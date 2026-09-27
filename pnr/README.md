@@ -11,6 +11,9 @@ source ./step_1_data_setup/scripts/master.tcl
 source ./step_2_floorplanning/scripts/master.tcl
 source ./step_3_powerplanning/scripts/master.tcl
 source ./step_4_placement/scripts/master.tcl
+source ./step_5_cts/scripts/master.tcl
+source ./step_5_1_cts_hold_fixing/scripts/master.tcl
+source ./step_5_2_elec_fixing/scripts/master.tcl
 ```
 
 ## Flow Structure
@@ -21,11 +24,13 @@ Intended stage order:
 2. Floorplanning — completed
 3. Power Planning — completed
 4. Placement — completed
-5. CTS — pending
+5. CTS — completed (`step_5_cts`, `step_5_1_cts_hold_fixing`,
+   `step_5_2_elec_fixing`)
 6. Routing — pending
 7. Finishing — pending
 
-Only Steps 1–4 are currently completed and documented below. Steps 5–7 are reserved for the subsequent stages of the PNR flow.
+Steps 1–5 are currently completed and documented below. Routing and
+Finishing are the remaining stages of the PNR flow.
 
 ## Completed Stages
 
@@ -41,7 +46,7 @@ Design summary (`reports/openMSP430_design_summary.rpt`): ~4362 standard
 cells, ~4956 nets, 260 ports, and 2 clocks (`dco_clk`, `lfxt_clk`).
 Sanity checks cover the NDM library, netlist linkage, and clocks.
 
-![Design setup](step_1_data_setup/images/design_setup.png)
+![Design setup](step_1_data_setup\images\design_setup.png)
 
 ### 2. Floorplanning (`step_2_floorplanning/`)
 
@@ -55,7 +60,7 @@ Results (`reports/`): utilization ~0.7013 (`utilization.rpt`), 0 legality
 violations (`floorplan_legality.rpt`), and minimal early congestion
 (2 total overflows, 0.01% of GRCs in `congestion.rpt`).
 
-![Floorplan](step_2_floorplanning/images/floorplan.png)
+![Floorplan](step_2_floorplanning\images\after_script_changes\floorplan.png)
 
 ### 3. Power Planning (`step_3_powerplanning/`)
 
@@ -72,19 +77,19 @@ reports zero missing vias.
 
 PG structure:
 
-![M1 rails](step_3_powerplanning/images/pg_rails_m1.png)
+![M1 rails](step_3_powerplanning\images\after_script_changes\pg_m1_rails.png)
 
-![Power ring](step_3_powerplanning/images/pg_ring.png)
+![Power ring](step_3_powerplanning\images\after_script_changes\pg_ring_m6_m7.png)
 
-![M5 straps](step_3_powerplanning/images/pg_straps_m5.png)
+![M5 straps](step_3_powerplanning\images\after_script_changes\pg_m5_straps.png)
 
-![M6 straps](step_3_powerplanning/images/pg_m6_straps.png)
+![M6 straps](step_3_powerplanning\images\after_script_changes\pg_m6_straps.png)
 
-![M7 straps](step_3_powerplanning/images/pg_straps_m7.png)
+![M7 straps](step_3_powerplanning\images\after_script_changes\pg_m7_straps.png)
 
 Full grid:
 
-![Power grid](step_3_powerplanning/images/power_grid.png)
+![Power grid](step_3_powerplanning\images\after_script_changes\power_grid.png)
 
 PG patterns and strategies are summarized in `pg_patterns.rpt` and
 `pg_strategies.rpt`.
@@ -109,15 +114,102 @@ and 0 total negative slack / 0 violating setup paths in both
 timing paths are in `timing/placement.max.tim` and
 `timing/placement.min.tim`. Library info is in `ndm_lib.rpt`.
 
-![Placement](step_4_placement/images/placement-design.png)
+![Placement](step_4_placement\images\after_script_changes\placement.png)
 
-![Cell density](step_4_placement/images/cell-density.png)
+![Cell density](step_4_placement\images\after_script_changes\cell_density.png)
 
-![Pin density](step_4_placement/images/pin-density.png)
+![Pin density](step_4_placement\images\after_script_changes\pin_density.png)
 
-![Power density](step_4_placement/images/power-density.png)
+![Power density](step_4_placement\images\after_script_changes\power_density.png)
 
-![Hierarchical placement](step_4_placement/images/design_hier_placement.png)
+![Hierarchical placement](step_4_placement\images\after_script_changes\hierar_placement.png)
+
+## CTS and Post-CTS Stages
+
+The three stages below are sub-stages of the CTS/post-CTS flow
+(top-level Step 5): `step_5_cts` → `step_5_1_cts_hold_fixing` →
+`step_5_2_elec_fixing` → Routing and Finishing.
+
+### 5. CTS (`step_5_cts/`)
+
+Opens the Step 4 checkpoint (`openMSP430_4_place_ends` via
+`temp_place_ends`), applies the MCMM setup from `common/mcmm.tcl`,
+builds the clock tree (`clock_opt -from build_clock -to build_clock`),
+then routes it and runs the final optimization (`clock_opt -from
+route_clock -to final_opto`) and saves the `openMSP430_5_clock_ends`
+checkpoint.
+
+CTS is configured with cell relocation and resizing of pre-existing
+cells into the CTS references, Concurrent Clock/Data (CCD) optimization
+with high hold effort (`clock_opt.flow.enable_ccd`,
+`ccd.hold_control_effort`, `clock_opt.hold.effort`), target skew 0.1
+for `dco_clk`/`lfxt_clk`, setup/hold clock uncertainty of 0.2/0.1, an
+inverter/buffer CTS reference set, and a `CLK_SPACING` routing rule
+(M2–M4) to reduce coupling and crosstalk.
+
+Results (`reports/`): utilization ~0.7615 (`qor_snapshot/clock.util.rpt`),
+0 total negative slack / 0 violating setup paths in both `func_slow`
+and `func_fast`, with 10 total hold violations remaining at CTS exit;
+`clock_tree.rpt` and `clock_timing.rpt` summarize the built trees and
+skew, and the clock SDC for the routing stage is written to
+`outputs/design.sdc`.
+
+![CTS route](step_5_cts\images\cts_route.png)
+
+![dco_clk tree](step_5_cts\images\dco_clk-tree.png)
+
+![lfxt_clk tree](step_5_cts\images\ifxt_clk-tree.png)
+
+![CTS cells dco_clk](step_5_cts\images\cts-cells_dco_clk.png)
+
+![CTS cells lfxt_clk](step_5_cts\images\cts-cells_ifxt_clk.png)
+
+![CTS timing](step_5_cts\images\timing.png)
+
+### 5.1. CTS Hold Fixing (`step_5_1_cts_hold_fixing/`)
+
+Opens the Step 5 checkpoint (`openMSP430_5_clock_ends` via
+`temp_clock_ends`) and fixes the remaining post-CTS hold violations
+with targeted ECO buffer insertion (`hold_fixing.tcl`), followed by
+incremental legalization (`legalization.tcl`), and saves the
+`openMSP430_5_1_cts_hold_fixing_ends` checkpoint.
+
+Thirteen `insert_buffer` ECO operations were performed using
+`NBUFFX2_RVT` and `IBUFFX2_RVT -inverter_pair` cells; the ECO cells
+were incrementally legalized (`legalize_placement -incremental`) to
+0 legality violations.
+
+Results (`reports/`): 10 hold violations → 0 hold violations with
+0 setup violations (`qor_snapshot/post_h_fixing.qor`); the 10
+max-capacitance violations from CTS remain
+(`qor_snapshot/post_h_fixing.con`). ECO cells and nets are recorded in
+`eco_cells_report.rpt` and `eco_nets_report.rpt`, and max/min timing
+paths are in `timing/post_h_fixing.max.tim` and
+`timing/post_h_fixing.min.tim`.
+
+![Hold fixing timing](step_5_1_cts_hold_fixing\images\timing.png)
+
+### 5.2. Electrical Fixing (`step_5_2_elec_fixing/`)
+
+Opens the Step 5.1 checkpoint
+(`openMSP430_5_1_cts_hold_fixing_ends` via
+`temp_cts_hold_fixing_ends`) and fixes max-capacitance /
+max-transition electrical violations, distinct from the hold-fixing ECO
+stage, and saves the `openMSP430_5_2_elec_fixing_ends` checkpoint.
+
+Baseline (`pre_reports/`): 12 max-capacitance violations and
+0 max-transition violations. The fixing strategy (`cap_trans_fix.tcl`)
+uses cell upsizing where higher drive-strength cells are available and
+buffer insertion where needed, followed by `legalize_placement
+-incremental` and max-capacitance / max-transition verification.
+
+Results (`reports/`): 1 max-capacitance violation after fixing
+(`constraint_violations_after_fix.rpt`), 0 hold violations and
+0 setup violations (`qor_snapshot/elec_fixing.qor`), and 0 legality
+violations (`legality_after_fix.rpt`). The remaining violation is
+`dbg_clk`, intentionally left unfixed because no higher
+drive-strength cell was available; it is expected to resolve with
+routed parasitics.
 
 ## Directory Organization
 
@@ -129,10 +221,11 @@ Each completed step follows the same layout:
 - `images/` — layout screenshots for that stage
 
 `run_flow.tcl` at the `pnr/` top level launches the stages in
-sequence via their `master.tcl` drivers (currently Steps 1–4).
+sequence via their `master.tcl` drivers (Steps 1–5 are documented
+above; Routing and Finishing are not yet documented).
 
 ## Pending Stages
 
-Clock Tree Synthesis (CTS), Routing, and Finishing are the
-subsequent stages of the flow. They are not yet implemented or documented
-in this directory.
+CTS and its post-CTS fixing stages are implemented and documented
+above. Routing and Finishing are the remaining stages of the flow.
+They are not yet documented in this directory.

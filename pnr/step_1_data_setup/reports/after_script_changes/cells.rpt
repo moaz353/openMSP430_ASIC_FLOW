@@ -1,0 +1,86 @@
+****************************************
+Report : cell
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:01:12 2026
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+U10                       OR3X1_RVT       saed32rvt_c      
+U11                       OR3X1_RVT       saed32rvt_c      
+U12                       OR3X1_RVT       saed32rvt_c      
+U13                       OR3X1_RVT       saed32rvt_c      
+U16                       OR3X1_RVT       saed32rvt_c      
+U18                       OR3X1_RVT       saed32rvt_c      
+U19                       OR3X1_RVT       saed32rvt_c      
+U2                        OR3X1_RVT       saed32rvt_c      
+U24                       OR3X1_RVT       saed32rvt_c      
+U25                       OR3X1_RVT       saed32rvt_c      
+U26                       OR3X1_RVT       saed32rvt_c      
+U28                       OR3X1_RVT       saed32rvt_c      
+U29                       OR3X1_RVT       saed32rvt_c      
+U30                       OR3X1_RVT       saed32rvt_c      
+U34                       AND2X1_RVT      saed32rvt_c      
+U35                       AND2X1_RVT      saed32rvt_c      
+U36                       NOR3X0_RVT      saed32rvt_c      
+U37                       NOR3X0_RVT      saed32rvt_c      
+U38                       NOR3X0_RVT      saed32rvt_c      
+U39                       NOR3X0_RVT      saed32rvt_c      
+U4                        OR3X1_RVT       saed32rvt_c      
+U40                       NAND2X0_RVT     saed32rvt_c      
+U41                       INVX1_RVT       saed32rvt_c      
+U42                       NAND2X0_RVT     saed32rvt_c      
+U43                       INVX1_RVT       saed32rvt_c      
+U44                       NAND2X0_RVT     saed32rvt_c      
+U45                       INVX1_RVT       saed32rvt_c      
+U46                       NAND2X0_RVT     saed32rvt_c      
+U47                       INVX1_RVT       saed32rvt_c      
+U48                       NAND2X0_RVT     saed32rvt_c      
+U49                       INVX1_RVT       saed32rvt_c      
+U5                        OR3X1_RVT       saed32rvt_c      
+U50                       NAND2X0_RVT     saed32rvt_c      
+U51                       INVX1_RVT       saed32rvt_c      
+U52                       INVX1_RVT       saed32rvt_c      
+U53                       INVX1_RVT       saed32rvt_c      
+U54                       NAND2X0_RVT     saed32rvt_c      
+U55                       INVX1_RVT       saed32rvt_c      
+U56                       INVX1_RVT       saed32rvt_c      
+U57                       NAND2X0_RVT     saed32rvt_c      
+U58                       INVX1_RVT       saed32rvt_c      
+U59                       INVX1_RVT       saed32rvt_c      
+U60                       NAND2X0_RVT     saed32rvt_c      
+U61                       INVX1_RVT       saed32rvt_c      
+U62                       INVX1_RVT       saed32rvt_c      
+U63                       INVX1_RVT       saed32rvt_c      
+U64                       INVX1_RVT       saed32rvt_c      
+U65                       NAND2X0_RVT     saed32rvt_c      
+U66                       INVX1_RVT       saed32rvt_c      
+U67                       INVX1_RVT       saed32rvt_c      
+clock_module_0            omsp_clock_module                h
+dbg_0                     omsp_dbg                         h
+execution_unit_0          omsp_execution_unit              h
+frontend_0                omsp_frontend                    h
+mem_backbone_0            omsp_mem_backbone                h
+multiplier_0              omsp_multiplier                  h
+sfr_0                     omsp_sfr                         h
+watchdog_0                omsp_watchdog                    h
+--------------------------------------------------------------------------------
+Total 58 cells
+
+1

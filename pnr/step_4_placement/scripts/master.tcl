@@ -28,13 +28,13 @@ source ${SCRIPT_DIR}/reports.tcl
 banner "Step 4 - Placement completed"
 
 # ###########################################################################
-# 6. Save the stage checkpoint
+# Save the stage checkpoint
 # ###########################################################################
 save_lb_to_checkpoint $NEW_CHECKPOINT
 
 
 # ###########################################################################
-# 7. Close the library
+# Close the library
 # .common procedure
 # ###########################################################################
 close_stage

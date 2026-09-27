@@ -1,0 +1,80 @@
+****************************************
+Report : constraint
+        -all_violators
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:05:07 2026
+****************************************
+
+   late_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   execution_unit_0/register_file_0/copt_net_991     0.08     0.08     0.00 (MET)
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   dbg_clk                    168.00         174.59          -6.59  (VIOLATED) 
+     PIN : clock_module_0/clock_gate_dbg_clk/cts_inv_7023075/Y   168.00   174.59    -6.59 (VIOLATED)
+
+   cts2                        82.00          86.66          -4.66  (VIOLATED) 
+     PIN : clock_module_0/clock_gate_dma_mclk/cts_inv_8373210/Y    82.00    86.66    -4.66 (VIOLATED)
+
+   dbg_0/dbg_din[10]            8.00           9.08          -1.08  (VIOLATED) 
+     PIN : dbg_0/dbg_uart_0/U167/Y     8.00     9.08         -1.08  (VIOLATED) 
+
+   ctsbuf_net_1840             32.00          32.57          -0.57  (VIOLATED) 
+     PIN : cts_inv_8943267/Y    32.00         32.57          -0.57  (VIOLATED) 
+
+   dbg_0/dbg_uart_0/placeHFSNET_94    16.00    16.40         -0.40  (VIOLATED) 
+     PIN : dbg_0/dbg_uart_0/placeHFSINV_1454_126/Y    16.00    16.40    -0.40 (VIOLATED)
+
+   per_din[12]                 16.00          16.03          -0.03  (VIOLATED) 
+     PIN : mem_backbone_0/U55/Y    16.00      16.03          -0.03  (VIOLATED) 
+
+   clock_module_0/placeHFSNET_30     8.00      8.03          -0.03  (VIOLATED) 
+     PIN : clock_module_0/placeHFSINV_573_42/Y     8.00     8.03    -0.03 (VIOLATED)
+
+   inst_dest[12]                8.00           8.02          -0.02  (VIOLATED) 
+     PIN : frontend_0/U176/Y     8.00          8.02          -0.02  (VIOLATED) 
+
+   execution_unit_0/register_file_0/reg_incr_val[10]     8.00     8.02    -0.02 (VIOLATED)
+     PIN : execution_unit_0/register_file_0/U217/Y     8.00     8.02    -0.02 (VIOLATED)
+
+   execution_unit_0/register_file_0/copt_net_991    16.00    16.01    -0.01 (VIOLATED)
+     PIN : execution_unit_0/register_file_0/clockcopt_h_inst_4840/Y    16.00    16.01    -0.01 (VIOLATED)
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 10
+
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+   Total number of violation(s): 10
+1
