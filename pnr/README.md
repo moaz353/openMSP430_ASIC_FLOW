@@ -14,7 +14,12 @@ source ./step_4_placement/scripts/master.tcl
 source ./step_5_cts/scripts/master.tcl
 source ./step_5_1_cts_hold_fixing/scripts/master.tcl
 source ./step_5_2_elec_fixing/scripts/master.tcl
+source ./step_6_routing/scripts/master.tcl
+source ./step_6_1_elec_fixing/scripts/master.tcl
+source ./step_7_finishing/scripts/master.tcl
 ```
+
+> **Run Note:** A complete PnR flow was executed from `step_1_data_setup` through `step_7_finishing`. For the stages already present in the repository, the reports from the new run were added while preserving the previous reports for comparison and history. The newly added stages also include their generated reports and outputs. Therefore, reports from the new flow run may share the same or closely related timestamps, as they were generated during the same full-flow execution.
 
 ## Flow Structure
 
@@ -26,11 +31,10 @@ Intended stage order:
 4. Placement — completed
 5. CTS — completed (`step_5_cts`, `step_5_1_cts_hold_fixing`,
    `step_5_2_elec_fixing`)
-6. Routing — pending
-7. Finishing — pending
+6. Routing — completed (`step_6_routing`, `step_6_1_elec_fixing`)
+7. Finishing — completed (`step_7_finishing`)
 
-Steps 1–5 are currently completed and documented below. Routing and
-Finishing are the remaining stages of the PNR flow.
+Steps 1–7 are currently completed and documented below.
 
 ## Completed Stages
 
@@ -46,7 +50,8 @@ Design summary (`reports/openMSP430_design_summary.rpt`): ~4362 standard
 cells, ~4956 nets, 260 ports, and 2 clocks (`dco_clk`, `lfxt_clk`).
 Sanity checks cover the NDM library, netlist linkage, and clocks.
 
-![Design setup](step_1_data_setup\images\design_setup.png)
+Design setup:
+![Design setup](step_1_data_setup/images/design_setup.png)
 
 ### 2. Floorplanning (`step_2_floorplanning/`)
 
@@ -60,7 +65,8 @@ Results (`reports/`): utilization ~0.7013 (`utilization.rpt`), 0 legality
 violations (`floorplan_legality.rpt`), and minimal early congestion
 (2 total overflows, 0.01% of GRCs in `congestion.rpt`).
 
-![Floorplan](step_2_floorplanning\images\after_script_changes\floorplan.png)
+Floorplan:
+![Floorplan](step_2_floorplanning/images/after_script_changes/floorplan.png)
 
 ### 3. Power Planning (`step_3_powerplanning/`)
 
@@ -77,19 +83,23 @@ reports zero missing vias.
 
 PG structure:
 
-![M1 rails](step_3_powerplanning\images\after_script_changes\pg_m1_rails.png)
+M1 rails:
+![M1 rails](step_3_powerplanning/images/after_script_changes/pg_m1_rails.png)
 
-![Power ring](step_3_powerplanning\images\after_script_changes\pg_ring_m6_m7.png)
+Power ring:
+![Power ring](step_3_powerplanning/images/after_script_changes/pg_ring_m6_m7.png)
 
-![M5 straps](step_3_powerplanning\images\after_script_changes\pg_m5_straps.png)
+M5 straps:
+![M5 straps](step_3_powerplanning/images/after_script_changes/pg_m5_straps.png)
 
-![M6 straps](step_3_powerplanning\images\after_script_changes\pg_m6_straps.png)
+M6 straps:
+![M6 straps](step_3_powerplanning/images/after_script_changes/pg_m6_straps.png)
 
-![M7 straps](step_3_powerplanning\images\after_script_changes\pg_m7_straps.png)
+M7 straps:
+![M7 straps](step_3_powerplanning/images/after_script_changes/pg_m7_straps.png)
 
 Full grid:
-
-![Power grid](step_3_powerplanning\images\after_script_changes\power_grid.png)
+![Power grid](step_3_powerplanning/images/after_script_changes/power_grid.png)
 
 PG patterns and strategies are summarized in `pg_patterns.rpt` and
 `pg_strategies.rpt`.
@@ -114,21 +124,26 @@ and 0 total negative slack / 0 violating setup paths in both
 timing paths are in `timing/placement.max.tim` and
 `timing/placement.min.tim`. Library info is in `ndm_lib.rpt`.
 
-![Placement](step_4_placement\images\after_script_changes\placement.png)
+Placement:
+![Placement](step_4_placement/images/after_script_changes/placement.png)
 
-![Cell density](step_4_placement\images\after_script_changes\cell_density.png)
+Cell density:
+![Cell density](step_4_placement/images/after_script_changes/cell_density.png)
 
-![Pin density](step_4_placement\images\after_script_changes\pin_density.png)
+Pin density:
+![Pin density](step_4_placement/images/after_script_changes/pin_density.png)
 
-![Power density](step_4_placement\images\after_script_changes\power_density.png)
+Power density:
+![Power density](step_4_placement/images/after_script_changes/power_density.png)
 
-![Hierarchical placement](step_4_placement\images\after_script_changes\hierar_placement.png)
+Hierarchical placement:
+![Hierarchical placement](step_4_placement/images/after_script_changes/hierar_placement.png)
 
 ## CTS and Post-CTS Stages
 
 The three stages below are sub-stages of the CTS/post-CTS flow
 (top-level Step 5): `step_5_cts` → `step_5_1_cts_hold_fixing` →
-`step_5_2_elec_fixing` → Routing and Finishing.
+`step_5_2_elec_fixing`.
 
 ### 5. CTS (`step_5_cts/`)
 
@@ -154,17 +169,23 @@ and `func_fast`, with 10 total hold violations remaining at CTS exit;
 skew, and the clock SDC for the routing stage is written to
 `outputs/design.sdc`.
 
-![CTS route](step_5_cts\images\cts_route.png)
+CTS route:
+![CTS route](step_5_cts/images/cts_route.png)
 
-![dco_clk tree](step_5_cts\images\dco_clk-tree.png)
+dco_clk tree:
+![dco_clk tree](step_5_cts/images/dco_clk-tree.png)
 
-![lfxt_clk tree](step_5_cts\images\ifxt_clk-tree.png)
+lfxt_clk tree:
+![lfxt_clk tree](step_5_cts/images/ifxt_clk-tree.png)
 
-![CTS cells dco_clk](step_5_cts\images\cts-cells_dco_clk.png)
+CTS cells dco_clk:
+![CTS cells dco_clk](step_5_cts/images/cts-cells_dco_clk.png)
 
-![CTS cells lfxt_clk](step_5_cts\images\cts-cells_ifxt_clk.png)
+CTS cells lfxt_clk:
+![CTS cells lfxt_clk](step_5_cts/images/cts-cells_ifxt_clk.png)
 
-![CTS timing](step_5_cts\images\timing.png)
+CTS timing:
+![CTS timing](step_5_cts/images/timing.png)
 
 ### 5.1. CTS Hold Fixing (`step_5_1_cts_hold_fixing/`)
 
@@ -187,7 +208,8 @@ max-capacitance violations from CTS remain
 paths are in `timing/post_h_fixing.max.tim` and
 `timing/post_h_fixing.min.tim`.
 
-![Hold fixing timing](step_5_1_cts_hold_fixing\images\timing.png)
+Hold fixing timing:
+![Hold fixing timing](step_5_1_cts_hold_fixing/images/timing.png)
 
 ### 5.2. Electrical Fixing (`step_5_2_elec_fixing/`)
 
@@ -211,21 +233,94 @@ violations (`legality_after_fix.rpt`). The remaining violation is
 drive-strength cell was available; it is expected to resolve with
 routed parasitics.
 
+## Routing
+
+The two stages below complete the PNR flow
+(top-level Steps 6 ): `step_6_routing` → `step_6_1_elec_fixing`.
+
+### 6. Routing (`step_6_routing/`)
+
+Opens the Step 5.2 checkpoint (`openMSP430_5_2_elec_fixing_ends` via
+`temp_elec_fixing_ends`), applies the MCMM setup from `common/mcmm.tcl`,
+runs global and detail routing (`route_auto`), then post-route
+optimization (`route_opt`), reconnects the PG nets, cleans remaining
+DRCs (`optimize_routes`), and saves the `openMSP430_6_complete`
+checkpoint.
+
+Checks and reports (`reports/`): in-design LVS (`route_lvs.rpt`),
+`op_check_route.rpt`, `op_legality.rpt`, congestion
+(`route.congestion.rpt`), constraint violations
+(`constraint_violations.rpt`), QoR snapshot (`qor_snapshot/route.*`),
+max/min timing (`timing/route.*`), and design summary
+(`design_summary.rpt`). The routed netlist for PrimeTime is written to
+`outputs/openMSP430_pt.v`.
+
+Routed design:
+![Routed design](step_6_routing/images/routed_design.png)
+
+### 6.1. Electrical Fixing (`step_6_1_elec_fixing/`)
+
+Opens the Step 6 checkpoint (`openMSP430_6_complete` via
+`temp_complete`) and fixes the post-route max-capacitance /
+max-transition electrical violations (`cap_trans_fix.tcl`) using cell
+upsizing and buffer insertion, followed by incremental legalization and
+ECO routing (`route_eco`, reusing the existing global route), and saves
+the `openMSP430_6_1_elec_fixing_ends` checkpoint.
+
+Checks and reports (`reports/`, `pre_reports/`): legality
+(`legality_after_fix.rpt`), route check
+(`check_route_after_fix.rpt`), max-capacitance / max-transition
+(`max_cap_after_fix.rpt`, `max_transition_after_fix.rpt`), constraint
+violations (`constraint_violations_after_fix.rpt`), and QoR/timing
+snapshots (`qor_snapshot/`, `timing/`).
+
+## Finishing
+
+### 7. Finishing (`step_7_finishing/`)
+
+Opens the Step 6.1 checkpoint (`openMSP430_6_1_elec_fixing_ends` via
+`temp_finish_ends`) and performs physical finishing: redundant-via
+insertion (excluding cap-sensitive nets), max-capacitance fixes for
+violations introduced by via insertion (`cap_fix.tcl`), standard-cell
+filler insertion, final PG connection, and saves the
+`openMSP430_7_finished` checkpoint.
+
+Final outputs (`outputs/`): gate-level Verilog with PG nets
+(`openMSP430_netlist.pg.v`) and without physical-only cells
+(`openMSP430_netlist.v`), SDC (`openMSP430.out.sdc`), SPEF
+(`openMSP430.out.spef.*`), DEF (`openMSP430.out.def`), and GDS
+(`openMSP430.gds`).
+
+Final checks and reports (`reports/`): QoR snapshot (`qor_snapshot/final.*`),
+max/min timing (`timing/final.*`), power
+(`openMSP430.final_power.rpt`), cell/reference usage
+(`openMSP430.final_cell_usage.rpt`,
+`openMSP430.final_reference_usage.rpt`), LVS (`openMSP430.lvs.rpt`),
+legality (`openMSP430.final_legality.rpt`), PG connectivity
+(`openMSP430.final_pg_connectivity.rpt`), constraint violations
+(`constraint_violations.rpt`), and crosstalk delta
+(`crosstalk_delta.tim`).
+
+Final layout:
+![Final layout](step_7_finishing/images/final_layout.png)
+
+Cell density:
+![Cell density](step_7_finishing/images/cell_density.png)
+
+Filler cells:
+![Filler cells](step_7_finishing/images/filler_cells_phy_only.png)
+
+Final timing:
+![Final timing](step_7_finishing/images/timing.png)
+
+
 ## Directory Organization
 
-Each completed step follows the same layout:
+Each step follows the same layout:
 
 - `scripts/` — stage driver and implementation (`master.tcl`, stage Tcl,
   `variables.tcl`, `checks.tcl`, `reports.tcl`)
 - `reports/` — tool-generated checks and summaries for that stage
-- `images/` — layout screenshots for that stage
-
-`run_flow.tcl` at the `pnr/` top level launches the stages in
-sequence via their `master.tcl` drivers (Steps 1–5 are documented
-above; Routing and Finishing are not yet documented).
-
-## Pending Stages
-
-CTS and its post-CTS fixing stages are implemented and documented
-above. Routing and Finishing are the remaining stages of the flow.
-They are not yet documented in this directory.
+- `images/` — layout screenshots
+- `run_flow.tcl` at the `pnr/` top level launches the stages in
+  sequence via their `master.tcl` drivers (Steps 1–7 are documented above).

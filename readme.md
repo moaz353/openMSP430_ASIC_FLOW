@@ -11,6 +11,7 @@
 - [🎛️ Design](#design)
 - [📁 Repository Structure](#repository-structure)
 - [⚙️ ASIC Implementation Flow](#asic-implementation-flow)
+- [🏁 Final Layout](#final-layout)
 - [📝 Notes](#notes)
 
 ---
@@ -26,7 +27,7 @@ Generated synthesis reports and outputs are available under `syn/`.
 
 The ASIC implementation is being developed progressively from synthesis through physical design, timing analysis, and final signoff.
 
-The physical design flow has progressed through data setup, floorplanning, power planning, placement, clock tree synthesis (CTS), CTS hold fixing, and electrical fixing, with the corresponding implementation scripts, reports, and layout images available under `pnr/`.
+The physical design flow has progressed through data setup, floorplanning, power planning, placement, clock tree synthesis (CTS), CTS hold fixing, electrical fixing, routing, post-route electrical fixing, and finishing, with the corresponding implementation scripts, reports, and layout images available under `pnr/`.
 
 ### 📈 Progress
 
@@ -39,7 +40,9 @@ The physical design flow has progressed through data setup, floorplanning, power
 - [✅] Clock Tree Synthesis (CTS) — **Done**
 - [✅] CTS Hold Fixing — **Done**
 - [✅] Electrical Fixing — **Done**
-- [⏳] Routing — _Pending_
+- [✅] Routing — **Done**
+- [✅] Post-Route Electrical Fixing — **Done**
+- [✅] Finishing — **Done**
 - [⏳] Static Timing Analysis (STA) — _Pending_
 - [⏳] Physical verification — _Pending_
 - [⏳] Final signoff — _Pending_
@@ -140,7 +143,20 @@ rtl/openMSP430.v
     │   ├── images
     │   ├── reports
     │   └── scripts
-    └── step_5_2_elec_fixing/
+    ├── step_5_2_elec_fixing/
+    │   ├── reports
+    │   └── scripts
+    ├── step_6_routing/
+    │   ├── images
+    │   ├── outputs
+    │   ├── reports
+    │   └── scripts
+    ├── step_6_1_elec_fixing/
+    │   ├── reports
+    │   └── scripts
+    └── step_7_finishing/
+        ├── images
+        ├── outputs
         ├── reports
         └── scripts
 ```
@@ -191,6 +207,14 @@ Signoff
 
 ---
 
+## 🏁 Final Layout
+
+Final routed and finished layout from `pnr/step_7_finishing/`:
+
+![Final layout](pnr/step_7_finishing/images/final_layout.png)
+
+---
+
 ## 📝 Notes
 
 This repository focuses on the ASIC implementation of the openMSP430 RTL.
@@ -198,3 +222,15 @@ This repository focuses on the ASIC implementation of the openMSP430 RTL.
 The original openMSP430 project also contains FPGA implementations, simulation infrastructure, software development tools, and other supporting material. These are not included in the current repository because this project starts directly from the selected RTL and proceeds into the ASIC implementation flow.
 
 As the implementation progresses, the repository will be updated with the corresponding ASIC flow scripts, reports, constraints, and implementation results.
+
+```
+
+            ███╗   ███╗ ▀▀▀▀▀▀▀      █████╗ ███████╗
+            ████╗ ████║ ██████╗     ██╔══██╗╚══███╔╝
+            ██╔████╔██║██╔═══██╗    ███████║  ███╔╝
+            ██║╚██╔╝██║██║   ██║    ██╔══██║ ███╔╝
+            ██║ ╚═╝ ██║╚██████╔╝    ██║  ██║███████╗
+            ╚═╝     ╚═╝ ╚═════╝     ╚═╝  ╚═╝╚══════╝
+            ────────────────────────────────────────
+            └─ RTL · Verification · Physical Design
+```

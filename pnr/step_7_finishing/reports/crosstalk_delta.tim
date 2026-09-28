@@ -1,0 +1,129 @@
+SI analysis is not enabled, so delta delays are unavailable.
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -crosstalk_delta
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:33:53 2026
+****************************************
+
+  Startpoint: dmem_dout[8] (input port clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_dco_wkup/data_sync_reg[1] (recovery check against rising-edge clock clocked by dco_clk')
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: REGIN
+  Path Type: max
+
+  Point                                          Delta     Incr      Path  
+  --------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                0.00      0.00
+  clock network delay (ideal)                              0.00      0.00
+  input external delay                                     2.25      2.25
+
+  dmem_dout[8] (in)                                        0.01      2.26 r
+  mem_backbone_0/placeZBUF_inst_193/A (NBUFFX4_RVT)        0.00      2.26 r
+  mem_backbone_0/placeZBUF_inst_193/Y (NBUFFX4_RVT)        0.07      2.33 r
+  mem_backbone_0/U101/A3 (AO222X1_RVT)                     0.00      2.33 r
+  mem_backbone_0/U101/Y (AO222X1_RVT)                      0.16      2.50 r
+  execution_unit_0/U177/A2 (AO22X1_RVT)                    0.00      2.50 r
+  execution_unit_0/U177/Y (AO22X1_RVT)                     0.14      2.64 r
+  execution_unit_0/U90/A4 (AO222X1_RVT)                    0.00      2.64 r
+  execution_unit_0/U90/Y (AO222X1_RVT)                     0.13      2.77 r
+  execution_unit_0/U86/A1 (OR2X1_RVT)                      0.00      2.77 r
+  execution_unit_0/U86/Y (OR2X1_RVT)                       0.11      2.88 r
+  execution_unit_0/alu_0/U26/A1 (XOR2X2_RVT)               0.00      2.88 r
+  execution_unit_0/alu_0/U26/Y (XOR2X2_RVT)                0.14      3.02 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_0/A (FADDX1_RVT)
+                                                           0.00      3.02 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_0/CO (FADDX1_RVT)
+                                                           0.11      3.13 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_1/CI (FADDX1_RVT)
+                                                           0.00      3.13 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_1/CO (FADDX1_RVT)
+                                                           0.09      3.22 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_2/CI (FADDX1_RVT)
+                                                           0.00      3.22 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_2/CO (FADDX1_RVT)
+                                                           0.09      3.31 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_3/CI (FADDX1_RVT)
+                                                           0.00      3.31 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C185/U1_3/S (FADDX1_RVT)
+                                                           0.16      3.47 r
+  execution_unit_0/alu_0/U143/A3 (OA21X1_RVT)              0.00      3.47 r
+  execution_unit_0/alu_0/U143/Y (OA21X1_RVT)               0.07      3.54 r
+  execution_unit_0/alu_0/U7/A2 (OR2X1_RVT)                 0.00      3.54 r
+  execution_unit_0/alu_0/U7/Y (OR2X1_RVT)                  0.07      3.62 r
+  execution_unit_0/alu_0/U106/A1 (AND2X1_RVT)              0.00      3.62 r
+  execution_unit_0/alu_0/U106/Y (AND2X1_RVT)               0.06      3.68 r
+  execution_unit_0/alu_0/add_102_C185_aco/U1_2/CI (FADDX1_RVT)
+                                                           0.00      3.68 r
+  execution_unit_0/alu_0/add_102_C185_aco/U1_2/CO (FADDX1_RVT)
+                                                           0.10      3.78 r
+  execution_unit_0/alu_0/U104/A1 (AND2X1_RVT)              0.00      3.78 r
+  execution_unit_0/alu_0/U104/Y (AND2X1_RVT)               0.06      3.84 r
+  execution_unit_0/alu_0/U103/A2 (XOR2X1_RVT)              0.00      3.84 r
+  execution_unit_0/alu_0/U103/Y (XOR2X1_RVT)               0.13      3.97 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C186/U1_0/CI (FADDX1_RVT)
+                                                           0.00      3.97 f
+  execution_unit_0/alu_0/add_1_root_add_100_2_C186/U1_0/S (FADDX1_RVT)
+                                                           0.15      4.12 r
+  execution_unit_0/alu_0/U17/A1 (AO222X1_RVT)              0.00      4.12 r
+  execution_unit_0/alu_0/U17/Y (AO222X1_RVT)               0.14      4.26 r
+  execution_unit_0/alu_0/clockcopt_h_inst_5229/A (NBUFFX4_RVT)
+                                                           0.00      4.26 r
+  execution_unit_0/alu_0/clockcopt_h_inst_5229/Y (NBUFFX4_RVT)
+                                                           0.09      4.35 r
+  execution_unit_0/register_file_0/U399/A1 (AO21X2_RVT)    0.00      4.36 r
+  execution_unit_0/register_file_0/U399/Y (AO21X2_RVT)     0.14      4.49 r
+  frontend_0/U69/A2 (NAND2X0_RVT)                          0.00      4.49 r
+  frontend_0/U69/Y (NAND2X0_RVT)                           0.06      4.55 f
+  frontend_0/U68/A4 (AO22X2_RVT)                           0.00      4.55 f
+  frontend_0/U68/Y (AO22X2_RVT)                            0.12      4.67 f
+  clock_module_0/and_cpuoff_mclk_en/U1/A1 (AND2X2_RVT)     0.00      4.67 f
+  clock_module_0/and_cpuoff_mclk_en/U1/Y (AND2X2_RVT)      0.11      4.79 f
+  clock_module_0/and_dco_dis1/U1/A1 (AND2X1_RVT)           0.00      4.79 f
+  clock_module_0/and_dco_dis1/U1/Y (AND2X1_RVT)            0.07      4.85 f
+  clock_module_0/U55/A2 (NOR2X0_RVT)                       0.00      4.85 f
+  clock_module_0/U55/Y (NOR2X0_RVT)                        0.07      4.93 r
+  clock_module_0/and_dco_dis2/U1/A1 (AND2X1_RVT)           0.00      4.93 r
+  clock_module_0/and_dco_dis2/U1/Y (AND2X1_RVT)            0.05      4.97 r
+  clock_module_0/and_dco_dis3/U1/A1 (AND2X1_RVT)           0.00      4.97 r
+  clock_module_0/and_dco_dis3/U1/Y (AND2X1_RVT)            0.05      5.03 r
+  clock_module_0/U45/A (INVX0_RVT)                         0.00      5.03 r
+  clock_module_0/U45/Y (INVX0_RVT)                         0.03      5.06 f
+  clock_module_0/and_dco_dis5/U1/A2 (AND2X1_RVT)           0.00      5.06 f
+  clock_module_0/and_dco_dis5/U1/Y (AND2X1_RVT)            0.07      5.13 f
+  clock_module_0/and_dco_en_wkup/U1/A1 (AND2X1_RVT)        0.00      5.13 f
+  clock_module_0/and_dco_en_wkup/U1/Y (AND2X1_RVT)         0.07      5.19 f
+  clock_module_0/U120/A3 (OR3X1_RVT)                       0.00      5.19 f
+  clock_module_0/U120/Y (OR3X1_RVT)                        0.07      5.26 f
+  clock_module_0/U112/A1 (OR2X1_RVT)                       0.00      5.26 f
+  clock_module_0/U112/Y (OR2X1_RVT)                        0.06      5.32 f
+  clock_module_0/scan_mux_dco_wkup/U2/A3 (AO22X1_RVT)      0.00      5.32 f
+  clock_module_0/scan_mux_dco_wkup/U2/Y (AO22X1_RVT)       0.06      5.38 f
+  clock_module_0/sync_cell_dco_wkup/U3/A (INVX1_RVT)       0.00      5.38 f
+  clock_module_0/sync_cell_dco_wkup/U3/Y (INVX1_RVT)       0.04      5.42 r
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/RSTB (DFFARX1_RVT)
+                                                           0.00      5.42 r
+  data arrival time                                                  5.42
+
+  clock dco_clk' (rise edge)                              20.00     20.00
+  clock network delay (ideal)                              0.00     20.00
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                           0.00     20.00 r
+  library setup time                                       0.04     20.04
+  data required time                                                20.04
+  --------------------------------------------------------------------------------
+  data required time                                                20.04
+  data arrival time                                                 -5.42
+  --------------------------------------------------------------------------------
+  slack (MET)                                                       14.62
+
+
+1

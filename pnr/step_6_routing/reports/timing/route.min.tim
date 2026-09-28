@@ -1,0 +1,481 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 10
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:06:57 2026
+****************************************
+
+  Startpoint: clock_module_0/dco_enable_reg (rising edge-triggered flip-flop clocked by dco_clk')
+  Endpoint: clock_module_0/sync_cell_dco_wkup/data_sync_reg[0] (removal check against rising-edge clock clocked by dco_clk')
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk' (rise edge)                                                  20.00     20.00
+  clock network delay (ideal)                                                  0.00     20.00
+
+  clock_module_0/dco_enable_reg/CLK (DFFARX1_RVT)                    0.00      0.00     20.00 r
+  clock_module_0/dco_enable_reg/QN (DFFARX1_RVT)                     0.02      0.04     20.04 f
+  clock_module_0/n104 (net)                         1      1.92
+  clock_module_0/and_dco_en_wkup/U1/A2 (AND2X1_RVT)                  0.02      0.00     20.04 f
+  clock_module_0/and_dco_en_wkup/U1/Y (AND2X1_RVT)                   0.01      0.02     20.06 f
+  clock_module_0/and_dco_en_wkup/y (net)            1      1.75
+  clock_module_0/U120/A3 (OR3X1_RVT)                                 0.01      0.00     20.06 f
+  clock_module_0/U120/Y (OR3X1_RVT)                                  0.01      0.02     20.08 f
+  clock_module_0/N169 (net)                         2      1.56
+  clock_module_0/U112/A1 (OR2X1_RVT)                                 0.01      0.00     20.08 f
+  clock_module_0/U112/Y (OR2X1_RVT)                                  0.01      0.02     20.10 f
+  clock_module_0/_9_net_ (net)                      1      0.75
+  clock_module_0/scan_mux_dco_wkup/U2/A3 (AO22X1_RVT)                0.01      0.00     20.10 f
+  clock_module_0/scan_mux_dco_wkup/U2/Y (AO22X1_RVT)                 0.01      0.02     20.11 f
+  clock_module_0/scan_mux_dco_wkup/data_out (net)
+                                                    1      0.97
+  clock_module_0/sync_cell_dco_wkup/U3/A (INVX1_RVT)                 0.01      0.00     20.11 f
+  clock_module_0/sync_cell_dco_wkup/U3/Y (INVX1_RVT)                 0.01      0.01     20.12 r
+  clock_module_0/sync_cell_dco_wkup/n1 (net)        2      3.07
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[0]/RSTB (DFFARX1_RVT)
+                                                                     0.01      0.00     20.12 r
+  data arrival time                                                                     20.12
+
+  clock dco_clk' (rise edge)                                                  20.00     20.00
+  clock network delay (ideal)                                                  0.00     20.00
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[0]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00     20.00 r
+  library hold time                                                            0.12     20.12
+  data required time                                                                    20.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                    20.12
+  data arrival time                                                                    -20.12
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/dco_enable_reg (rising edge-triggered flip-flop clocked by dco_clk')
+  Endpoint: clock_module_0/sync_cell_dco_wkup/data_sync_reg[1] (removal check against rising-edge clock clocked by dco_clk')
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk' (rise edge)                                                  20.00     20.00
+  clock network delay (ideal)                                                  0.00     20.00
+
+  clock_module_0/dco_enable_reg/CLK (DFFARX1_RVT)                    0.00      0.00     20.00 r
+  clock_module_0/dco_enable_reg/QN (DFFARX1_RVT)                     0.02      0.04     20.04 f
+  clock_module_0/n104 (net)                         1      1.92
+  clock_module_0/and_dco_en_wkup/U1/A2 (AND2X1_RVT)                  0.02      0.00     20.04 f
+  clock_module_0/and_dco_en_wkup/U1/Y (AND2X1_RVT)                   0.01      0.02     20.06 f
+  clock_module_0/and_dco_en_wkup/y (net)            1      1.75
+  clock_module_0/U120/A3 (OR3X1_RVT)                                 0.01      0.00     20.06 f
+  clock_module_0/U120/Y (OR3X1_RVT)                                  0.01      0.02     20.08 f
+  clock_module_0/N169 (net)                         2      1.56
+  clock_module_0/U112/A1 (OR2X1_RVT)                                 0.01      0.00     20.08 f
+  clock_module_0/U112/Y (OR2X1_RVT)                                  0.01      0.02     20.10 f
+  clock_module_0/_9_net_ (net)                      1      0.75
+  clock_module_0/scan_mux_dco_wkup/U2/A3 (AO22X1_RVT)                0.01      0.00     20.10 f
+  clock_module_0/scan_mux_dco_wkup/U2/Y (AO22X1_RVT)                 0.01      0.02     20.11 f
+  clock_module_0/scan_mux_dco_wkup/data_out (net)
+                                                    1      0.97
+  clock_module_0/sync_cell_dco_wkup/U3/A (INVX1_RVT)                 0.01      0.00     20.11 f
+  clock_module_0/sync_cell_dco_wkup/U3/Y (INVX1_RVT)                 0.01      0.01     20.12 r
+  clock_module_0/sync_cell_dco_wkup/n1 (net)        2      3.07
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/RSTB (DFFARX1_RVT)
+                                                                     0.01      0.00     20.12 r
+  data arrival time                                                                     20.12
+
+  clock dco_clk' (rise edge)                                                  20.00     20.00
+  clock network delay (ideal)                                                  0.00     20.00
+  clock_module_0/sync_cell_dco_wkup/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00     20.00 r
+  library hold time                                                            0.12     20.12
+  data required time                                                                    20.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                    20.12
+  data arrival time                                                                    -20.12
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)   0.00      0.00      0.00 r
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)     0.01      0.05      0.05 f
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.88
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                      0.03      0.03      0.08 f
+  clock_module_0/scan_mux_por/data_out (net)        4      6.36
+  placeHFSINV_493_16/A (INVX4_RVT)                                   0.03      0.00      0.08 f
+  placeHFSINV_493_16/Y (INVX4_RVT)                                   0.01      0.01      0.09 r
+  placeHFSNET_12 (net)                              1      0.66
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                              0.01      0.00      0.09 r
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                              0.01      0.02      0.10 r
+  ropt_net_2076 (net)                               1      1.01
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                              0.01      0.00      0.10 r
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                              0.02      0.02      0.13 r
+  copt_net_81 (net)                                10     14.95
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]/RSTB (DFFARX1_RVT)
+                                                                     0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)   0.00      0.00      0.00 r
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)     0.01      0.05      0.05 f
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.88
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                      0.03      0.03      0.08 f
+  clock_module_0/scan_mux_por/data_out (net)        4      6.36
+  placeHFSINV_493_16/A (INVX4_RVT)                                   0.03      0.00      0.08 f
+  placeHFSINV_493_16/Y (INVX4_RVT)                                   0.01      0.01      0.09 r
+  placeHFSNET_12 (net)                              1      0.66
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                              0.01      0.00      0.09 r
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                              0.01      0.02      0.10 r
+  ropt_net_2076 (net)                               1      1.01
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                              0.01      0.00      0.10 r
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                              0.02      0.02      0.13 r
+  copt_net_81 (net)                                10     14.95
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]/RSTB (DFFARX1_RVT)
+                                                                     0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdt_reset_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)   0.00      0.00      0.00 r
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)     0.01      0.05      0.05 f
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.88
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                      0.03      0.03      0.08 f
+  clock_module_0/scan_mux_por/data_out (net)        4      6.36
+  placeHFSINV_493_16/A (INVX4_RVT)                                   0.03      0.00      0.08 f
+  placeHFSINV_493_16/Y (INVX4_RVT)                                   0.01      0.01      0.09 r
+  placeHFSNET_12 (net)                              1      0.66
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                              0.01      0.00      0.09 r
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                              0.01      0.02      0.10 r
+  ropt_net_2076 (net)                               1      1.01
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                              0.01      0.00      0.10 r
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                              0.02      0.02      0.13 r
+  copt_net_81 (net)                                10     14.95
+  watchdog_0/wdt_reset_reg/RSTB (DFFARX1_RVT)                        0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdt_reset_reg/CLK (DFFARX1_RVT)                         0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdtifg_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)   0.00      0.00      0.00 r
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)     0.01      0.05      0.05 f
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.88
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                     0.01      0.00      0.05 f
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                      0.03      0.03      0.08 f
+  clock_module_0/scan_mux_por/data_out (net)        4      6.36
+  placeHFSINV_493_16/A (INVX4_RVT)                                   0.03      0.00      0.08 f
+  placeHFSINV_493_16/Y (INVX4_RVT)                                   0.01      0.01      0.09 r
+  placeHFSNET_12 (net)                              1      0.66
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                              0.01      0.00      0.09 r
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                              0.01      0.02      0.10 r
+  ropt_net_2076 (net)                               1      1.01
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                              0.01      0.00      0.10 r
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                              0.02      0.02      0.13 r
+  copt_net_81 (net)                                10     14.95
+  watchdog_0/wdtifg_reg/RSTB (DFFARX1_RVT)                           0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  watchdog_0/wdtifg_reg/CLK (DFFARX1_RVT)                            0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1] (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/aclk_div_reg[0] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/Q (DFFARX1_RVT)
+                                                                     0.01      0.05      0.05 r
+  clock_module_0/sync_cell_puc_lfxt/data_out (net)
+                                                    1      1.33
+  clock_module_0/U54/A (INVX1_RVT)                                   0.01      0.00      0.05 r
+  clock_module_0/U54/Y (INVX1_RVT)                                   0.01      0.01      0.06 f
+  clock_module_0/n51 (net)                          1      1.90
+  clock_module_0/scan_mux_puc_lfxt/U2/A3 (AO22X1_RVT)                0.01      0.00      0.06 f
+  clock_module_0/scan_mux_puc_lfxt/U2/Y (AO22X1_RVT)                 0.01      0.02      0.08 f
+  clock_module_0/scan_mux_puc_lfxt/data_out (net)
+                                                    1      1.41
+  clock_module_0/placeHFSINV_433_2/A (INVX0_RVT)                     0.01      0.00      0.08 f
+  clock_module_0/placeHFSINV_433_2/Y (INVX0_RVT)                     0.03      0.03      0.11 r
+  clock_module_0/placeHFSNET_1 (net)                6      6.77
+  clock_module_0/clockcopt_h_inst_3882/A (NBUFFX2_RVT)               0.03      0.00      0.11 r
+  clock_module_0/clockcopt_h_inst_3882/Y (NBUFFX2_RVT)               0.02      0.02      0.13 r
+  clock_module_0/copt_net_63 (net)                  3      3.88
+  clock_module_0/aclk_div_reg[0]/RSTB (DFFARX1_RVT)                  0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  clock_module_0/aclk_div_reg[0]/CLK (DFFARX1_RVT)                   0.00      0.00      0.00 r
+  library hold time                                                            0.12      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1] (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/aclk_div_reg[2] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/Q (DFFARX1_RVT)
+                                                                     0.01      0.05      0.05 r
+  clock_module_0/sync_cell_puc_lfxt/data_out (net)
+                                                    1      1.33
+  clock_module_0/U54/A (INVX1_RVT)                                   0.01      0.00      0.05 r
+  clock_module_0/U54/Y (INVX1_RVT)                                   0.01      0.01      0.06 f
+  clock_module_0/n51 (net)                          1      1.90
+  clock_module_0/scan_mux_puc_lfxt/U2/A3 (AO22X1_RVT)                0.01      0.00      0.06 f
+  clock_module_0/scan_mux_puc_lfxt/U2/Y (AO22X1_RVT)                 0.01      0.02      0.08 f
+  clock_module_0/scan_mux_puc_lfxt/data_out (net)
+                                                    1      1.41
+  clock_module_0/placeHFSINV_433_2/A (INVX0_RVT)                     0.01      0.00      0.08 f
+  clock_module_0/placeHFSINV_433_2/Y (INVX0_RVT)                     0.03      0.03      0.11 r
+  clock_module_0/placeHFSNET_1 (net)                6      6.77
+  clock_module_0/clockcopt_h_inst_3882/A (NBUFFX2_RVT)               0.03      0.00      0.11 r
+  clock_module_0/clockcopt_h_inst_3882/Y (NBUFFX2_RVT)               0.02      0.02      0.13 r
+  clock_module_0/copt_net_63 (net)                  3      3.88
+  clock_module_0/aclk_div_reg[2]/RSTB (DFFARX1_RVT)                  0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  clock_module_0/aclk_div_reg[2]/CLK (DFFARX1_RVT)                   0.00      0.00      0.00 r
+  library hold time                                                            0.12      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1] (rising edge-triggered flip-flop clocked by lfxt_clk)
+  Endpoint: clock_module_0/aclk_div_reg[1] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: lfxt_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                     0.00      0.00      0.00 r
+  clock_module_0/sync_cell_puc_lfxt/data_sync_reg[1]/Q (DFFARX1_RVT)
+                                                                     0.01      0.05      0.05 r
+  clock_module_0/sync_cell_puc_lfxt/data_out (net)
+                                                    1      1.33
+  clock_module_0/U54/A (INVX1_RVT)                                   0.01      0.00      0.05 r
+  clock_module_0/U54/Y (INVX1_RVT)                                   0.01      0.01      0.06 f
+  clock_module_0/n51 (net)                          1      1.90
+  clock_module_0/scan_mux_puc_lfxt/U2/A3 (AO22X1_RVT)                0.01      0.00      0.06 f
+  clock_module_0/scan_mux_puc_lfxt/U2/Y (AO22X1_RVT)                 0.01      0.02      0.08 f
+  clock_module_0/scan_mux_puc_lfxt/data_out (net)
+                                                    1      1.41
+  clock_module_0/placeHFSINV_433_2/A (INVX0_RVT)                     0.01      0.00      0.08 f
+  clock_module_0/placeHFSINV_433_2/Y (INVX0_RVT)                     0.03      0.03      0.11 r
+  clock_module_0/placeHFSNET_1 (net)                6      6.77
+  clock_module_0/clockcopt_h_inst_3882/A (NBUFFX2_RVT)               0.03      0.00      0.11 r
+  clock_module_0/clockcopt_h_inst_3882/Y (NBUFFX2_RVT)               0.02      0.02      0.13 r
+  clock_module_0/copt_net_63 (net)                  3      3.88
+  clock_module_0/aclk_div_reg[1]/RSTB (DFFARX1_RVT)                  0.02      0.00      0.13 r
+  data arrival time                                                                      0.13
+
+  clock lfxt_clk (rise edge)                                                   0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  clock_module_0/aclk_div_reg[1]/CLK (DFFARX1_RVT)                   0.00      0.00      0.00 r
+  library hold time                                                            0.12      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.13
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+
+  Startpoint: watchdog_0/wdt_reset_reg (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_puc/data_sync_reg[0] (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  watchdog_0/wdt_reset_reg/CLK (DFFARX1_RVT)                         0.00      0.00      0.00 r
+  watchdog_0/wdt_reset_reg/Q (DFFARX1_RVT)                           0.02      0.06      0.06 f
+  watchdog_0/wdt_reset (net)                        1      2.38
+  clock_module_0/U7/A2 (OR2X4_RVT)                                   0.02      0.00      0.06 f
+  clock_module_0/U7/Y (OR2X4_RVT)                                    0.01      0.02      0.08 f
+  clock_module_0/puc_a (net)                        1      0.80
+  clock_module_0/scan_mux_puc_rst_a/U2/A3 (AO22X1_RVT)               0.01      0.00      0.08 f
+  clock_module_0/scan_mux_puc_rst_a/U2/Y (AO22X1_RVT)                0.07      0.06      0.13 f
+  clock_module_0/scan_mux_puc_rst_a/data_out (net)
+                                                    1     16.35
+  clock_module_0/sync_cell_puc/U3/A (INVX32_RVT)                     0.07      0.00      0.13 f
+  clock_module_0/sync_cell_puc/U3/Y (INVX32_RVT)                     0.03      0.01      0.14 r
+  clock_module_0/sync_cell_puc/n1 (net)             2      2.75
+  clock_module_0/sync_cell_puc/data_sync_reg[0]/RSTB (DFFARX1_RVT)   0.03      0.00      0.14 r
+  data arrival time                                                                      0.14
+
+  clock dco_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  clock_module_0/sync_cell_puc/data_sync_reg[0]/CLK (DFFARX1_RVT)    0.00      0.00      0.00 r
+  library hold time                                                            0.13      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.14
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.01
+
+
+1

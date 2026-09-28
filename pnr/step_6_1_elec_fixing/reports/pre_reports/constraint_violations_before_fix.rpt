@@ -1,0 +1,194 @@
+Using libraries: openMSP430.ndm saed32rvt_c
+Visiting block openMSP430.ndm:temp_complete.design
+Information: Clearing abstracted power annotation ... 
+Design 'openMSP430' was successfully linked.
+****************************************
+Report : constraint
+        -all_violators
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:06:58 2026
+****************************************
+
+   late_timing
+   -----------
+
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner fast: no PVT mismatches. (PVT-032)
+Information: Corner slow: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'openMSP430.ndm:temp_complete.design'. (TIM-125)
+Information: Design temp_complete has 4994 nets, 0 global routed, 4992 detail routed. (NEX-024)
+Warning: Technology layer 'M8' setting 'routing-direction' is not valid (NEX-001)
+Warning: Technology layer 'M9' setting 'routing-direction' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'routing-direction' is not valid (NEX-001)
+Begin building search trees for block openMSP430.ndm:temp_complete.design
+Done building search trees for block openMSP430.ndm:temp_complete.design (time 0s)
+Information: The RC mode used is DR for design 'openMSP430'. (NEX-022)
+---extraction options---
+Corner: slow
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: fast
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: temp_complete 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 4992 nets are successfully extracted. (NEX-028)
+Information: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4992, routed nets = 4992, across physical hierarchy nets = 0, parasitics cached nets = 4992, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   clock_module_0/puc_a_scan
+                                0.19           0.20          -0.01  (VIOLATED) 
+     PIN : clock_module_0/scan_mux_puc_rst_a/U2/Y
+                                0.19           0.20          -0.01  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 1
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   clock_module_0/puc_a_scan
+                                8.00          21.25         -13.25  (VIOLATED) 
+     PIN : clock_module_0/scan_mux_puc_rst_a/U2/Y
+                                8.00          21.25         -13.25  (VIOLATED) 
+
+   eu_mab[2]                    8.00          15.41          -7.41  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_2/S
+                                8.00          15.41          -7.41  (VIOLATED) 
+
+   eu_mab[5]                    8.00          15.25          -7.25  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_5/S
+                                8.00          15.25          -7.25  (VIOLATED) 
+
+   eu_mab[6]                    8.00          15.02          -7.02  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_6/S
+                                8.00          15.02          -7.02  (VIOLATED) 
+
+   eu_mab[1]                    8.00          14.04          -6.04  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_1/S
+                                8.00          14.04          -6.04  (VIOLATED) 
+
+   eu_mab[8]                    8.00          13.88          -5.88  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_8/S
+                                8.00          13.88          -5.88  (VIOLATED) 
+
+   eu_mab[7]                    8.00          13.46          -5.46  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_7/S
+                                8.00          13.46          -5.46  (VIOLATED) 
+
+   eu_mab[9]                    8.00          12.45          -4.45  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_9/S
+                                8.00          12.45          -4.45  (VIOLATED) 
+
+   eu_mab[11]                   8.00          10.41          -2.41  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_11/S
+                                8.00          10.41          -2.41  (VIOLATED) 
+
+   eu_mab[10]                   8.00          10.11          -2.11  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_10/S
+                                8.00          10.11          -2.11  (VIOLATED) 
+
+   eu_mab[12]                   8.00           9.41          -1.41  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_12/S
+                                8.00           9.41          -1.41  (VIOLATED) 
+
+   eu_mab[13]                   8.00           9.15          -1.15  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_13/S
+                                8.00           9.15          -1.15  (VIOLATED) 
+
+   fe_mab[4]                    8.00           8.47          -0.47  (VIOLATED) 
+     PIN : frontend_0/U15/Y     8.00           8.47          -0.47  (VIOLATED) 
+
+   eu_mab[14]                   8.00           8.47          -0.47  (VIOLATED) 
+     PIN : execution_unit_0/alu_0/add_171/U1_14/S
+                                8.00           8.47          -0.47  (VIOLATED) 
+
+   placeHFSNET_2                8.00           8.38          -0.38  (VIOLATED) 
+     PIN : frontend_0/U17/Y     8.00           8.38          -0.38  (VIOLATED) 
+
+   execution_unit_0/register_file_0/clock_gate_r11/enable_latch
+                                8.00           8.16          -0.16  (VIOLATED) 
+     PIN : execution_unit_0/register_file_0/clock_gate_r11/enable_latch_reg/Q
+                                8.00           8.16          -0.16  (VIOLATED) 
+
+   eu_mdb_out[4]                8.00           8.14          -0.14  (VIOLATED) 
+     PIN : execution_unit_0/mdb_out_nxt_reg[4]/Q
+                                8.00           8.14          -0.14  (VIOLATED) 
+
+   inst_dest[11]                8.00           8.13          -0.13  (VIOLATED) 
+     PIN : frontend_0/U180/Y
+                                8.00           8.13          -0.13  (VIOLATED) 
+
+   execution_unit_0/op_src[4]
+                                8.00           8.06          -0.06  (VIOLATED) 
+     PIN : execution_unit_0/U56/Y
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   execution_unit_0/n130        8.00           8.06          -0.06  (VIOLATED) 
+     PIN : execution_unit_0/U179/Y
+                                8.00           8.06          -0.06  (VIOLATED) 
+
+   mem_backbone_0/placeHFSNET_51
+                                8.00           8.00          -0.00  (VIOLATED) 
+     PIN : mem_backbone_0/placeHFSINV_358_65/Y
+                                8.00           8.00          -0.00  (VIOLATED) 
+
+   execution_unit_0/register_file_0/copt_net_1241
+                               16.00          16.00          -0.00  (VIOLATED) 
+     PIN : execution_unit_0/register_file_0/clockcopt_h_inst_5094/Y
+                               16.00          16.00          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 22
+
+
+   Mode: func Corner: slow
+   Scenario: func_slow
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+   Total number of violation(s): 23
+1

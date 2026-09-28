@@ -5,3 +5,6 @@ source ./step_4_placement/scripts/master.tcl
 source ./step_5_cts/scripts/master.tcl
 source ./step_5_1_cts_hold_fixing/scripts/master.tcl
 source ./step_5_2_elec_fixing/scripts/master.tcl
+source ./step_6_routing/scripts/master.tcl
+source ./step_6_1_elec_fixing/scripts/master.tcl
+source ./step_7_finishing/scripts/master.tcl

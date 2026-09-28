@@ -1,0 +1,914 @@
+SI analysis is not enabled, so delta delays are unavailable.
+****************************************
+Report : timing
+        -path_type full_clock_expanded
+        -delay_type min
+        -nworst 1
+        -max_paths 1
+        -report_by group
+        -input_pins
+        -nets
+        -include_hierarchical_pins
+        -transition_time
+        -capacitance
+        -crosstalk_delta
+        -derate
+        -attributes
+        -physical
+Design : openMSP430
+Version: O-2018.06-SP1
+Date   : Sat Sep 26 03:33:39 2026
+****************************************
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdt_reset_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: dco_clk
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     22.4211                                                                                d
+  cts_inv_8993272/A (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (155.37,196.85)
+  cts_inv_8993272/Y (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (156.19,196.75)
+  ctsbuf_net_1941 (net)                             1      0.6769                                                                                d
+  cts_inv_8943267/A (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (155.07,198.34)
+  cts_inv_8943267/Y (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (156.49,198.43)
+  ctsbuf_net_1840 (net)                            17     27.1434                                                                                d
+  clock_module_0/dco_clk (omsp_clock_module)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/dco_clk (net)                     17     27.1434                                                                                d
+  clock_module_0/sync_reset_por/clk (omsp_sync_reset_0)                0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/sync_reset_por/clk (net)          17     27.1434                                                                                d
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)       0.0137      1.0000              0.0511      0.0511 f    (84.52,146.59)    s, n
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.9282
+  clock_module_0/sync_reset_por/rst_s (omsp_sync_reset_0)              0.0137      1.0000              0.0000      0.0511 f    (hierarchical)    h
+  clock_module_0/por_noscan (net)                          0.9282
+  clock_module_0/scan_mux_por/data_in_func (omsp_scan_mux_8)           0.0137      1.0000              0.0000      0.0511 f    (hierarchical)    h
+  clock_module_0/scan_mux_por/data_in_func (net)           0.9282
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                       0.0137      1.0000              0.0000      0.0511 f    (78.40,147.28)
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                        0.0299      1.0000              0.0312      0.0823 f    (77.96,146.58)
+  clock_module_0/scan_mux_por/data_out (net)        4      6.4647
+  clock_module_0/scan_mux_por/data_out (omsp_scan_mux_8)               0.0299      1.0000              0.0000      0.0823 f    (hierarchical)    h
+  clock_module_0/por (net)                                 6.4647
+  clock_module_0/por (omsp_clock_module)                               0.0299      1.0000              0.0000      0.0823 f    (hierarchical)    h
+  por (net)                                                6.4647
+  placeHFSINV_493_16/A (INVX4_RVT)                                     0.0299      1.0000              0.0002      0.0825 f    (82.79,136.66)
+  placeHFSINV_493_16/Y (INVX4_RVT)                                     0.0149      1.0000              0.0056      0.0880 r    (82.92,136.56)
+  placeHFSNET_12 (net)                              1      0.6970
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                                0.0149      1.0000              0.0000      0.0880 r    (82.86,138.15)
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                                0.0098      1.0000              0.0154      0.1035 r    (83.38,138.24)
+  ropt_net_2076 (net)                               1      1.0508
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                                0.0098      1.0000              0.0000      0.1035 r    (80.59,140.01)
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                                0.0178      1.0000              0.0234      0.1269 r    (81.25,139.90)
+  copt_net_81 (net)                                10     15.2019
+  watchdog_0/por (omsp_watchdog)                                       0.0178      1.0000              0.0000      0.1269 r    (hierarchical)    h
+  watchdog_0/por (net)                                    15.2019
+  watchdog_0/wdt_reset_reg/RSTB (DFFARX1_RVT)                          0.0178      1.0000              0.0004      0.1273 r    (101.23,130.87)   s, n
+  data arrival time                                                                                                0.1273
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     22.9387                                                                                d
+  clock_module_0/p_abuf15 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf15 (net)                     4     22.9387                                                                                d
+  clock_module_0/clock_gate_dma_mclk/clk (omsp_clock_gate_33)          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_dma_mclk/clk (net)      4     22.9387                                                                                d
+  clock_module_0/clock_gate_dma_mclk/U3/A2 (AND2X4_RVT)                0.0000      1.0000              0.0000      0.0000 r    (146.70,154.88)   s
+  clock_module_0/clock_gate_dma_mclk/U3/Y (AND2X4_RVT)                 0.0000      1.0000              0.0000      0.0000 r    (147.52,154.96)   s
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (net)
+                                                    3     19.3150                                                                                d
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (omsp_clock_gate_33)      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf13 (net)                     3     19.3150                                                                                d
+  clock_module_0/p_abuf13 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  p_abuf10 (net)                                    3     19.3150                                                                                d
+  cto_buf_drc_3483/A (NBUFFX16_RVT)                                    0.0000      1.0000              0.0000      0.0000 r    (150.36,160.07)
+  cto_buf_drc_3483/Y (NBUFFX16_RVT)                                    0.0000      1.0000              0.0000      0.0000 r    (152.08,159.97)
+  cts6 (net)                                        8     19.6387                                                                                d
+  clock_module_0/cts3 (omsp_clock_module)                              0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/cts3 (net)                         8     19.6387                                                                                d
+  clock_module_0/clock_gate_dma_mclk/cts3 (omsp_clock_gate_33)         0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_dma_mclk/cts3 (net)     8     19.6387                                                                                d
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8423215/A (INVX8_RVT)     0.0000      1.0000              0.0000      0.0000 r    (122.16,148.17)
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8423215/Y (INVX8_RVT)     0.0000      1.0000              0.0000      0.0000 f    (122.29,148.27)
+  clock_module_0/clock_gate_dma_mclk/ctsbuf_net_1537 (net)
+                                                    1     23.2299                                                                                d
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8373210/A (INVX32_RVT)    0.0000      1.0000              0.0000      0.0000 f    (150.74,154.86)
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8373210/Y (INVX32_RVT)    0.0000      1.0000              0.0000      0.0000 r    (150.87,154.96)
+  clock_module_0/clock_gate_dma_mclk/p_abuf0 (net)
+                                                   53     78.8789                                                                                d
+  clock_module_0/clock_gate_dma_mclk/p_abuf0 (omsp_clock_gate_33)      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf4 (net)                     53     78.8789                                                                                d
+  clock_module_0/p_abuf4 (omsp_clock_module)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  cts2 (net)                                       53     78.8789                                                                                d
+  watchdog_0/mclk (omsp_watchdog)                                      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  watchdog_0/mclk (net)                            53     78.8789                                                                                d
+  watchdog_0/wdt_reset_reg/CLK (DFFARX1_RVT)                           0.0000      1.0000              0.0000      0.0000 r    (99.58,132.21)    s, n
+
+  library hold time                                                                1.0000              0.1262      0.1262
+  data required time                                                                                               0.1262
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.1262
+  data arrival time                                                                                               -0.1273
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0011
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: lfxt_clk
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     22.4211                                                                                d
+  cts_inv_8993272/A (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (155.37,196.85)
+  cts_inv_8993272/Y (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (156.19,196.75)
+  ctsbuf_net_1941 (net)                             1      0.6769                                                                                d
+  cts_inv_8943267/A (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (155.07,198.34)
+  cts_inv_8943267/Y (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (156.49,198.43)
+  ctsbuf_net_1840 (net)                            17     27.1434                                                                                d
+  clock_module_0/dco_clk (omsp_clock_module)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/dco_clk (net)                     17     27.1434                                                                                d
+  clock_module_0/sync_reset_por/clk (omsp_sync_reset_0)                0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/sync_reset_por/clk (net)          17     27.1434                                                                                d
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)       0.0137      1.0000              0.0511      0.0511 f    (84.52,146.59)    s, n
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.9282
+  clock_module_0/sync_reset_por/rst_s (omsp_sync_reset_0)              0.0137      1.0000              0.0000      0.0511 f    (hierarchical)    h
+  clock_module_0/por_noscan (net)                          0.9282
+  clock_module_0/scan_mux_por/data_in_func (omsp_scan_mux_8)           0.0137      1.0000              0.0000      0.0511 f    (hierarchical)    h
+  clock_module_0/scan_mux_por/data_in_func (net)           0.9282
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                       0.0137      1.0000              0.0000      0.0511 f    (78.40,147.28)
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                        0.0299      1.0000              0.0312      0.0823 f    (77.96,146.58)
+  clock_module_0/scan_mux_por/data_out (net)        4      6.4647
+  clock_module_0/scan_mux_por/data_out (omsp_scan_mux_8)               0.0299      1.0000              0.0000      0.0823 f    (hierarchical)    h
+  clock_module_0/por (net)                                 6.4647
+  clock_module_0/por (omsp_clock_module)                               0.0299      1.0000              0.0000      0.0823 f    (hierarchical)    h
+  por (net)                                                6.4647
+  placeHFSINV_493_16/A (INVX4_RVT)                                     0.0299      1.0000              0.0002      0.0825 f    (82.79,136.66)
+  placeHFSINV_493_16/Y (INVX4_RVT)                                     0.0149      1.0000              0.0056      0.0880 r    (82.92,136.56)
+  placeHFSNET_12 (net)                              1      0.6970
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                                0.0149      1.0000              0.0000      0.0880 r    (82.86,138.15)
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                                0.0098      1.0000              0.0154      0.1035 r    (83.38,138.24)
+  ropt_net_2076 (net)                               1      1.0508
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                                0.0098      1.0000              0.0000      0.1035 r    (80.59,140.01)
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                                0.0178      1.0000              0.0234      0.1269 r    (81.25,139.90)
+  copt_net_81 (net)                                10     15.2019
+  clock_module_0/placeHFSNET_12 (omsp_clock_module)                    0.0178      1.0000              0.0000      0.1269 r    (hierarchical)    h
+  clock_module_0/placeHFSNET_12 (net)                     15.2019
+  clock_module_0/sync_cell_cpu_aux_en/rst (omsp_sync_cell_13)          0.0178      1.0000              0.0000      0.1269 r    (hierarchical)    h
+  clock_module_0/sync_cell_cpu_aux_en/rst (net)           15.2019
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]/RSTB (DFFARX1_RVT)
+                                                                       0.0178      1.0000              0.0002      0.1270 r    (87.40,150.62)    s, n
+  data arrival time                                                                                                0.1270
+
+  clock lfxt_clk (rise edge)                                                                           0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  lfxt_clk (in)                                                        0.0000      1.0000              0.0000      0.0000 r    (57.60,211.12)
+  lfxt_clk (net)                                    1      1.6358                                                                                d
+  cto_buf_drc_3447/A (NBUFFX4_RVT)                                     0.0000      1.0000              0.0000      0.0000 r    (59.16,198.33)
+  cto_buf_drc_3447/Y (NBUFFX4_RVT)                                     0.0000      1.0000              0.0000      0.0000 r    (59.82,198.43)
+  cts4 (net)                                        2      6.9614                                                                                d
+  cts_inv_9453318/A (INVX8_RVT)                                        0.0000      1.0000              0.0000      0.0000 r    (55.28,194.99)
+  cts_inv_9453318/Y (INVX8_RVT)                                        0.0000      1.0000              0.0000      0.0000 f    (55.41,195.09)
+  ctsbuf_net_2143 (net)                             1     10.6690                                                                                d
+  cts_inv_9403313/A (INVX16_RVT)                                       0.0000      1.0000              0.0000      0.0000 f    (55.89,196.85)
+  cts_inv_9403313/Y (INVX16_RVT)                                       0.0000      1.0000              0.0000      0.0000 r    (56.02,196.75)
+  ctsbuf_net_2042 (net)                            16     28.8264                                                                                d
+  clock_module_0/lfxt_clk (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/lfxt_clk (net)                    16     28.8264                                                                                d
+  clock_module_0/sync_cell_cpu_aux_en/clk (omsp_sync_cell_13)          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/sync_cell_cpu_aux_en/clk (net)    16     28.8264                                                                                d
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[1]/CLK (DFFARX1_RVT)
+                                                                       0.0000      1.0000              0.0000      0.0000 r    (85.75,149.28)    s, n
+
+  library hold time                                                                1.0000              0.1262      0.1262
+  data required time                                                                                               0.1262
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.1262
+  data arrival time                                                                                               -0.1270
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0009
+
+
+
+  Startpoint: pmem_dout[7] (input port clocked by dco_clk)
+  Endpoint: pmem_addr[6] (output port clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  input external delay                                                                                 0.0000      0.0000
+
+  pmem_dout[7] (in)                                                    0.0189      1.0000              0.0101      0.0101 f    (0.14,65.50)
+  pmem_dout[7] (net)                                4      7.4175
+  mem_backbone_0/pmem_dout[7] (omsp_mem_backbone)                      0.0189      1.0000              0.0101      0.0101 f    (hierarchical)    h
+  mem_backbone_0/pmem_dout[7] (net)                        7.4175
+  mem_backbone_0/U78/A1 (MUX21X2_RVT)                                  0.0189      1.0000              0.0003      0.0103 f    (18.10,71.12)
+  mem_backbone_0/U78/Y (MUX21X2_RVT)                                   0.0290      1.0000              0.0397      0.0500 f    (19.62,71.36)
+  mem_backbone_0/fe_mdb_in[7] (net)                 5     10.5069
+  mem_backbone_0/fe_mdb_in[7] (omsp_mem_backbone)                      0.0290      1.0000              0.0000      0.0500 f    (hierarchical)    h
+  fe_mdb_in[7] (net)                                      10.5069
+  frontend_0/mdb_in[7] (omsp_frontend)                                 0.0290      1.0000              0.0000      0.0500 f    (hierarchical)    h
+  frontend_0/mdb_in[7] (net)                              10.5069
+  frontend_0/U9/A1 (AO221X2_RVT)                                       0.0290      1.0000              0.0007      0.0507 f    (93.19,64.71)
+  frontend_0/U9/Y (AO221X2_RVT)                                        0.0222      1.0000              0.0438      0.0946 f    (94.39,64.66)
+  frontend_0/mab[7] (net)                           3      8.1813
+  frontend_0/mab[7] (omsp_frontend)                                    0.0222      1.0000              0.0000      0.0946 f    (hierarchical)    h
+  fe_mab[7] (net)                                          8.1813
+  mem_backbone_0/fe_mab[6] (omsp_mem_backbone)                         0.0222      1.0000              0.0000      0.0946 f    (hierarchical)    h
+  mem_backbone_0/fe_mab[6] (net)                           8.1813
+  mem_backbone_0/U31/A3 (AO222X1_RVT)                                  0.0222      1.0000              0.0004      0.0949 f    (113.41,97.12)
+  mem_backbone_0/U31/Y (AO222X1_RVT)                                   0.0316      1.0000              0.0403      0.1353 f    (114.31,96.43)
+  mem_backbone_0/pmem_addr[6] (net)                 1      6.5306
+  mem_backbone_0/pmem_addr[6] (omsp_mem_backbone)                      0.0316      1.0000              0.0000      0.1353 f    (hierarchical)    h
+  pmem_addr[6] (net)                                       6.5306
+  pmem_addr[6] (out)                                                   0.0316      1.0000              0.0006      0.1358 f    (211.88,97.42)
+  data arrival time                                                                                                0.1358
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  output external delay                                                                               -0.0000      0.0000
+  data required time                                                                                               0.0000
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.0000
+  data arrival time                                                                                               -0.1358
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.1358
+
+
+
+  Startpoint: pmem_dout[15] (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/pmem_dout_bckup_reg[15] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  input external delay                                                                                 0.0000      0.0000
+
+  pmem_dout[15] (in)                                                   0.0140      1.0000              0.0063      0.0063 r    (0.14,91.04)
+  pmem_dout[15] (net)                               4      5.3660
+  mem_backbone_0/pmem_dout[15] (omsp_mem_backbone)                     0.0140      1.0000              0.0063      0.0063 r    (hierarchical)    h
+  mem_backbone_0/pmem_dout[15] (net)                       5.3660
+  mem_backbone_0/pmem_dout_bckup_reg[15]/D (DFFARX1_RVT)               0.0140      1.0000              0.0002      0.0065 r    (12.34,93.29)     s, n
+  data arrival time                                                                                                0.0065
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     22.9387                                                                                d
+  clock_module_0/p_abuf15 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf15 (net)                     4     22.9387                                                                                d
+  clock_module_0/clock_gate_dma_mclk/clk (omsp_clock_gate_33)          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_dma_mclk/clk (net)      4     22.9387                                                                                d
+  clock_module_0/clock_gate_dma_mclk/U3/A2 (AND2X4_RVT)                0.0000      1.0000              0.0000      0.0000 r    (146.70,154.88)   s
+  clock_module_0/clock_gate_dma_mclk/U3/Y (AND2X4_RVT)                 0.0000      1.0000              0.0000      0.0000 r    (147.52,154.96)   s
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (net)
+                                                    3     19.3150                                                                                d
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (omsp_clock_gate_33)      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf13 (net)                     3     19.3150                                                                                d
+  clock_module_0/p_abuf13 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  p_abuf10 (net)                                    3     19.3150                                                                                d
+  mem_backbone_0/p_abuf1 (omsp_mem_backbone)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  mem_backbone_0/p_abuf1 (net)                      3     19.3150                                                                                d
+  mem_backbone_0/clock_gate_bckup/clk (omsp_clock_gate_22)             0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  mem_backbone_0/clock_gate_bckup/clk (net)         3     19.3150                                                                                d
+  mem_backbone_0/clock_gate_bckup/U3/A2 (AND2X4_RVT)                   0.0000      1.0000              0.0000      0.0000 r    (15.53,74.62)     s
+  mem_backbone_0/clock_gate_bckup/U3/Y (AND2X4_RVT)                    0.0000      1.0000              0.0000      0.0000 r    (16.35,74.70)     s
+  mem_backbone_0/clock_gate_bckup/gclk (net)       16     18.9035                                                                                d
+  mem_backbone_0/clock_gate_bckup/gclk (omsp_clock_gate_22)            0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  mem_backbone_0/mclk_bckup_gated (net)            16     18.9035                                                                                d
+  mem_backbone_0/pmem_dout_bckup_reg[15]/CLK (DFFARX1_RVT)             0.0000      1.0000              0.0000      0.0000 r    (12.64,92.43)     s, n
+
+  library hold time                                                                1.0000             -0.0038     -0.0038
+  data required time                                                                                              -0.0038
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              -0.0038
+  data arrival time                                                                                               -0.0065
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0103
+
+
+
+  Startpoint: frontend_0/irq_num_reg[3] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: irq_acc[7] (output port clocked by dco_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     22.4211                                                                                d
+  clock_module_0/p_abuf15 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf15 (net)                     4     22.4211                                                                                d
+  clock_module_0/clock_gate_mclk/clk (omsp_clock_gate_0)               0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_mclk/clk (net)          4     22.4211                                                                                d
+  clock_module_0/clock_gate_mclk/U3/A2 (AND2X4_RVT)                    0.0000      1.0000              0.0000      0.0000 r    (71.46,64.59)     s
+  clock_module_0/clock_gate_mclk/U3/Y (AND2X4_RVT)                     0.0000      1.0000              0.0000      0.0000 r    (72.28,64.67)     s
+  clock_module_0/clock_gate_mclk/gclk (net)         1      8.5856                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8313204/A (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 r    (73.83,69.78)
+  clock_module_0/clock_gate_mclk/cts_inv_8313204/Y (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 f    (73.96,69.68)
+  clock_module_0/clock_gate_mclk/ctsbuf_net_1335 (net)
+                                                    1      8.2154                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8263199/A (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 f    (73.83,67.91)
+  clock_module_0/clock_gate_mclk/cts_inv_8263199/Y (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 r    (73.96,68.02)
+  clock_module_0/clock_gate_mclk/p_abuf5 (net)      3     22.2384                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8213194/A (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 r    (22.45,81.29)
+  clock_module_0/clock_gate_mclk/cts_inv_8213194/Y (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 f    (22.58,81.39)
+  clock_module_0/clock_gate_mclk/ctsbuf_net_1133 (net)
+                                                    1     19.5081                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8163189/A (INVX32_RVT)        0.0000      1.0000              0.0000      0.0000 f    (65.47,87.98)
+  clock_module_0/clock_gate_mclk/cts_inv_8163189/Y (INVX32_RVT)        0.0000      1.0000              0.0000      0.0000 r    (65.60,88.08)
+  clock_module_0/clock_gate_mclk/p_abuf3 (net)     43     73.1947                                                                                d
+  clock_module_0/clock_gate_mclk/p_abuf3 (omsp_clock_gate_0)           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf11 (net)                    43     73.1947                                                                                d
+  clock_module_0/p_abuf11 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  p_abuf8 (net)                                    43     73.1947                                                                                d
+  frontend_0/p_abuf3 (omsp_frontend)                                   0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  frontend_0/p_abuf3 (net)                         43     73.1947                                                                                d
+  frontend_0/clock_gate_irq_num/clk (omsp_clock_gate_29)               0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  frontend_0/clock_gate_irq_num/clk (net)          43     73.1947                                                                                d
+  frontend_0/clock_gate_irq_num/U3/A2 (AND2X1_RVT)                     0.0000      1.0000              0.0000      0.0000 r    (79.97,21.12)     s
+  frontend_0/clock_gate_irq_num/U3/Y (AND2X1_RVT)                      0.0000      1.0000              0.0000      0.0000 r    (80.64,21.20)     s
+  frontend_0/clock_gate_irq_num/gclk (net)          4      4.0361                                                                                d
+  frontend_0/clock_gate_irq_num/gclk (omsp_clock_gate_29)              0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  frontend_0/mclk_irq_num (net)                     4      4.0361                                                                                d
+  frontend_0/irq_num_reg[3]/CLK (DFFASX1_RVT)                          0.0000      1.0000              0.0000      0.0000 r    (80.58,18.86)     s, n
+
+  frontend_0/irq_num_reg[3]/CLK (DFFASX1_RVT)                          0.0000      1.0000              0.0000      0.0000 r    (80.58,18.86)     s, n
+  frontend_0/irq_num_reg[3]/QN (DFFASX1_RVT)                           0.0174      1.0000              0.0386      0.0386 f    (83.98,19.51)     s, n
+  frontend_0/n373 (net)                             2      1.4162
+  frontend_0/U86/A1 (AND2X1_RVT)                                       0.0174      1.0000              0.0000      0.0386 f    (84.47,17.93)
+  frontend_0/U86/Y (AND2X1_RVT)                                        0.0199      1.0000              0.0258      0.0644 f    (83.96,17.85)
+  frontend_0/n83 (net)                              4      3.8197
+  frontend_0/U78/A1 (AND2X1_RVT)                                       0.0199      1.0000              0.0000      0.0644 f    (82.10,14.58)
+  frontend_0/U78/Y (AND2X1_RVT)                                        0.0103      1.0000              0.0187      0.0831 f    (82.62,14.51)
+  frontend_0/irq_acc[7] (net)                       1      0.9116
+  frontend_0/irq_acc[7] (omsp_frontend)                                0.0103      1.0000              0.0000      0.0831 f    (hierarchical)    h
+  irq_acc[7] (net)                                         0.9116
+  irq_acc[7] (out)                                                     0.0103      1.0000              0.0000      0.0832 f    (83.44,0.14)
+  data arrival time                                                                                                0.0832
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  output external delay                                                                               -0.0000      0.0000
+  data required time                                                                                               0.0000
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.0000
+  data arrival time                                                                                               -0.0832
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0832
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: watchdog_0/wdt_reset_reg (removal check against rising-edge clock clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: dco_clk
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     25.7458                                                                                d
+  cts_inv_8993272/A (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (155.37,196.85)
+  cts_inv_8993272/Y (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (156.19,196.75)
+  ctsbuf_net_1941 (net)                             1      0.6944                                                                                d
+  cts_inv_8943267/A (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (155.07,198.34)
+  cts_inv_8943267/Y (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (156.49,198.43)
+  ctsbuf_net_1840 (net)                            17     29.7908                                                                                d
+  clock_module_0/dco_clk (omsp_clock_module)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/dco_clk (net)                     17     29.7908                                                                                d
+  clock_module_0/sync_reset_por/clk (omsp_sync_reset_0)                0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/sync_reset_por/clk (net)          17     29.7908                                                                                d
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)       0.0139      1.0000              0.0513      0.0513 f    (84.52,146.59)    s, n
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.9952
+  clock_module_0/sync_reset_por/rst_s (omsp_sync_reset_0)              0.0139      1.0000              0.0000      0.0513 f    (hierarchical)    h
+  clock_module_0/por_noscan (net)                          0.9952
+  clock_module_0/scan_mux_por/data_in_func (omsp_scan_mux_8)           0.0139      1.0000              0.0000      0.0513 f    (hierarchical)    h
+  clock_module_0/scan_mux_por/data_in_func (net)           0.9952
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                       0.0139      1.0000              0.0000      0.0513 f    (78.40,147.28)
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                        0.0313      1.0000              0.0322      0.0835 f    (77.96,146.58)
+  clock_module_0/scan_mux_por/data_out (net)        4      6.8364
+  clock_module_0/scan_mux_por/data_out (omsp_scan_mux_8)               0.0313      1.0000              0.0000      0.0835 f    (hierarchical)    h
+  clock_module_0/por (net)                                 6.8364
+  clock_module_0/por (omsp_clock_module)                               0.0313      1.0000              0.0000      0.0835 f    (hierarchical)    h
+  por (net)                                                6.8364
+  placeHFSINV_493_16/A (INVX4_RVT)                                     0.0313      1.0000              0.0002      0.0837 f    (82.79,136.66)
+  placeHFSINV_493_16/Y (INVX4_RVT)                                     0.0155      1.0000              0.0057      0.0894 r    (82.92,136.56)
+  placeHFSNET_12 (net)                              1      0.7264
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                                0.0155      1.0000              0.0000      0.0894 r    (82.86,138.15)
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                                0.0100      1.0000              0.0155      0.1049 r    (83.38,138.24)
+  ropt_net_2076 (net)                               1      1.0967
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                                0.0100      1.0000              0.0000      0.1049 r    (80.59,140.01)
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                                0.0183      1.0000              0.0239      0.1287 r    (81.25,139.90)
+  copt_net_81 (net)                                10     16.0119
+  watchdog_0/por (omsp_watchdog)                                       0.0183      1.0000              0.0000      0.1287 r    (hierarchical)    h
+  watchdog_0/por (net)                                    16.0119
+  watchdog_0/wdt_reset_reg/RSTB (DFFARX1_RVT)                          0.0183      1.0000              0.0004      0.1292 r    (101.23,130.87)   s, n
+  data arrival time                                                                                                0.1292
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     26.2634                                                                                d
+  clock_module_0/p_abuf15 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf15 (net)                     4     26.2634                                                                                d
+  clock_module_0/clock_gate_dma_mclk/clk (omsp_clock_gate_33)          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_dma_mclk/clk (net)      4     26.2634                                                                                d
+  clock_module_0/clock_gate_dma_mclk/U3/A2 (AND2X4_RVT)                0.0000      1.0000              0.0000      0.0000 r    (146.70,154.88)   s
+  clock_module_0/clock_gate_dma_mclk/U3/Y (AND2X4_RVT)                 0.0000      1.0000              0.0000      0.0000 r    (147.52,154.96)   s
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (net)
+                                                    3     21.9949                                                                                d
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (omsp_clock_gate_33)      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf13 (net)                     3     21.9949                                                                                d
+  clock_module_0/p_abuf13 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  p_abuf10 (net)                                    3     21.9949                                                                                d
+  cto_buf_drc_3483/A (NBUFFX16_RVT)                                    0.0000      1.0000              0.0000      0.0000 r    (150.36,160.07)
+  cto_buf_drc_3483/Y (NBUFFX16_RVT)                                    0.0000      1.0000              0.0000      0.0000 r    (152.08,159.97)
+  cts6 (net)                                        8     21.1741                                                                                d
+  clock_module_0/cts3 (omsp_clock_module)                              0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/cts3 (net)                         8     21.1741                                                                                d
+  clock_module_0/clock_gate_dma_mclk/cts3 (omsp_clock_gate_33)         0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_dma_mclk/cts3 (net)     8     21.1741                                                                                d
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8423215/A (INVX8_RVT)     0.0000      1.0000              0.0000      0.0000 r    (122.16,148.17)
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8423215/Y (INVX8_RVT)     0.0000      1.0000              0.0000      0.0000 f    (122.29,148.27)
+  clock_module_0/clock_gate_dma_mclk/ctsbuf_net_1537 (net)
+                                                    1     23.5636                                                                                d
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8373210/A (INVX32_RVT)    0.0000      1.0000              0.0000      0.0000 f    (150.74,154.86)
+  clock_module_0/clock_gate_dma_mclk/cts_inv_8373210/Y (INVX32_RVT)    0.0000      1.0000              0.0000      0.0000 r    (150.87,154.96)
+  clock_module_0/clock_gate_dma_mclk/p_abuf0 (net)
+                                                   53     84.7466                                                                                d
+  clock_module_0/clock_gate_dma_mclk/p_abuf0 (omsp_clock_gate_33)      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf4 (net)                     53     84.7466                                                                                d
+  clock_module_0/p_abuf4 (omsp_clock_module)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  cts2 (net)                                       53     84.7466                                                                                d
+  watchdog_0/mclk (omsp_watchdog)                                      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  watchdog_0/mclk (net)                            53     84.7466                                                                                d
+  watchdog_0/wdt_reset_reg/CLK (DFFARX1_RVT)                           0.0000      1.0000              0.0000      0.0000 r    (99.58,132.21)    s, n
+
+  library hold time                                                                1.0000              0.1266      0.1266
+  data required time                                                                                               0.1266
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.1266
+  data arrival time                                                                                               -0.1292
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0026
+
+
+
+  Startpoint: clock_module_0/sync_reset_por/data_sync_reg[1] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0] (removal check against rising-edge clock clocked by lfxt_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: lfxt_clk
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     25.7458                                                                                d
+  cts_inv_8993272/A (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (155.37,196.85)
+  cts_inv_8993272/Y (IBUFFX2_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (156.19,196.75)
+  ctsbuf_net_1941 (net)                             1      0.6944                                                                                d
+  cts_inv_8943267/A (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 f    (155.07,198.34)
+  cts_inv_8943267/Y (IBUFFX8_RVT)                                      0.0000      1.0000              0.0000      0.0000 r    (156.49,198.43)
+  ctsbuf_net_1840 (net)                            17     29.7908                                                                                d
+  clock_module_0/dco_clk (omsp_clock_module)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/dco_clk (net)                     17     29.7908                                                                                d
+  clock_module_0/sync_reset_por/clk (omsp_sync_reset_0)                0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/sync_reset_por/clk (net)          17     29.7908                                                                                d
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+
+  clock_module_0/sync_reset_por/data_sync_reg[1]/CLK (DFFASX1_RVT)     0.0000      1.0000              0.0000      0.0000 r    (81.34,145.93)    s, n
+  clock_module_0/sync_reset_por/data_sync_reg[1]/Q (DFFASX1_RVT)       0.0139      1.0000              0.0513      0.0513 f    (84.52,146.59)    s, n
+  clock_module_0/sync_reset_por/rst_s (net)         1      0.9952
+  clock_module_0/sync_reset_por/rst_s (omsp_sync_reset_0)              0.0139      1.0000              0.0000      0.0513 f    (hierarchical)    h
+  clock_module_0/por_noscan (net)                          0.9952
+  clock_module_0/scan_mux_por/data_in_func (omsp_scan_mux_8)           0.0139      1.0000              0.0000      0.0513 f    (hierarchical)    h
+  clock_module_0/scan_mux_por/data_in_func (net)           0.9952
+  clock_module_0/scan_mux_por/U2/A3 (AO22X1_RVT)                       0.0139      1.0000              0.0000      0.0513 f    (78.40,147.28)
+  clock_module_0/scan_mux_por/U2/Y (AO22X1_RVT)                        0.0313      1.0000              0.0322      0.0835 f    (77.96,146.58)
+  clock_module_0/scan_mux_por/data_out (net)        4      6.8364
+  clock_module_0/scan_mux_por/data_out (omsp_scan_mux_8)               0.0313      1.0000              0.0000      0.0835 f    (hierarchical)    h
+  clock_module_0/por (net)                                 6.8364
+  clock_module_0/por (omsp_clock_module)                               0.0313      1.0000              0.0000      0.0835 f    (hierarchical)    h
+  por (net)                                                6.8364
+  placeHFSINV_493_16/A (INVX4_RVT)                                     0.0313      1.0000              0.0002      0.0837 f    (82.79,136.66)
+  placeHFSINV_493_16/Y (INVX4_RVT)                                     0.0155      1.0000              0.0057      0.0894 r    (82.92,136.56)
+  placeHFSNET_12 (net)                              1      0.7264
+  clockropt_h_inst_6015/A (NBUFFX2_RVT)                                0.0155      1.0000              0.0000      0.0894 r    (82.86,138.15)
+  clockropt_h_inst_6015/Y (NBUFFX2_RVT)                                0.0100      1.0000              0.0155      0.1049 r    (83.38,138.24)
+  ropt_net_2076 (net)                               1      1.0967
+  clockcopt_h_inst_3900/A (NBUFFX4_RVT)                                0.0100      1.0000              0.0000      0.1049 r    (80.59,140.01)
+  clockcopt_h_inst_3900/Y (NBUFFX4_RVT)                                0.0183      1.0000              0.0239      0.1287 r    (81.25,139.90)
+  copt_net_81 (net)                                10     16.0119
+  clock_module_0/placeHFSNET_12 (omsp_clock_module)                    0.0183      1.0000              0.0000      0.1287 r    (hierarchical)    h
+  clock_module_0/placeHFSNET_12 (net)                     16.0119
+  clock_module_0/sync_cell_cpu_aux_en/rst (omsp_sync_cell_13)          0.0183      1.0000              0.0000      0.1287 r    (hierarchical)    h
+  clock_module_0/sync_cell_cpu_aux_en/rst (net)           16.0119
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]/RSTB (DFFARX1_RVT)
+                                                                       0.0183      1.0000              0.0002      0.1289 r    (87.25,147.27)    s, n
+  data arrival time                                                                                                0.1289
+
+  clock lfxt_clk (rise edge)                                                                           0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  lfxt_clk (in)                                                        0.0000      1.0000              0.0000      0.0000 r    (57.60,211.12)
+  lfxt_clk (net)                                    1      1.7440                                                                                d
+  cto_buf_drc_3447/A (NBUFFX4_RVT)                                     0.0000      1.0000              0.0000      0.0000 r    (59.16,198.33)
+  cto_buf_drc_3447/Y (NBUFFX4_RVT)                                     0.0000      1.0000              0.0000      0.0000 r    (59.82,198.43)
+  cts4 (net)                                        2      7.0909                                                                                d
+  cts_inv_9453318/A (INVX8_RVT)                                        0.0000      1.0000              0.0000      0.0000 r    (55.28,194.99)
+  cts_inv_9453318/Y (INVX8_RVT)                                        0.0000      1.0000              0.0000      0.0000 f    (55.41,195.09)
+  ctsbuf_net_2143 (net)                             1     10.6919                                                                                d
+  cts_inv_9403313/A (INVX16_RVT)                                       0.0000      1.0000              0.0000      0.0000 f    (55.89,196.85)
+  cts_inv_9403313/Y (INVX16_RVT)                                       0.0000      1.0000              0.0000      0.0000 r    (56.02,196.75)
+  ctsbuf_net_2042 (net)                            16     30.7014                                                                                d
+  clock_module_0/lfxt_clk (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/lfxt_clk (net)                    16     30.7014                                                                                d
+  clock_module_0/sync_cell_cpu_aux_en/clk (omsp_sync_cell_13)          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/sync_cell_cpu_aux_en/clk (net)    16     30.7014                                                                                d
+  clock_module_0/sync_cell_cpu_aux_en/data_sync_reg[0]/CLK (DFFARX1_RVT)
+                                                                       0.0000      1.0000              0.0000      0.0000 r    (85.60,145.93)    s, n
+
+  library hold time                                                                1.0000              0.1266      0.1266
+  data required time                                                                                               0.1266
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.1266
+  data arrival time                                                                                               -0.1289
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0023
+
+
+
+  Startpoint: pmem_dout[7] (input port clocked by dco_clk)
+  Endpoint: pmem_addr[6] (output port clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: FEEDTHROUGH
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  input external delay                                                                                 0.0000      0.0000
+
+  pmem_dout[7] (in)                                                    0.0203      1.0000              0.0110      0.0110 f    (0.14,65.50)
+  pmem_dout[7] (net)                                4      8.1646
+  mem_backbone_0/pmem_dout[7] (omsp_mem_backbone)                      0.0203      1.0000              0.0110      0.0110 f    (hierarchical)    h
+  mem_backbone_0/pmem_dout[7] (net)                        8.1646
+  mem_backbone_0/U78/A1 (MUX21X2_RVT)                                  0.0203      1.0000              0.0003      0.0113 f    (18.10,71.12)
+  mem_backbone_0/U78/Y (MUX21X2_RVT)                                   0.0305      1.0000              0.0412      0.0525 f    (19.62,71.36)
+  mem_backbone_0/fe_mdb_in[7] (net)                 5     11.3596
+  mem_backbone_0/fe_mdb_in[7] (omsp_mem_backbone)                      0.0305      1.0000              0.0000      0.0525 f    (hierarchical)    h
+  fe_mdb_in[7] (net)                                      11.3596
+  frontend_0/mdb_in[7] (omsp_frontend)                                 0.0305      1.0000              0.0000      0.0525 f    (hierarchical)    h
+  frontend_0/mdb_in[7] (net)                              11.3596
+  frontend_0/U9/A1 (AO221X2_RVT)                                       0.0305      1.0000              0.0007      0.0533 f    (93.19,64.71)
+  frontend_0/U9/Y (AO221X2_RVT)                                        0.0239      1.0000              0.0454      0.0986 f    (94.39,64.66)
+  frontend_0/mab[7] (net)                           3      9.0501
+  frontend_0/mab[7] (omsp_frontend)                                    0.0239      1.0000              0.0000      0.0986 f    (hierarchical)    h
+  fe_mab[7] (net)                                          9.0501
+  mem_backbone_0/fe_mab[6] (omsp_mem_backbone)                         0.0239      1.0000              0.0000      0.0986 f    (hierarchical)    h
+  mem_backbone_0/fe_mab[6] (net)                           9.0501
+  mem_backbone_0/U31/A3 (AO222X1_RVT)                                  0.0239      1.0000              0.0004      0.0990 f    (113.41,97.12)
+  mem_backbone_0/U31/Y (AO222X1_RVT)                                   0.0347      1.0000              0.0428      0.1418 f    (114.31,96.43)
+  mem_backbone_0/pmem_addr[6] (net)                 1      7.3261
+  mem_backbone_0/pmem_addr[6] (omsp_mem_backbone)                      0.0347      1.0000              0.0000      0.1418 f    (hierarchical)    h
+  pmem_addr[6] (net)                                       7.3261
+  pmem_addr[6] (out)                                                   0.0347      1.0000              0.0006      0.1424 f    (211.88,97.42)
+  data arrival time                                                                                                0.1424
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  output external delay                                                                               -0.0000      0.0000
+  data required time                                                                                               0.0000
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.0000
+  data arrival time                                                                                               -0.1424
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.1424
+
+
+
+  Startpoint: pmem_dout[15] (input port clocked by dco_clk)
+  Endpoint: mem_backbone_0/pmem_dout_bckup_reg[15] (rising edge-triggered flip-flop clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  input external delay                                                                                 0.0000      0.0000
+
+  pmem_dout[15] (in)                                                   0.0147      1.0000              0.0068      0.0068 r    (0.14,91.04)
+  pmem_dout[15] (net)                               4      5.8484
+  mem_backbone_0/pmem_dout[15] (omsp_mem_backbone)                     0.0147      1.0000              0.0068      0.0068 r    (hierarchical)    h
+  mem_backbone_0/pmem_dout[15] (net)                       5.8484
+  mem_backbone_0/pmem_dout_bckup_reg[15]/D (DFFARX1_RVT)               0.0146      1.0000              0.0002      0.0070 r    (12.34,93.29)     s, n
+  data arrival time                                                                                                0.0070
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     26.2634                                                                                d
+  clock_module_0/p_abuf15 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf15 (net)                     4     26.2634                                                                                d
+  clock_module_0/clock_gate_dma_mclk/clk (omsp_clock_gate_33)          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_dma_mclk/clk (net)      4     26.2634                                                                                d
+  clock_module_0/clock_gate_dma_mclk/U3/A2 (AND2X4_RVT)                0.0000      1.0000              0.0000      0.0000 r    (146.70,154.88)   s
+  clock_module_0/clock_gate_dma_mclk/U3/Y (AND2X4_RVT)                 0.0000      1.0000              0.0000      0.0000 r    (147.52,154.96)   s
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (net)
+                                                    3     21.9949                                                                                d
+  clock_module_0/clock_gate_dma_mclk/p_abuf1 (omsp_clock_gate_33)      0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf13 (net)                     3     21.9949                                                                                d
+  clock_module_0/p_abuf13 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  p_abuf10 (net)                                    3     21.9949                                                                                d
+  mem_backbone_0/p_abuf1 (omsp_mem_backbone)                           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  mem_backbone_0/p_abuf1 (net)                      3     21.9949                                                                                d
+  mem_backbone_0/clock_gate_bckup/clk (omsp_clock_gate_22)             0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  mem_backbone_0/clock_gate_bckup/clk (net)         3     21.9949                                                                                d
+  mem_backbone_0/clock_gate_bckup/U3/A2 (AND2X4_RVT)                   0.0000      1.0000              0.0000      0.0000 r    (15.53,74.62)     s
+  mem_backbone_0/clock_gate_bckup/U3/Y (AND2X4_RVT)                    0.0000      1.0000              0.0000      0.0000 r    (16.35,74.70)     s
+  mem_backbone_0/clock_gate_bckup/gclk (net)       16     19.9325                                                                                d
+  mem_backbone_0/clock_gate_bckup/gclk (omsp_clock_gate_22)            0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  mem_backbone_0/mclk_bckup_gated (net)            16     19.9325                                                                                d
+  mem_backbone_0/pmem_dout_bckup_reg[15]/CLK (DFFARX1_RVT)             0.0000      1.0000              0.0000      0.0000 r    (12.64,92.43)     s, n
+
+  library hold time                                                                1.0000             -0.0038     -0.0038
+  data required time                                                                                              -0.0038
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              -0.0038
+  data arrival time                                                                                               -0.0070
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0108
+
+
+
+  Startpoint: frontend_0/irq_num_reg[3] (rising edge-triggered flip-flop clocked by dco_clk)
+  Endpoint: irq_acc[7] (output port clocked by dco_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout     Cap        Trans      Derate    Delta       Incr        Path           Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  source latency                                                                                       0.0000      0.0000
+  dco_clk (in)                                                         0.0000      1.0000              0.0000      0.0000 r    (157.77,211.12)
+  dco_clk (net)                                     4     25.7458                                                                                d
+  clock_module_0/p_abuf15 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf15 (net)                     4     25.7458                                                                                d
+  clock_module_0/clock_gate_mclk/clk (omsp_clock_gate_0)               0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/clock_gate_mclk/clk (net)          4     25.7458                                                                                d
+  clock_module_0/clock_gate_mclk/U3/A2 (AND2X4_RVT)                    0.0000      1.0000              0.0000      0.0000 r    (71.46,64.59)     s
+  clock_module_0/clock_gate_mclk/U3/Y (AND2X4_RVT)                     0.0000      1.0000              0.0000      0.0000 r    (72.28,64.67)     s
+  clock_module_0/clock_gate_mclk/gclk (net)         1      8.6668                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8313204/A (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 r    (73.83,69.78)
+  clock_module_0/clock_gate_mclk/cts_inv_8313204/Y (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 f    (73.96,69.68)
+  clock_module_0/clock_gate_mclk/ctsbuf_net_1335 (net)
+                                                    1      8.2324                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8263199/A (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 f    (73.83,67.91)
+  clock_module_0/clock_gate_mclk/cts_inv_8263199/Y (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 r    (73.96,68.02)
+  clock_module_0/clock_gate_mclk/p_abuf5 (net)      3     24.7955                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8213194/A (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 r    (22.45,81.29)
+  clock_module_0/clock_gate_mclk/cts_inv_8213194/Y (INVX16_RVT)        0.0000      1.0000              0.0000      0.0000 f    (22.58,81.39)
+  clock_module_0/clock_gate_mclk/ctsbuf_net_1133 (net)
+                                                    1     20.0401                                                                                d
+  clock_module_0/clock_gate_mclk/cts_inv_8163189/A (INVX32_RVT)        0.0000      1.0000              0.0000      0.0000 f    (65.47,87.98)
+  clock_module_0/clock_gate_mclk/cts_inv_8163189/Y (INVX32_RVT)        0.0000      1.0000              0.0000      0.0000 r    (65.60,88.08)
+  clock_module_0/clock_gate_mclk/p_abuf3 (net)     43     81.0258                                                                                d
+  clock_module_0/clock_gate_mclk/p_abuf3 (omsp_clock_gate_0)           0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  clock_module_0/p_abuf11 (net)                    43     81.0258                                                                                d
+  clock_module_0/p_abuf11 (omsp_clock_module)                          0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  p_abuf8 (net)                                    43     81.0258                                                                                d
+  frontend_0/p_abuf3 (omsp_frontend)                                   0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  frontend_0/p_abuf3 (net)                         43     81.0258                                                                                d
+  frontend_0/clock_gate_irq_num/clk (omsp_clock_gate_29)               0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  frontend_0/clock_gate_irq_num/clk (net)          43     81.0258                                                                                d
+  frontend_0/clock_gate_irq_num/U3/A2 (AND2X1_RVT)                     0.0000      1.0000              0.0000      0.0000 r    (79.97,21.12)     s
+  frontend_0/clock_gate_irq_num/U3/Y (AND2X1_RVT)                      0.0000      1.0000              0.0000      0.0000 r    (80.64,21.20)     s
+  frontend_0/clock_gate_irq_num/gclk (net)          4      4.2715                                                                                d
+  frontend_0/clock_gate_irq_num/gclk (omsp_clock_gate_29)              0.0000      1.0000              0.0000      0.0000 r    (hierarchical)    h
+  frontend_0/mclk_irq_num (net)                     4      4.2715                                                                                d
+  frontend_0/irq_num_reg[3]/CLK (DFFASX1_RVT)                          0.0000      1.0000              0.0000      0.0000 r    (80.58,18.86)     s, n
+
+  frontend_0/irq_num_reg[3]/CLK (DFFASX1_RVT)                          0.0000      1.0000              0.0000      0.0000 r    (80.58,18.86)     s, n
+  frontend_0/irq_num_reg[3]/QN (DFFASX1_RVT)                           0.0177      1.0000              0.0389      0.0389 f    (83.98,19.51)     s, n
+  frontend_0/n373 (net)                             2      1.4993
+  frontend_0/U86/A1 (AND2X1_RVT)                                       0.0177      1.0000              0.0000      0.0389 f    (84.47,17.93)
+  frontend_0/U86/Y (AND2X1_RVT)                                        0.0209      1.0000              0.0266      0.0655 f    (83.96,17.85)
+  frontend_0/n83 (net)                              4      4.0851
+  frontend_0/U78/A1 (AND2X1_RVT)                                       0.0209      1.0000              0.0000      0.0655 f    (82.10,14.58)
+  frontend_0/U78/Y (AND2X1_RVT)                                        0.0108      1.0000              0.0193      0.0848 f    (82.62,14.51)
+  frontend_0/irq_acc[7] (net)                       1      1.0363
+  frontend_0/irq_acc[7] (omsp_frontend)                                0.0108      1.0000              0.0000      0.0848 f    (hierarchical)    h
+  irq_acc[7] (net)                                         1.0363
+  irq_acc[7] (out)                                                     0.0108      1.0000              0.0000      0.0848 f    (83.44,0.14)
+  data arrival time                                                                                                0.0848
+
+  clock dco_clk (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                          0.0000      0.0000
+  output external delay                                                                               -0.0000      0.0000
+  data required time                                                                                               0.0000
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                               0.0000
+  data arrival time                                                                                               -0.0848
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                      0.0848
+
+
+1
